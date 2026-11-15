@@ -21,3 +21,6 @@ Deutschsprachiger Produktideen- und Affiliate-Demokatalog mit 27 Themenwelten.
 
 ## Pflege
 Shopinhalte und Designs künftig über GitHub-Commits aktualisieren; Git-verbundenes Cloudflare Pages veröffentlicht den gewählten Branch automatisch. Keine echten Partnerlinks ohne Partnerfreigabe, Kennzeichnung und Prüfung hinzufügen.
+
+## Automatische Veröffentlichung
+Cloudflare Pages ist seit 15.11.2026 als Git-verbundenes Projekt `alltagsfinder-auto` eingerichtet. Diese README-Änderung dient als erster Auto-Deployment-Test; sie verändert die Shop-Oberfläche nicht.
