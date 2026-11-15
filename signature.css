@@ -411,3 +411,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
 @media(prefers-reduced-motion:reduce){
  .spotlight-stage.fresh-fund{animation:none}
 }
+
+/* Required Amazon Associates status disclosure; visible on all screen sizes. */
+.amazon-disclosure{
+ padding:15px 0 24px;
+ border-top:1px solid #ffffff20;
+ color:#eeeafa;
+ font-size:12px;
+ font-weight:660;
+ line-height:1.6
+}
+.amazon-disclosure a{
+ display:inline-block;
+ margin-left:8px;
+ color:#dfff83;
+ text-decoration:underline;
+ text-underline-offset:3px
+}
+@media(max-width:600px){
+ .amazon-disclosure{font-size:11px;padding:14px 0 24px}
+ .amazon-disclosure a{margin-left:0;display:block;margin-top:5px}
+}
