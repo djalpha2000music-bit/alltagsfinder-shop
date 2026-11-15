@@ -399,3 +399,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
  .showcase-main,.float-top,.float-bottom,.hero-glow,.hero-stamp,.pulse-dot{animation:none}
  .surprise-trigger,.surprise-trigger:before{transition:none}
 }
+/* A tiny reveal makes the surprise button feel responsive, not deceptive. */
+@keyframes afRevealFund{
+  0%{filter:brightness(1);transform:scale(.985)}
+  35%{filter:brightness(1.06);transform:scale(1.025)}
+  100%{filter:brightness(1);transform:scale(1)}
+}
+@media(prefers-reduced-motion:no-preference){
+ .spotlight-stage.fresh-fund{animation:afRevealFund .65s ease-out}
+}
+@media(prefers-reduced-motion:reduce){
+ .spotlight-stage.fresh-fund{animation:none}
+}
