@@ -11671,9 +11671,21 @@ window.ALLTAGSFINDER_PRODUCTS = [
   "published": false
  }
 ];
-</script><script>(function () {
+</script><script src="partner-offers.js"></script><script>(function () {
   'use strict';
-  const products = window.ALLTAGSFINDER_PRODUCTS || [];
+  // Bulk overlay: only independently checked and activated offer entries are published.
+  const offerRegistry = window.ALLTAGSFINDER_PARTNER_OFFERS || {};
+  const products = (window.ALLTAGSFINDER_PRODUCTS || []).map(p => ({ ...p, ...(offerRegistry[p.id] || {}) }));
+  if (products.some(p => validPartnerLink(p))) {
+    const strip = document.querySelector('.preview-strip');
+    if (strip) strip.innerHTML = '<span class="pulse-dot"></span><strong>Alltagsfinder</strong> · Gekennzeichnete Partnerangebote und unverbindliche Produktideen.';
+    const intro = document.querySelector('.discovery-head p');
+    if (intro) intro.textContent = 'Entdecke Produktideen aus 27 Bereichen. Einzelne gekennzeichnete Partnerangebote führen direkt zum jeweiligen Händler.';
+    const notice = document.querySelector('.catalog-notice p');
+    if (notice) notice.textContent = 'Wichtiger Hinweis: Nur ausdrücklich gekennzeichnete Partnerangebote verweisen auf externe Händler. Weitere Karten sind unverbindliche Demo-Produktideen. Preise und Lieferbarkeit bitte direkt beim Händler prüfen.';
+    const footerNote = document.querySelector('.footer-bottom > span:last-child');
+    if (footerNote) footerNote.textContent = '* Bei gekennzeichneten Partnerlinks kann eine Provision entstehen.';
+  }
   const labels = {"musik": "Musik & DJ", "technik": "Technik & Elektronik", "gaming": "Gaming & Streaming", "haushalt": "Haushalt & Küche", "unterwegs": "Unterwegs", "homeoffice": "Homeoffice & Büro", "freizeit": "Freizeit & Fitness", "wohnen": "Wohnen & Deko", "moebel": "Möbel", "mode": "Mode & Schuhe", "pflege": "Beauty & Pflege", "familie": "Baby, Kinder & Familie", "spielzeug": "Spielzeug & Spiele", "haustiere": "Tierbedarf", "garten": "Garten & Balkon", "auto": "Auto & Fahrzeug", "fahrrad": "Fahrrad & Mobilität", "camping": "Camping & Outdoor", "reisen": "Reise & Gepäck", "werkzeug": "Baumarkt & Werkzeug", "foto": "Foto & Video", "smarthome": "Smart Home", "buecher": "Lesen & Schreibwaren", "party": "Party & Events", "kreativ": "Kreativ & Basteln", "lebensmittel": "Lebensmittel & Genuss", "schmuck": "Uhren, Schmuck & Geschenke"};
   const pictograms = {
     charging:'<rect x="7" y="5" width="34" height="38" rx="7"/><path d="M17 17h6m-6 8h6m8-10v19m-4-6h8"/><path d="m29 15-4 8h7l-5 9"/>',
