@@ -1,0 +1,2 @@
+# alltagsfinder-shop
+Private
