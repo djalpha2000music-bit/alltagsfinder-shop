@@ -432,3 +432,52 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
  .amazon-disclosure{font-size:11px;padding:14px 0 24px}
  .amazon-disclosure a{margin-left:0;display:block;margin-top:5px}
 }
+
+
+/* Reference images are illustrative, not genuine merchant product photos. */
+.image-disclaimer {
+ display:flex;align-items:flex-start;gap:14px;
+ background:#f0ebff;color:#2c2354;
+ border:1px solid #cdbbff;border-left:5px solid #7655dc;
+ border-radius:16px;padding:18px 19px;
+ margin:0 0 20px;
+ box-shadow:0 8px 22px #38237110;
+}
+.image-disclaimer-icon {
+ flex:none;display:grid;place-items:center;
+ width:34px;height:34px;border-radius:11px;
+ background:#ded2ff;color:#5332b6;font-size:17px;font-weight:900;
+}
+.image-disclaimer strong,.image-disclaimer span{display:block}
+.image-disclaimer strong{font-size:13px;font-weight:850;line-height:1.45}
+.image-disclaimer div>span{font-size:11px;line-height:1.6;color:#514672;margin-top:4px}
+.product-art .reference-tag {
+ position:absolute;z-index:3;left:12px;bottom:12px;
+ max-width:calc(100% - 24px);
+ color:#292243;
+ border:1px solid #dcd3ff;
+ background:#fbfaffee;
+ border-radius:8px;
+ padding:6px 9px;
+ font-size:9px;
+ line-height:1.3;
+ font-weight:900;
+ letter-spacing:.05em;
+ box-shadow:0 3px 12px #2312421b;
+}
+.modal-reference-note{
+ margin:10px 0 20px;
+ border-radius:11px;background:#f0ecff;
+ color:#4c4166;padding:12px 14px;
+ border:1px solid #e1d9f7;
+ font-size:12px;line-height:1.65;
+}
+.modal-reference-note strong{color:#2c2151}
+@media(max-width:600px){
+ .image-disclaimer{padding:15px 13px;gap:10px;margin-bottom:16px}
+ .image-disclaimer-icon{width:28px;height:28px;font-size:13px}
+ .image-disclaimer strong{font-size:12px}
+ .image-disclaimer div>span{font-size:10.5px}
+ .product-art .reference-tag{font-size:8px;left:9px;bottom:9px;padding:5px 7px}
+ .modal-reference-note{font-size:11px}
+}
