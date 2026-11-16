@@ -6,7 +6,7 @@ Stand: 16. November 2026.
 - [x] Der vom Nutzer übermittelte Formular-Endpunkt lautet `https://form.taxi/s/qc25mby6`.
 - [x] Formular `kontakt.html` sendet echte Nachrichten per `method="post"` an diese Sendeadresse.
 - [x] Form.taxi-Standardseite für die Erfolgsmeldung ist laut Screenshot ausgewählt; wir imitieren keine erfolgreiche Zustellung auf unserer Website.
-- [x] Ein Honeypot-Feld `_honeypot` wurde ergänzt.
+- [x] Das Formular nutzt ein verborgenes Honeypot-Feld `_gotcha` (Standardvorgabe der Form.taxi-Spamfilter-Dokumentation). Die E-Mail-Eingabe heißt `email`, damit eine künftig aktivierte E-Mail-Prüfung sie erkennt. Quelle: https://docs.form.taxi/de/spam-protection
 - [x] Die manuelle E-Mail-Adresse bleibt als alternative Kontaktmöglichkeit.
 - [x] Der Nutzer-Screenshot zeigt einen aktivierten Spamfilter sowie die eingeschränkte Domain `alltagsfinder-auto.pages.dev`.
 - [x] Datenschutztext für Form.taxi angepasst, inklusive Hinweise auf Verarbeitung, E-Mail-Zustellung und Vertrag.
