@@ -1,18 +1,24 @@
-# Alltagsfinder Kontaktformular: direkten Versand aktivieren
+# Alltagsfinder – Form.taxi angeschlossen
+Stand: 16. November 2026.
 
-## Aktueller Stand
-Die neue Seite `kontakt.html` ist eingebaut und im Impressum sowie Footer verlinkt. Das sichtbare Formular erstellt aktuell **einen E-Mail-Entwurf im Besuchergerät**; es versendet selbst keine Nachricht. Damit wird niemand durch eine falsche „Erfolgreich gesendet“-Meldung getäuscht.
+## Technischer Anschluss
+- [x] Benutzer hat im Form.taxi-Dashboard ein individuelles Formular eingerichtet.
+- [x] Der vom Nutzer übermittelte Formular-Endpunkt lautet `https://form.taxi/s/qc25mby6`.
+- [x] Formular `kontakt.html` sendet echte Nachrichten per `method="post"` an diese Sendeadresse.
+- [x] Form.taxi-Standardseite für die Erfolgsmeldung ist laut Screenshot ausgewählt; wir imitieren keine erfolgreiche Zustellung auf unserer Website.
+- [x] Ein Honeypot-Feld `_honeypot` wurde ergänzt.
+- [x] Die manuelle E-Mail-Adresse bleibt als alternative Kontaktmöglichkeit.
+- [x] Der Nutzer-Screenshot zeigt einen aktivierten Spamfilter sowie die eingeschränkte Domain `alltagsfinder-auto.pages.dev`.
+- [x] Datenschutztext für Form.taxi angepasst, inklusive Hinweise auf Verarbeitung, E-Mail-Zustellung und Vertrag.
 
-## Empfohlener EU-Formularanbieter: Form.taxi
-Form.taxi verarbeitet Formularsendungen nach eigenen Angaben innerhalb der EU und bietet einen Auftragsverarbeitungsvertrag an; die dauerhafte Funktion braucht ein Betreiberkonto und einen individuellen Formular-Endpunkt. Quelle: https://docs.form.taxi/de/privacy
+## Noch unbedingt erforderlich
+- [ ] In Form.taxi bei den Zustellfunktionen bestätigen, dass die E-Mail-Benachrichtigungen tatsächlich an `djalpha2000.music@gmail.com` gehen. Evtl. neue E-Mail-Adresse per Link bestätigen.
+- [ ] Im Form.taxi-Panel Bereich **Datenschutz** den AV-Vertrag gemäß Art. 28 DSGVO abschließen und Speicherdauer/Einstellungen kontrollieren. Nur das Formular anzulegen reicht dafür nicht. https://docs.form.taxi/de/privacy
+- [ ] Nach einem abgeschlossenen AV-Vertrag von der öffentlichen Seite `https://alltagsfinder-auto.pages.dev/kontakt.html` eine echte Testnachricht schicken. Prüfen, ob Form.taxi die **Standard-Erfolgsseite** anzeigt und die Nachricht bei der genannten Empfängeradresse ankommt (ggf. Spam).
+- [ ] Cloudflare-Deployment der neuesten GitHub-Version überprüfen.
+- [ ] Impressum-Anschrift, Amazon PartnerNet und Cloudflare-Datenschutz getrennt prüfen, bevor `_headers` ohne `noindex` geschaltet wird.
 
-1. Betreiber bei https://form.taxi/de/ registrieren (je nach Plan kostenfrei möglich).
-2. Neue Formularkonfiguration für **Alltagsfinder** einrichten, Empfängeradresse `djalpha2000.music@gmail.com` wählen und E-Mail-Benachrichtigungen aktivieren.
-3. Individuelle **Sendeadresse** des Formulars aus dem Dashboard kopieren (Schema `https://form.taxi/s/FORM_CODE`, **kein** ausgedachter Test-Code). Dokumentation: https://www.docs.form.taxi/de/html-form-snippets
-4. Im Form.taxi-Dashboard nach Möglichkeit Spam-Schutz und Versandbeschränkung auf `alltagsfinder-auto.pages.dev` konfigurieren. Formular-Felder Name, E-Mail, Thema, Nachricht, Honeypot einrichten.
-5. **AV-Vertrag** nach Art. 28 DSGVO im Form.taxi-Dashboard erstellen/abschließen und die Datenschutz-Informationen an die tatsächlichen Verarbeitungseinstellungen anpassen.
-6. Die echte Sendeadresse an ChatGPT weitergeben, damit `kontakt.html` auf einen **POST an Form.taxi** umgestellt wird. Die bisherige `mailto:`-Funktion als Fallback kennzeichnen.
-7. Mit einer echten Testanfrage über die öffentliche Website prüfen, ob die Nachricht tatsächlich im Empfängerpostfach ankommt; gegebenenfalls Spamordner prüfen.
-8. Erst danach öffentlich als direkt sendbares Kontaktformular bezeichnen. Die `noindex`-Sperre bleibt bis zum Abschluss *aller* Rechts- und Amazon-Checks erhalten.
-
-Wichtig: **Nicht** einfach einen Form.taxi-Endpunkt raten oder ohne Vertrag personenbezogene Kontaktdaten an einen fremden Formularservice übertragen.
+## Technische Hinweise
+Form.taxi unterstützt standardmäßigen HTML-POST, ohne besondere JavaScript-Bibliothek: https://docs.form.taxi/de/form-setup
+HTML-Beispiele inkl. Honeypot: https://docs.form.taxi/de/html-form-snippets
+Der gegebene Formular-Endpunkt ist kein Passwort, sollte aber nicht für Testspam missbraucht werden.

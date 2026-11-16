@@ -142,14 +142,17 @@ const robots=text('robots.txt');
 if(!robots.includes('Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml'))
   fail('Missing correct sitemap declaration in robots.txt');
 const contactHtml=text('kontakt.html');
-if(!contactHtml.includes('id="alltagsfinder-kontaktformular"') || !contactHtml.includes('E-Mail-Entwurf'))fail('Contact form must clearly indicate email-draft behavior');
+if(!contactHtml.includes('id="alltagsfinder-kontaktformular"') || !contactHtml.includes('method="post"') || !contactHtml.includes('action="https://form.taxi/s/qc25mby6"'))fail('Contact form must submit to configured Form.taxi endpoint via POST');
+if(contactHtml.includes('E-Mail-Entwurf') || contactHtml.includes('novalidate'))fail('Contact form still claims mail draft or disables native validity checks');
+for(const field of ['Name','Email','Thema','Nachricht'])if(!contactHtml.includes('name="'+field+'"'))fail('Contact form field missing: '+field);
+if(!contactHtml.includes('name="_honeypot"'))fail('Form.taxi honeypot field missing');
 if(!contactHtml.includes('href="datenschutz.html#kontaktformular"'))fail('Contact form privacy link missing');
 if(!contactHtml.includes('href="mailto:djalpha2000.music@gmail.com?'))fail('Contact email fallback missing');
 const contactScript=text('kontakt.js');
 try{new Script(contactScript,{filename:'kontakt.js'})}catch(e){fail('Contact form JavaScript invalid: '+e.message)}
-if(!contactScript.includes('mailto:djalpha2000.music@gmail.com'))fail('Contact form email draft action missing');
-if(contactHtml.includes('action="https://form.taxi/'))fail('Never publish unconfigured backend endpoint');
-if(!text('datenschutz.html').includes('id="kontaktformular"'))fail('Contact form privacy info missing');
+if(contactScript.includes('preventDefault') && !contactScript.includes('No preventDefault:'))fail('A JavaScript interception could prevent real form submission');
+if(contactScript.includes('window.location.href'))fail('Old email-draft redirect must not intercept real form submission');
+if(!text('datenschutz.html').includes('id="kontaktformular"') || !text('datenschutz.html').includes('Form.taxi'))fail('Contact processing privacy text missing');
 for(const page of ['index.html','angebote.html','musik-dj.html','ratgeber.html','ueber-uns.html','impressum.html','datenschutz.html','transparenz.html'])if(!text(page).includes('href="kontakt.html"'))fail('Contact link missing in '+page);
 if(!text('impressum.html').includes('Alltagsfinder per E-Mail kontaktieren'))
   fail('Direct email contact action missing from legal page');

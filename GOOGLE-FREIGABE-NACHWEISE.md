@@ -46,5 +46,7 @@ Offizielle Google-Anleitung: https://developers.google.com/search/docs/crawling-
 
 ## Kontaktformular-Ausbau (16.11.2026)
 - [x] Kontaktseite mit E-Mail-Entwurf und klarer Versand-Anzeige erstellt, Datenschutz erläutert, Navigation und Sitemap ergänzt.
-- [ ] Für unabhängig funktionsfähiges Direktformular Form.taxi-Verbindung (EU), E-Mail-Benachrichtigung, Auftragsverarbeitungsvertrag und Testversand einrichten.
-- [ ] Erst danach im Impressum das Kontaktformular als direkte Alternative zur E-Mail bezeichnen und vor Google-Freigabe rechtliche Erreichbarkeit erneut prüfen.
+- [x] Benutzerdefinierte Form.taxi-Sendeverbindung aus Nutzerangabe `https://form.taxi/s/qc25mby6` mit POST integriert; Nutzer-Screenshot bestätigt Spamfilter und Domainfreigabe.
+- [ ] E-Mail-Empfänger verifizieren, tatsächlichen Testeingang bestätigen, Form.taxi-AV-Vertrag abschließen.
+- [x] Im Impressum als Formularlink bezeichnet; technisch unabhängig vom E-Mail-Client.
+- [ ] Vor Google-Freigabe tatsächliche Zustellung und rechtliche Erreichbarkeit erneut prüfen.
