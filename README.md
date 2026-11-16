@@ -3,8 +3,8 @@
 Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenwelten, einer Sammlung von 668 Produktideen und eigenständigen Ratgebern.
 
 ## Status
-- **1 aktives, gekennzeichnetes Amazon-Partnerangebot** (DOQAUS DJ-Kopfhörer) und 667 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
-- **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau.
+- **2 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer und AlphaTheta DDJ-FLX2 DJ-Controller) und 666 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
+- **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau. Für den Controller nutzt die Angebotsseite ausdrücklich ein Symbolbild statt eines Amazon-Produktfotos.
 - **11 eigenständige Kaufhilfe-Seiten plus vier Grundlagenartikel** sind unter `ratgeber.html` verlinkt.
 - Auf Unterseiten verlinken Navigation und Footer zum Angebotsbereich; Favoriten lassen sich über `index.html?favorites=1#entdecken` öffnen.
 - Der DOQAUS-Referenzbild-Asset liegt in `assets/doqaus-kopfhoerer-referenz.svg`, als generierte Illustration gekennzeichnet.
