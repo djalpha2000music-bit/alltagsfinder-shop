@@ -117,3 +117,18 @@ body:not(.offers-page) .image-disclaimer{box-shadow:0 12px 38px rgba(49,28,98,.0
  .offers-page .offer-visual img,.offers-page .offers-hero-main,.offers-page .offers-count{animation:none!important}
  .offers-page .more-offer,.offers-page .more-offer-visual img,.offers-page .offer-buy,body:not(.offers-page) .mood-card{transition:none!important}
 }
+
+/* Four clear pathways to real offer details, not to unlinked demo ideas. */
+.offers-page .offers-quick-lanes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 25px}
+.offers-page .offers-quick-lanes a{display:grid;grid-template-columns:46px minmax(0,1fr);grid-template-rows:auto auto;gap:0 10px;align-items:center;min-height:89px;padding:16px 14px;border:1px solid #e3dcf1;border-radius:17px;background:#fff;text-decoration:none;box-shadow:0 9px 24px rgba(37,19,87,.05);transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.offers-page .offers-quick-lanes a:hover{transform:translateY(-4px);border-color:#c3adeb;box-shadow:0 20px 31px rgba(45,25,96,.12)}
+.offers-page .offers-quick-lanes a>span{grid-row:1/3;display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:#efebff;color:#6340b7;font-size:24px}
+.offers-page .offers-quick-lanes a:nth-child(2)>span{background:#e9f4f7;color:#346c89}
+.offers-page .offers-quick-lanes a:nth-child(3)>span{background:#e9f0e5;color:#477049}
+.offers-page .offers-quick-lanes a:nth-child(4)>span{background:#fff1e6;color:#9b6040}
+.offers-page .offers-quick-lanes strong{color:#2a2148;font-size:13px;font-weight:900;line-height:1.2}
+.offers-page .offers-quick-lanes small{color:#82758e;font-size:11px;line-height:1.4;white-space:normal}
+.offers-page .offers-quick-lanes a:focus-visible{outline:3px solid #8558d9;outline-offset:3px}
+@media(max-width:850px){.offers-page .offers-quick-lanes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:410px){.offers-page .offers-quick-lanes{gap:9px}.offers-page .offers-quick-lanes a{grid-template-columns:34px minmax(0,1fr);gap:0 7px;min-height:77px;padding:11px 9px}.offers-page .offers-quick-lanes a>span{width:32px;height:32px;border-radius:9px;font-size:18px}.offers-page .offers-quick-lanes strong{font-size:12px}.offers-page .offers-quick-lanes small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.offers-page .offers-quick-lanes a{transition:none!important}}
