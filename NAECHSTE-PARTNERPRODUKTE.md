@@ -1,13 +1,13 @@
-# Alltagsfinder: fünf ausgewählte Partnerprodukte (zwei weitere Angebote freigegeben)
+# Alltagsfinder: fünf ausgewählte Partnerprodukte (drei weitere Angebote freigegeben)
 
-Stand: 16.11.2026. Ziel: fünf zusätzliche klar beschriebene Produkte in der Kategorie Musik/DJ statt unübersichtlicher Demo-Masse. DJ-Controller und das vom Betreiber bestätigte Mikrofon sind jetzt freigeschaltete Partnerangebote; die anderen drei sind **Redaktionskandidaten, noch keine freigeschalteten Partnerangebote**. Keine Links, Preise oder Amazon-Produktbilder wurden erfunden.
+Stand: 16.11.2026. Ziel: fünf zusätzliche klar beschriebene Produkte in der Kategorie Musik/DJ statt unübersichtlicher Demo-Masse. DJ-Controller, Mikrofon und EUROLITE LED PARty TCL Spot sind freigeschaltete Partnerangebote; Audiointerface und Studiomonitore bleiben **Redaktionskandidaten ohne Partnerlink**. Keine Links, Preise oder Amazon-Produktbilder wurden erfunden.
 
 | Priorität | Katalog-ID (bereits vorhanden) | Konkreter Kandidat | Kaufhilfe-Ansatz | Status |
 |---|---|---|---|---|
 | 1 | dj-controller | AlphaTheta Pioneer DJ DDJ-FLX2 – 2-Kanal DJ-Controller | Software, Anschlüsse und Laptop-Bedarf | Produkt durch Amazon-Screenshot des Betreibers abgeglichen, Link `https://link.amazon/B099Pt8mG` mit `geprueft=JA`, `freigeben=JA` im Shop aktiviert; Tracking-Tag und Kurzlink-Ziel extern noch kontrollieren |
-| 2 | audiointerface | USB-Audiointerface (Behringer U-Phoria UMC22 war nur ein Suchvorschlag, nicht als Linkziel bestätigt) | Mikrofonanschluss, USB, Monitoring | Kurzlink `https://link.amazon/B0dO2Pgr3` vorläufig erfasst, `geprueft=NEIN`, `freigeben=NEIN`. Originales Referenzbild im Katalog ergänzt; Screenshot des tatsächlichen Modells zur Veröffentlichung nötig |
+| 2 | audiointerface | USB-Audiointerface (Behringer U-Phoria UMC22 als Suchvorschlag) | Mikrofonanschluss, USB, Monitoring | Noch kein Partnerlink. Eigenes Referenzbild im Katalog vorbereitet |
 | 3 | dynamisches-mikrofon | Mikrofon-Angebot (Hersteller/Modell noch nicht nachgewiesen) | Anschlüsse, Zubehör, Verwendung | Betreiber bestätigt Mikrofon, Link `https://link.amazon/B0fHdmstM` veröffentlicht mit `geprueft=JA`, `freigeben=JA`, eigene Referenzillustration ergänzt. Kein konkretes Modell behaupten |
-| 4 | led-par | EUROLITE LED PARty TCL Spot | Einsatzbereich, Stromversorgung und Steuerung | Partnerlink und Eigenschaften prüfen |
+| 4 | led-par | EUROLITE LED PARty TCL Spot | Einsatzbereich, Stromversorgung und Steuerung | Betreiberbestätigter Amazon-Link `https://link.amazon/B0dO2Pgr3`, `geprueft=JA`, `freigeben=JA`, eigenes Referenzbild ergänzt. Technische Ziel-/Tracking-Prüfung extern offen |
 | 5 | studio-monitore | PreSonus Eris 3.5 (Modellgeneration ausdrücklich angeben) | Paar/Lieferumfang, Eingänge, Tischaufstellung | Partnerlink und Modellgeneration prüfen |
 
 ## Vorgehen
@@ -18,4 +18,4 @@ Stand: 16.11.2026. Ziel: fünf zusätzliche klar beschriebene Produkte in der Ka
 4. Keine Preise, Rezensionen oder offiziellen Produktbilder ohne erforderliche Nutzungsrechte/API veröffentlichen. Referenzillustrationen immer als solche kennzeichnen; bei fehlendem Bild ein neutrales Symbol verwenden.
 5. Für Kunden sichtbar bleiben: Werbung/Partnerlink und Amazon-Partnerhinweis. Kein eigener Warenkorb, keine Kaufabwicklung durch Alltagsfinder.
 
-**Wichtig:** Derzeit sind drei Partnerangebote im Katalog aktiv. Die weiteren 665 Katalogeinträge sind unverbindliche Produktideen. Kein offizielles Amazon-Produktbild auf unserer Webseite verwenden.
+**Wichtig:** Derzeit sind vier Partnerangebote im Katalog aktiv. Die weiteren 664 Katalogeinträge sind unverbindliche Produktideen. Kein offizielles Amazon-Produktbild auf unserer Webseite verwenden.
