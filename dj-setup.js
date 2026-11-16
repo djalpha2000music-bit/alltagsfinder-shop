@@ -72,7 +72,7 @@
     action.className = "dj-setup-buy";
     action.href = href;
     action.target = "_blank";
-    action.rel = "sponsored nofollow noopener noreferrer";
+    action.rel = "sponsored nofollow noopener";
     action.referrerPolicy = "strict-origin-when-cross-origin";
     action.textContent = "Beim Händler ansehen ↗";
     content.append(ad, heading, details, action);

@@ -31,7 +31,7 @@
 </div>
 </div><aside class="offers-count" aria-label="Anzahl aktuell hinterlegter Partnerangebote"><strong id="offer-count">–</strong><span id="offer-count-label">Angebote werden geladen</span><p>668 Produktideen sind im großen Katalog erfasst. Die meisten davon sind noch keine kaufbaren Händlerangebote.</p></aside></section>
 <div class="offers-eyebrow" id="angebote">AKTUELL BEI ALLTAGSFINDER</div>
-<h2 class="offers-section-title">Unser Startangebot: DJ-Kopfhörer</h2>
+<h2 class="offers-section-title">Im Fokus: DJ-Kopfhörer</h2>
 <article class="offer-panel" id="featured-offer" aria-labelledby="kopfhoerer-title">
 <div class="offer-visual"><img src="assets/doqaus-kopfhoerer-referenz.webp" alt="Generiertes Referenzbild eines schwarzen Over-Ear-DJ-Kopfhörers mit Kabel. Kein offizielles DOQAUS-Produktfoto." width="520" height="520" loading="eager" decoding="async"/><span class="offer-picture-tag">REFERENZBILD · ORIGINALPRODUKT BEI AMAZON ANSEHEN</span></div>
 <div class="offer-copy">
@@ -126,7 +126,7 @@
  const first=window.ALLTAGSFINDER_PARTNER_OFFERS?.["dj-kopfhoerer"];
  const firstUrl=safeOffer(first);
  if(firstUrl){
-    button.href=firstUrl;button.target="_blank";button.rel="sponsored nofollow noopener noreferrer";
+    button.href=firstUrl;button.target="_blank";button.rel="sponsored nofollow noopener";
     button.referrerPolicy="strict-origin-when-cross-origin";
     button.textContent="Zum Amazon-Partnerangebot ↗";
     button.setAttribute("aria-label","DOQAUS DJ-Kopfhörer auf der Händlerseite ansehen, öffnet neuen Tab");
@@ -210,7 +210,7 @@
    const description=document.createElement("p");description.textContent=offer.description||"Details und tatsächliches Produkt bitte beim Händler prüfen.";
    const merchant=document.createElement("span");merchant.className="more-offer-merchant";merchant.textContent="Händler: "+offer.merchant+" · Kein eigener Produkttest";
    const link=document.createElement("a");link.className="offer-buy";link.href=href;
-   link.target="_blank";link.rel="sponsored nofollow noopener noreferrer";
+   link.target="_blank";link.rel="sponsored nofollow noopener";
    link.referrerPolicy="strict-origin-when-cross-origin";
    link.textContent="Beim Händler ansehen ↗";
    body.append(badge,h,description,merchant,link);
