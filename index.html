@@ -11729,7 +11729,7 @@ window.ALLTAGSFINDER_PRODUCTS = [
   const dialogContent = document.getElementById('modal-content');
   const compareDialog = document.getElementById('compare-dialog');
   const initialParams = new URLSearchParams(location.search);
-  let category = labels[initialParams.get('category')] ? initialParams.get('category') : 'alle', subcategory = 'alle', term = (initialParams.get('q')||'').toLocaleLowerCase('de').trim(), sort = 'featured', favoritesOnly = false, visibleLimit = 12;
+  let category = labels[initialParams.get('category')] ? initialParams.get('category') : 'alle', subcategory = 'alle', term = (initialParams.get('q')||'').toLocaleLowerCase('de').trim(), sort = 'featured', favoritesOnly = initialParams.get('favorites') === '1', visibleLimit = 12;
   const compare = new Set();
   const storageKey = 'alltagsfinder-v2-favorites';
   let favorites = new Set();
