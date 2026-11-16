@@ -185,5 +185,29 @@ for(const rule of [
 ]){
  if(!headerRules.includes(rule))fail('Missing safety header: '+rule);
 }
+// Validate local navigation routes on all 20 indexed-candidate pages,
+// including the eleven buying guides (not only links in shared footers).
+for(const url of sitemapURLs){
+ const page=url.endsWith('.dev/')?'index.html':url.split('.dev/')[1];
+ const src=text(page);
+ for(const match of src.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["']/g)){
+  const href=match[1];
+  if(/^(?:#|https?:|mailto:|tel:|sms:|data:|javascript:)/i.test(href) || href.includes('
+console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');
++'{'))continue;
+  let dest;
+  try{dest=new URL(href,'https://alltagsfinder-auto.pages.dev/'+page)}
+  catch{fail('Invalid internal link in '+page+': '+href)}
+  if(dest.origin!=='https://alltagsfinder-auto.pages.dev')continue;
+  const target=decodeURIComponent(dest.pathname.replace(/^\/+/,'')||'index.html');
+  if(!existsSync(resolve(root,target)))fail('Broken internal link: '+page+' -> '+href);
+ }
+}
+for(const file of ['index.html','angebote.html','dj-setup.js','transparenz.html','datenschutz.html']){
+ if(text(file).includes('sponsored nofollow noopener noreferrer'))
+  fail('Amazon referral origin suppressed by noreferrer in '+file);
+}
+if(!text('index.html').includes('AUSGEWÄHLTES PARTNERANGEBOT'))
+ fail('Homepage still describes a single affiliate product');
 if(!text('_headers').includes('noindex'))fail('Premature SEO release: legal review not complete');
 console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');
