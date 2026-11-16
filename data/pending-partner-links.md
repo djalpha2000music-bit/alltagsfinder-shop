@@ -14,6 +14,6 @@ Diese Links wurden vom Shopbetreiber bereitgestellt. Der erste Link ist anhand d
 
 | 2026-11-16 | https://link.amazon/B0c2ZsVIU | PreSonus Eris 3.5 Gen 2, 3,5-Zoll-Studiomonitore, Schwarz (laut Amazon-Screenshot) | studio-monitore | Produktmodell durch vom Betreiber bereitgestellten Amazon-Screenshot abgeglichen; als Partnerangebot mit eigener Referenzillustration freigegeben. Kurzlink-Ziel und Partner-Tracking weiterhin unabhängig prüfen. |
 
-| 2026-11-16 | https://link.amazon/B08GxVIDS | USB-Audiointerface (genaues Modell noch nicht bestätigt) | audiointerface | Betreiber bestätigt, dass es das Audiointerface-Angebot ist; generisch mit eigenem Referenzbild freigegeben. Der zuvor vorgeschlagene Behringer UMC22 ist nicht als Linkziel nachgewiesen. Amazon-Ziel und Tracking bitte kontrollieren. |
+| 2026-11-16 | https://link.amazon/B08GxVIDS | Behringer U-PHORIA UMC22, 2x2 USB-Audiointerface mit MIDAS-Mikrofonvorverstärker laut Amazon-Screenshot | audiointerface | Modell vom Betreiber per Amazon-Screenshot bestätigt. Als sechstes Partnerangebot mit eigenem Referenzbild freigegeben. Technische Auflösung des Kurzlinks und Tracking-Tag im PartnerNet bitte dennoch prüfen. |
 
 **Vorgehen:** Produktseite im Amazon-Konto öffnen, sichtbaren Produktnamen oder Screenshot liefern, sicherstellen, dass der Link per „Partner-Link kopieren“ erzeugt wurde und die korrekte Tracking-ID enthält. Erst nach Prüfung die entsprechende Zeile in `data/affiliate-offers.csv` mit Händler und Link füllen sowie `geprueft=JA` und `freigeben=JA` setzen.
