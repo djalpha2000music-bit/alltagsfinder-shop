@@ -208,4 +208,35 @@ for(const file of ['index.html','angebote.html','dj-setup.js','transparenz.html'
 if(!text('index.html').includes('AUSGEWÄHLTES PARTNERANGEBOT'))
  fail('Homepage still describes a single affiliate product');
 if(/X-Robots-Tag:\s*[^\n]*\bnoindex\b/i.test(text('_headers')))fail('Search engine exclusion still active after operator-authorized technical launch');
+
+// SEO readiness validation: avoid accidentally regressing the public launch.
+const sitemapXml=text('sitemap.xml');
+if(!sitemapXml.startsWith('<?xml version="1.0" encoding="UTF-8"?>'))
+  fail('Sitemap XML declaration missing');
+if(!sitemapXml.includes('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">') || !sitemapXml.trimEnd().endsWith('</urlset>'))
+  fail('Sitemap URL-set envelope missing');
+if((sitemapXml.match(/<loc>/g)||[]).length!==20)
+  fail('Sitemap must contain exactly 20 URL entries');
+if(/<loc>[^<]*&(?!amp;)/.test(sitemapXml))
+  fail('Unescaped ampersand in sitemap URL');
+if(!headerRules.includes('/sitemap.xml') || !headerRules.includes('Content-Type: application/xml; charset=utf-8'))
+  fail('Sitemap must be served with explicit XML MIME type');
+if(!headerRules.includes('/robots.txt') || !headerRules.includes('Content-Type: text/plain; charset=utf-8'))
+  fail('Robots file MIME type must be explicit');
+const webSiteMarkup=html.match(/<script type="application\\/ld\\+json">([\\s\\S]*?)<\\/script>/);
+if(!webSiteMarkup)fail('Public home page lacks WebSite structured data');
+let websiteSchema;
+try{websiteSchema=JSON.parse(webSiteMarkup[1]);}
+catch(e){fail('Invalid home JSON-LD: '+e.message);}
+if(websiteSchema['@type']!=='WebSite' || websiteSchema.name!=='Alltagsfinder' ||
+   websiteSchema.url!=='https://alltagsfinder-auto.pages.dev/')
+  fail('Home WebSite structured data inconsistent with public website');
+if(!html.includes('property="og:site_name" content="Alltagsfinder"'))
+  fail('Home social preview branding missing');
+for(const page of sitemapURLs.map(url=>url.endsWith('.dev/')?'index.html':url.split('.dev/')[1])){
+ const src=text(page);
+ if(/<meta[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(src))
+   fail('Public page still contains meta robots noindex: '+page);
+}
+
 console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');
