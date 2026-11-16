@@ -14,8 +14,8 @@
       text: "Für den Einstieg ins Auflegen: Controller und Kopfhörer sind mögliche Bausteine. Vor dem Kauf Software, Anschlüsse und benötigte Kabel prüfen."
     },
     recording: {
-      ids: ["dynamisches-mikrofon", "dj-kopfhoerer"],
-      text: "Für erste Sprach- und Musikaufnahmen: Mikrofon und Kopfhörer können sinnvoll sein. Aufnahmegerät, Mikrofonanschluss und nötiges Zubehör vorher prüfen."
+      ids: ["dynamisches-mikrofon", "dj-kopfhoerer", "studio-monitore"],
+      text: "Für erste Sprach- und Musikaufnahmen: Mikrofon und Kopfhörer sind mögliche Bausteine; Studiomonitore können fürs Abhören dazukommen. Anschlüsse, Aufnahmegerät und nötiges Zubehör vor dem Kauf prüfen."
     },
     speech: {
       ids: ["dynamisches-mikrofon"],
