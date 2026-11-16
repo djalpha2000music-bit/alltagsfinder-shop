@@ -18,3 +18,12 @@
 
 /editorial-finish.css
   Cache-Control: public, max-age=0, must-revalidate
+
+# Google and other crawlers: correct MIME, always serve current sitemap
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate
