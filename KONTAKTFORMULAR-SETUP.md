@@ -15,7 +15,7 @@ Stand: 16. November 2026.
 - [x] Tatsächlicher E-Mail-Eingang am 16.11.2026 um 10:55 Uhr (Deutschland) im verbundenen Gmail-Postfach `djalpha2000.music@gmail.com` bestätigt. Betreff: „Sendung von Alltagsfinder Kontaktformular“. Gmail meldet Nachricht im Posteingang. Das beweist den End-to-End-Test. Konfiguration der Absender-/Empfängeradressen bei späteren Änderungen erneut kontrollieren.
 - [x] AV-Vertrag im Form.taxi-Dashboard **erstellt**: Screenshot des Betreibers vom 16.11.2026 zeigt ausdrücklich „Vertrag wurde erstellt!“.
 - [ ] AV-Vertrag als PDF herunterladen, Angaben prüfen, dauerhaft aufbewahren und sicherstellen, dass die Vereinbarung tatsächlich wirksam abgeschlossen ist. Speicherfristen/Einstellungen im Form.taxi-Konto kontrollieren. https://docs.form.taxi/de/privacy
-- [ ] Nach einem abgeschlossenen AV-Vertrag von der öffentlichen Seite `https://alltagsfinder-auto.pages.dev/kontakt.html` eine echte Testnachricht schicken. Prüfen, ob Form.taxi die **Standard-Erfolgsseite** anzeigt und die Nachricht bei der genannten Empfängeradresse ankommt (ggf. Spam).
+- [x] Echte Testübermittlung von der öffentlichen Kontaktseite durchgeführt: Screenshot des Nutzers zeigt Form.taxi „Formular wurde übermittelt!“. Passende Benachrichtigung im verbundenen Gmail-Postfach nachgewiesen.
 - [ ] Cloudflare-Deployment der neuesten GitHub-Version überprüfen.
 - [ ] Impressum-Anschrift, Amazon PartnerNet und Cloudflare-Datenschutz getrennt prüfen, bevor `_headers` ohne `noindex` geschaltet wird.
 
