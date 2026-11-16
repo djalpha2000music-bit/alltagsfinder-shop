@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+<title id="title">USB-Audiointerface – Referenzillustration</title>
+<desc id="desc">Eigenständig gestaltete schematische Zeichnung eines kleinen USB-Audiointerfaces mit zwei Eingangsbuchsen und Reglern. Kein Originalfoto eines Amazon-Produkts.</desc>
+<defs>
+<radialGradient id="back" cx=".52" cy=".31" r=".76"><stop stop-color="#6a5692"/><stop offset=".58" stop-color="#332848"/><stop offset="1" stop-color="#181629"/></radialGradient>
+<linearGradient id="panel" x1=".1" y1=".1" x2=".8" y2=".9"><stop stop-color="#394454"/><stop offset=".5" stop-color="#222b38"/><stop offset="1" stop-color="#101925"/></linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#687482"/><stop offset=".4" stop-color="#293440"/><stop offset="1" stop-color="#0c131b"/></linearGradient>
+<radialGradient id="dial"><stop stop-color="#8697a3"/><stop offset=".3" stop-color="#4b5662"/><stop offset=".84" stop-color="#131d26"/><stop offset="1" stop-color="#94a4ab"/></radialGradient>
+<filter id="drop" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect x="0" y="0" width="640" height="640" rx="42" fill="url(#back)"/>
+<ellipse cx="319" cy="463" rx="258" ry="47" fill="#080715" opacity=".48" filter="url(#drop)"/>
+<g transform="translate(0 -10)">
+<path d="M103 238l390 -34 49 42 -1 195 -432 31 -19 -37 -3 -174z" fill="url(#edge)" stroke="#8e95a2" stroke-width="4"/>
+<path d="M103 238l390 -34 49 42 -427 35z" fill="#626b75" stroke="#b4bbc2" stroke-width="3"/>
+<path d="M114 279l425 -33 -2 192 -420 35z" fill="url(#panel)" stroke="#7e8a99" stroke-width="3"/>
+<path d="M115 445l422 -34v26l-420 36z" fill="#0b121b"/>
+<g transform="rotate(-4 310 350)">
+<circle cx="175" cy="347" r="37" fill="#0b141f" stroke="#9da8b2" stroke-width="6"/>
+<circle cx="175" cy="347" r="26" fill="#1e2833" stroke="#637586" stroke-width="3"/>
+<circle cx="175" cy="347" r="10" fill="#0c1219"/>
+<circle cx="281" cy="347" r="37" fill="#0b141f" stroke="#9da8b2" stroke-width="6"/>
+<circle cx="281" cy="347" r="26" fill="#1e2833" stroke="#637586" stroke-width="3"/>
+<circle cx="281" cy="347" r="10" fill="#0c1219"/>
+<circle cx="391" cy="330" r="28" fill="url(#dial)" stroke="#8898a7" stroke-width="3"/>
+<path d="M391 303v11" stroke="#eff9f7" stroke-width="4" stroke-linecap="round"/>
+<circle cx="478" cy="322" r="27" fill="url(#dial)" stroke="#8898a7" stroke-width="3"/>
+<path d="M478 295v11" stroke="#eff9f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="359" y="396" width="104" height="13" rx="6" fill="#0f1924" stroke="#88919c" stroke-width="2"/>
+<rect x="366" y="398" width="58" height="9" rx="4" fill="#d3e47c"/>
+<circle cx="188" cy="422" r="4" fill="#dbe492"/>
+<circle cx="207" cy="422" r="4" fill="#e0e895"/>
+</g>
+</g>
+<rect x="24" y="24" width="186" height="40" rx="20" fill="#fff" opacity=".95"/>
+<text x="117" y="50" font-family="Arial,sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#513569" letter-spacing="1.5">REFERENZBILD</text>
+<text x="320" y="579" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">USB-Audiointerface</text>
+<text x="320" y="606" font-family="Arial,sans-serif" font-size="16" text-anchor="middle" fill="#fff" opacity=".78">Symbolische Darstellung · Original beim Händler</text>
+</svg>
