@@ -6,6 +6,7 @@ Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenw
 - **3 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer, AlphaTheta DDJ-FLX2 DJ-Controller und ein vom Betreiber bestätigtes Mikrofonangebot mit noch offener Modellbezeichnung) und 665 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
 - **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau. Die Angebotsseite nutzt selbst erstellte, klar gekennzeichnete Referenzillustrationen für DJ-Controller und Mikrofon statt Amazon-Produktfotos.
 - **11 eigenständige Kaufhilfe-Seiten plus vier Grundlagenartikel** sind unter `ratgeber.html` verlinkt.
+- **DJ-Setup-Beratung** auf `musik-dj.html`: Auswahl DJ-Einstieg, Aufnehmen oder Ansagen/Streaming, ohne Anmeldung oder Datenspeicherung; zeigt nur vorhandene freigegebene Partnerangebote mit gekennzeichneten Referenzbildern.
 - Auf Unterseiten verlinken Navigation und Footer zum Angebotsbereich; Favoriten lassen sich über `index.html?favorites=1#entdecken` öffnen.
 - Referenzillustrationen: `assets/doqaus-kopfhoerer-referenz.webp`, `assets/dj-controller-referenz.svg` und `assets/mikrofon-referenz.svg`. Das tatsächliche Produkt ist ausschließlich auf der Händlerseite abgebildet.
 - Partnerlink-Sammelimport über `data/affiliate-offers.csv` und GitHub Actions; keine API-Schlüssel im Repository.
