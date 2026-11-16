@@ -223,10 +223,12 @@ if(!headerRules.includes('/sitemap.xml') || !headerRules.includes('Content-Type:
   fail('Sitemap must be served with explicit XML MIME type');
 if(!headerRules.includes('/robots.txt') || !headerRules.includes('Content-Type: text/plain; charset=utf-8'))
   fail('Robots file MIME type must be explicit');
-const webSiteMarkup=html.match(/<script type="application\\/ld\\+json">([\\s\\S]*?)<\\/script>/);
-if(!webSiteMarkup)fail('Public home page lacks WebSite structured data');
+const schemaTag='<script type="application/ld+json">';
+const schemaStart=html.indexOf(schemaTag);
+const schemaEnd=schemaStart>=0?html.indexOf('</script>',schemaStart+schemaTag.length):-1;
+if(schemaStart<0 || schemaEnd<0)fail('Public home page lacks WebSite structured data');
 let websiteSchema;
-try{websiteSchema=JSON.parse(webSiteMarkup[1]);}
+try{websiteSchema=JSON.parse(html.slice(schemaStart+schemaTag.length,schemaEnd));}
 catch(e){fail('Invalid home JSON-LD: '+e.message);}
 if(websiteSchema['@type']!=='WebSite' || websiteSchema.name!=='Alltagsfinder' ||
    websiteSchema.url!=='https://alltagsfinder-auto.pages.dev/')
