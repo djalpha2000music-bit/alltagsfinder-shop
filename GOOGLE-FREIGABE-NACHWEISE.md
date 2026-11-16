@@ -36,6 +36,9 @@ Cloudflare Analytics: https://developers.cloudflare.com/pages/how-to/web-analyti
 Cloudflare DPA: https://www.cloudflare.com/en-gb/cloudflare-customer-dpa/
 
 ## Technisches Link-Audit 16.11.2026
+- [x] **DOQAUS-DJ-Kopfhörer konkret abgesichert:** Betreiber hat ASIN `B0F9WBFSK7` als das richtige DOQAUS-Produkt bestätigt. Der in der Amazon-App erzeugte Voll-Link enthält den sichtbaren Partner-Tag `alltagsfin03b-21`. Im Produktregister wurde für diese eine Position der ursprüngliche Kurzlink durch den übermittelten vollständigen Affiliate-Link ersetzt.
+- [ ] **Die übrigen fünf Partnerlinks** und deren Tracking-Tags weiter getrennt prüfen; sie bleiben unverändert.
+
 - [x] Alle sechs veröffentlichten Partnerangebote sind im geprüften GitHub-Register vorhanden, die URLs verwenden HTTPS und den vom Partnerprogramm verwendeten Kurzlink-Host `link.amazon`.
 - [x] Werbekennzeichnung, Amazon-Partnerhinweis und eigene Referenzillustrationen bleiben erhalten; der Betrieb zeigt keine ungeprüften Livepreise.
 - [x] `noreferrer` wurde bei den **Amazon-Partnerlinks** entfernt, damit der Shop-Ursprung nach der eigenen Referrer-Richtlinie übermittelt werden kann (nicht der Seitenpfad). Fremde externe Dokumentationslinks bleiben datensparsam.

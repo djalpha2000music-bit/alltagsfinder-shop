@@ -2,7 +2,7 @@
 window.ALLTAGSFINDER_PARTNER_OFFERS = {
   "dj-kopfhoerer": {
     "merchant": "Amazon",
-    "affiliateUrl": "https://link.amazon/B0iSm1X4H",
+    "affiliateUrl": "https://www.amazon.de/dp/B0F9WBFSK7/ref=cm_sw_r_as_gl_api_gl_i_dl_X3N13G3BSTJ0QK3YDV3V?linkCode=ml1&tag=alltagsfin03b-21&linkId=36646fb4755127180a73df3d1e61fd7c&gaOptInStatus=true&ascsubtag=srctok-5b8754df68eba381&btn_type=ss&btn_ref=srctok-5b8754df68eba381&ref_=btn_assoc_p-other_o-1_srctok-5b8754df68eba381_ht-t",
     "published": true,
     "title": "DOQAUS DJ-Kopfhörer mit Kabel (Schwarz)",
     "category": "musik",
