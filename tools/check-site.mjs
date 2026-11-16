@@ -73,6 +73,11 @@ if (!offersPage.includes('id="offer-search"') || !offersPage.includes('id="offer
   fail('Additional partner offer filters missing');
 if (!offerStyle.includes('.offer-filter-panel') || !offerStyle.includes('.offer-share-button'))
   fail('Offer share/filter styles missing');
+for(const id of ['dj-controller','dynamisches-mikrofon']){
+ const item=products.find(p=>p.id===id);
+ if(!item?.image || !existsSync(resolve(root,item.image)))fail('Missing own reference image for '+id);
+ if(!item.imageAlt?.includes('Referenzbild'))fail('Image alt should state reference for '+id);
+}
 if (!html.includes('href="angebote.html"')) fail('Home page does not link to genuine offers');
 const partnersContext={window:{}};
 try { new Script(partnerJS,{filename:'partner-offers.js'}).runInNewContext(partnersContext,{timeout:1000}); }
