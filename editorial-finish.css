@@ -132,3 +132,24 @@ body:not(.offers-page) .image-disclaimer{box-shadow:0 12px 38px rgba(49,28,98,.0
 @media(max-width:850px){.offers-page .offers-quick-lanes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:410px){.offers-page .offers-quick-lanes{gap:9px}.offers-page .offers-quick-lanes a{grid-template-columns:34px minmax(0,1fr);gap:0 7px;min-height:77px;padding:11px 9px}.offers-page .offers-quick-lanes a>span{width:32px;height:32px;border-radius:9px;font-size:18px}.offers-page .offers-quick-lanes strong{font-size:12px}.offers-page .offers-quick-lanes small{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.offers-page .offers-quick-lanes a{transition:none!important}}
+
+/* iPhone review, Nov 2026: retain impact, show real offers sooner. */
+@media(max-width:650px){
+ .offers-page .offers-hero{padding:27px 20px 23px;gap:16px}
+ .offers-page .offers-hero h1{font-size:clamp(37px,9.5vw,46px);line-height:1.035;margin:12px 0 14px;letter-spacing:-.073em}
+ .offers-page .offers-hero .offers-eyebrow{font-size:10px;line-height:1.55;letter-spacing:.15em}
+ .offers-page .offers-lead{font-size:13px;line-height:1.65}
+ .offers-page .offers-shortcuts{margin-top:17px;gap:9px}
+ .offers-page .offers-shortcuts a{min-height:47px;padding:11px 13px}
+ .offers-page .offers-hero-stamp{margin-top:10px;font-size:9px;line-height:1.5}
+ .offers-page .offer-share-row{margin-top:10px}
+ .offers-page .offers-count{display:flex;align-items:center;gap:12px;padding:14px 17px;border-radius:17px}
+ .offers-page .offers-count::after{font-size:75px;top:-15px;right:-8px}
+ .offers-page .offers-count strong{font-size:50px;letter-spacing:-.065em}
+ .offers-page .offers-count span{font-size:12px;line-height:1.35;margin:0;max-width:200px}
+ .offers-page .offers-count p{display:none}
+ .offers-page .offers-highlights{margin:5px 0 38px}
+}
+@media(max-width:370px){
+ .offers-page .offers-hero h1{font-size:36px}
+}
