@@ -43,3 +43,8 @@ Offizielle Google-Anleitung: https://developers.google.com/search/docs/crawling-
 
 ## Sperrstatus
 **Noch gesperrt**. Wir dürfen die `noindex`-Datei nicht als letzte Formalität behandeln, solange echte rechtliche oder Kontoprüfungen offen sind. Eine erfolgreiche Google-Verifizierung ist nur eine Bestätigung der Inhaberschaft, nicht die rechtliche Freigabe.
+
+## Kontaktformular-Ausbau (16.11.2026)
+- [x] Kontaktseite mit E-Mail-Entwurf und klarer Versand-Anzeige erstellt, Datenschutz erläutert, Navigation und Sitemap ergänzt.
+- [ ] Für unabhängig funktionsfähiges Direktformular Form.taxi-Verbindung (EU), E-Mail-Benachrichtigung, Auftragsverarbeitungsvertrag und Testversand einrichten.
+- [ ] Erst danach im Impressum das Kontaktformular als direkte Alternative zur E-Mail bezeichnen und vor Google-Freigabe rechtliche Erreichbarkeit erneut prüfen.

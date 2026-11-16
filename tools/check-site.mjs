@@ -128,7 +128,7 @@ if(!sitemap.includes('/angebote.html</loc>') || guides.some(n=>!sitemap.includes
   fail('Sitemap does not reference every current buying guide and the offer page');
 // Google readiness: one unique canonical URL per sitemap entry.
 const sitemapURLs=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
-if(sitemapURLs.length!==19 || new Set(sitemapURLs).size!==sitemapURLs.length)
+if(sitemapURLs.length!==20 || new Set(sitemapURLs).size!==sitemapURLs.length)
   fail('Unexpected sitemap URL count or duplicate URLs');
 for(const url of sitemapURLs){
   if(!url.startsWith('https://alltagsfinder-auto.pages.dev/'))fail('Sitemap external or wrong host: '+url);
@@ -141,6 +141,16 @@ for(const url of sitemapURLs){
 const robots=text('robots.txt');
 if(!robots.includes('Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml'))
   fail('Missing correct sitemap declaration in robots.txt');
+const contactHtml=text('kontakt.html');
+if(!contactHtml.includes('id="alltagsfinder-kontaktformular"') || !contactHtml.includes('E-Mail-Entwurf'))fail('Contact form must clearly indicate email-draft behavior');
+if(!contactHtml.includes('href="datenschutz.html#kontaktformular"'))fail('Contact form privacy link missing');
+if(!contactHtml.includes('href="mailto:djalpha2000.music@gmail.com?'))fail('Contact email fallback missing');
+const contactScript=text('kontakt.js');
+try{new Script(contactScript,{filename:'kontakt.js'})}catch(e){fail('Contact form JavaScript invalid: '+e.message)}
+if(!contactScript.includes('mailto:djalpha2000.music@gmail.com'))fail('Contact form email draft action missing');
+if(contactHtml.includes('action="https://form.taxi/'))fail('Never publish unconfigured backend endpoint');
+if(!text('datenschutz.html').includes('id="kontaktformular"'))fail('Contact form privacy info missing');
+for(const page of ['index.html','angebote.html','musik-dj.html','ratgeber.html','ueber-uns.html','impressum.html','datenschutz.html','transparenz.html'])if(!text(page).includes('href="kontakt.html"'))fail('Contact link missing in '+page);
 if(!text('impressum.html').includes('Alltagsfinder per E-Mail kontaktieren'))
   fail('Direct email contact action missing from legal page');
 if(!text('datenschutz.html').includes('Cloudflare Pages kann bei eingeschalteter Web Analytics'))
