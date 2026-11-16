@@ -3,8 +3,8 @@
 Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenwelten, einer Sammlung von 668 Produktideen und eigenständigen Ratgebern.
 
 ## Status
-- **6 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer, AlphaTheta DDJ-FLX2 DJ-Controller, Mikrofonangebot und USB-Audiointerface mit noch offener Modellbezeichnung, EUROLITE LED PARty TCL Spot und PreSonus Eris 3.5 Gen 2 Studiomonitore) und 662 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
-- **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau. Die Angebotsseite nutzt selbst erstellte, klar gekennzeichnete Referenzillustrationen für DJ-Controller, Mikrofon, LED-Partyspot und Studiolautsprecher statt Amazon-Produktfotos.
+- **6 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer, AlphaTheta DDJ-FLX2 DJ-Controller, Mikrofonangebot mit noch offener Modellbezeichnung, Behringer U-PHORIA UMC22 USB-Audiointerface, EUROLITE LED PARty TCL Spot und PreSonus Eris 3.5 Gen 2 Studiomonitore) und 662 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
+- **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau. Die Angebotsseite nutzt selbst erstellte, klar gekennzeichnete Referenzillustrationen für DJ-Controller, Mikrofon, Audiointerface, LED-Partyspot und Studiolautsprecher statt Amazon-Produktfotos.
 - **11 eigenständige Kaufhilfe-Seiten plus vier Grundlagenartikel** sind unter `ratgeber.html` verlinkt.
 - **DJ-Setup-Beratung** auf `musik-dj.html`: Auswahl DJ-Einstieg, Aufnehmen oder Ansagen/Streaming, ohne Anmeldung oder Datenspeicherung; zeigt nur vorhandene freigegebene Partnerangebote mit gekennzeichneten Referenzbildern.
 - Auf Unterseiten verlinken Navigation und Footer zum Angebotsbereich; Favoriten lassen sich über `index.html?favorites=1#entdecken` öffnen.
