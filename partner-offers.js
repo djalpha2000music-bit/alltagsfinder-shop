@@ -9,5 +9,15 @@ window.ALLTAGSFINDER_PARTNER_OFFERS = {
     "description": "Over-Ear-Kopfhörer mit 50-mm-Treibern, drehbaren Ohrmuscheln, Share-Port und 3,5-/6,35-mm-Anschlüssen.",
     "image": "assets/doqaus-kopfhoerer-referenz.webp",
     "imageAlt": "Generiertes Referenzbild schwarzer DJ-Kopfhörer mit Kabeln – tatsächliches DOQAUS-Produkt bei Amazon ansehen"
+  },
+  "dj-controller": {
+    "merchant": "Amazon",
+    "affiliateUrl": "https://link.amazon/B099Pt8mG",
+    "published": true,
+    "title": "AlphaTheta Pioneer DJ DDJ-FLX2 Kompakter 2-Kanal DJ-Controller",
+    "category": "musik",
+    "description": "Kompakter 2-Kanal-DJ-Controller. Vor dem Kauf Software-Kompatibilität, Anschlussmöglichkeiten, Stromversorgung und mitgeliefertes Zubehör beim Händler prüfen.",
+    "image": "",
+    "imageAlt": ""
   }
 };
