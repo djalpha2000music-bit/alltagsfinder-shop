@@ -13,7 +13,8 @@ Stand: 16. November 2026.
 
 ## Noch unbedingt erforderlich
 - [ ] In Form.taxi bei den Zustellfunktionen bestätigen, dass die E-Mail-Benachrichtigungen tatsächlich an `djalpha2000.music@gmail.com` gehen. Evtl. neue E-Mail-Adresse per Link bestätigen.
-- [ ] Im Form.taxi-Panel Bereich **Datenschutz** den AV-Vertrag gemäß Art. 28 DSGVO abschließen und Speicherdauer/Einstellungen kontrollieren. Nur das Formular anzulegen reicht dafür nicht. https://docs.form.taxi/de/privacy
+- [x] AV-Vertrag im Form.taxi-Dashboard **erstellt**: Screenshot des Betreibers vom 16.11.2026 zeigt ausdrücklich „Vertrag wurde erstellt!“.
+- [ ] AV-Vertrag als PDF herunterladen, Angaben prüfen, dauerhaft aufbewahren und sicherstellen, dass die Vereinbarung tatsächlich wirksam abgeschlossen ist. Speicherfristen/Einstellungen im Form.taxi-Konto kontrollieren. https://docs.form.taxi/de/privacy
 - [ ] Nach einem abgeschlossenen AV-Vertrag von der öffentlichen Seite `https://alltagsfinder-auto.pages.dev/kontakt.html` eine echte Testnachricht schicken. Prüfen, ob Form.taxi die **Standard-Erfolgsseite** anzeigt und die Nachricht bei der genannten Empfängeradresse ankommt (ggf. Spam).
 - [ ] Cloudflare-Deployment der neuesten GitHub-Version überprüfen.
 - [ ] Impressum-Anschrift, Amazon PartnerNet und Cloudflare-Datenschutz getrennt prüfen, bevor `_headers` ohne `noindex` geschaltet wird.
