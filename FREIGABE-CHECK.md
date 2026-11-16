@@ -37,7 +37,7 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 
 ## Unverzichtbare externe Schritte vor uneingeschränkter Bewerbung und SEO-Freigabe
 
-- [ ] **PartnerNet-Website-Liste prüfen:** Unter PartnerNet-Kontoeinstellungen sicherstellen, dass `https://alltagsfinder-auto.pages.dev/` als eigene Werbewebsite hinterlegt ist. Die frühere Direktupload-Adresse `https://alltagsfinder-shop.pages.dev/` ist eine andere Site und ersetzt die neue Adresse nicht.
+- [x] **PartnerNet-Website-Liste:** Der Betreiber hat am 16.11.2026 nach Einsicht in die PartnerNet-Kontoeinstellungen bestätigt, dass `https://alltagsfinder-auto.pages.dev/` bereits als Werbewebsite hinterlegt ist. Dies ist eine Nutzerbestätigung, keine unabhängige technische Kontoprüfung. Die frühere Adresse `https://alltagsfinder-shop.pages.dev/` ist eine andere Site.
 - [x] **Kontaktseite eingerichtet:** `kontakt.html` mit responsivem Formular für Name, E-Mail, Anliegen und Nachricht; jetzt echter HTML-POST an Form.taxi; keine eigene Erfolgsmeldung ohne Anbieterbestätigung. Die Seite ist von Hauptseiten und Impressum erreichbar und in der Sitemap.
 - [x] **Direkter Formularversand technisch integriert:** Nutzer hat den Endpunkt `https://form.taxi/s/qc25mby6` zur Verfügung gestellt; `kontakt.html` sendet mit nativem HTML-POST an Form.taxi. Standard-Bestätigungsseite (laut Nutzerkonfiguration), Spamfilter aktiviert und Domainfreigabe `alltagsfinder-auto.pages.dev` laut Screenshot vorhanden.
 - [x] **Formular-Versand und E-Mail-Empfang nachgewiesen:** Nutzer-Screenshot „Formular wurde übermittelt!“ und passende Nachricht „Sendung von Alltagsfinder Kontaktformular“ im verbundenen Gmail-Postfach am 16.11.2026 um 10:55 Uhr (Deutschland).
