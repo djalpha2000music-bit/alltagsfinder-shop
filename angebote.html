@@ -31,10 +31,50 @@
 <p>Schwarzer, kabelgebundener Kopfhörer. Laut vom Händler gezeigter Artikelbeschreibung mit 50-mm-Treibern, drehbaren Ohrmuscheln, Share-Port und 3,5-mm-/6,35-mm-Anschlüssen.</p>
 <ul class="offer-specs"><li>Anschlüsse vor dem Kauf mit dem eigenen Mixer vergleichen</li><li>Sitz, Ersatzpolster und Kabelverlegung beachten</li><li>Preis, Verfügbarkeit, Modellvariante und tatsächliche Produktfotos direkt bei Amazon kontrollieren</li></ul>
 <a class="offer-buy" id="doqaus-link" href="index.html?category=musik#entdecken" aria-label="DOQAUS DJ-Kopfhörer: Händlerangebot wird geladen">Partnerangebot laden …</a>
+<a class="offer-alt" href="#kopfhoerer-check">Unsicher? Kopfhörer-Kaufcheck starten ↗</a>
 <a class="offer-alt" href="ratgeber/dj-kopfhoerer-praxis.html">Erst die Kopfhörer-Kaufhilfe lesen ↗</a>
 <p class="offer-disclosure"><strong>Werbung / Partnerlink.</strong> Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Dieses Bild ist eine Illustration und keine offizielle Aufnahme des angebotenen Produkts. Wir haben keinen eigenen Produkttest durchgeführt. Für den Kauf wirst du zur Händlerseite weitergeleitet.</p>
 </div>
 </article>
+
+<section class="headphone-check" id="kopfhoerer-check" aria-labelledby="headphone-check-title">
+  <div class="headphone-check-heading">
+    <div class="offers-eyebrow">KOSTENLOSE KAUFHILFE · OHNE ANMELDUNG</div>
+    <h2 id="headphone-check-title">Passt ein DJ-Kopfhörer zu deinem Setup?</h2>
+    <p>Beantworte drei Fragen. Du erhältst eine persönliche Prüfliste, ohne dass Eingaben gespeichert oder übertragen werden. Dies ist keine Bewertung des beworbenen Produkts.</p>
+  </div>
+  <form id="headphone-check-form" class="headphone-check-form">
+    <label for="check-use">1. Wofür brauchst du den Kopfhörer?</label>
+    <select id="check-use" required>
+      <option value="" selected disabled>Bitte auswählen</option>
+      <option value="dj">DJ-Controller oder Mischpult</option>
+      <option value="mobile">Handy, Laptop oder unterwegs</option>
+      <option value="studio">Musikproduktion oder längeres Hören</option>
+    </select>
+    <label for="check-plug">2. Welchen Kopfhörerausgang hat dein Gerät?</label>
+    <select id="check-plug" required>
+      <option value="" selected disabled>Bitte auswählen</option>
+      <option value="small">3,5-mm-Klinke</option>
+      <option value="large">6,35-mm-Klinke</option>
+      <option value="both">Beide Anschlüsse / mehrere Geräte</option>
+      <option value="unknown">Weiß ich noch nicht</option>
+    </select>
+    <label for="check-priority">3. Was ist dir besonders wichtig?</label>
+    <select id="check-priority" required>
+      <option value="" selected disabled>Bitte auswählen</option>
+      <option value="comfort">Tragekomfort über längere Zeit</option>
+      <option value="mobility">Bewegungsfreiheit und Kabelführung</option>
+      <option value="budget">Ein passender Kauf ohne Fehlentscheidung</option>
+    </select>
+    <button class="headphone-check-submit" type="submit">Meine Prüfliste anzeigen</button>
+  </form>
+  <div id="headphone-check-result" class="headphone-check-result" role="status" aria-live="polite" hidden>
+    <h3>Das solltest du vor dem Kauf prüfen</h3>
+    <ul id="headphone-check-list"></ul>
+    <p>Die tatsächlichen Anschlüsse, das Zubehör, Bilder und den aktuellen Preis bitte immer direkt beim Händler kontrollieren.</p>
+    <a href="ratgeber/dj-kopfhoerer-praxis.html">Ausführlichen DJ-Kopfhörer-Ratgeber lesen ↗</a>
+  </div>
+</section>
 <section id="more-offers" class="more-offers" hidden aria-labelledby="more-offers-title"><div class="offers-eyebrow">WEITERE FREIGEGEBENE PARTNERANGEBOTE</div><h2 class="offers-section-title" id="more-offers-title">Noch mehr konkret verlinkte Produkte</h2><div class="more-offers-grid" id="more-offers-grid"></div></section>
 <div class="offers-eyebrow">SO ARBEITET ALLTAGSFINDER</div>
 <h2 class="offers-section-title">Keine unklaren Werbeversprechen.</h2>
@@ -78,6 +118,33 @@
     button.textContent="Aktuell kein freigegebenes Händlerangebot";
     button.setAttribute("aria-disabled","true");
  }
+
+ // Kaufhilfe läuft nur im Browser; die Antworten werden weder gesendet noch gespeichert.
+ const checkForm=document.getElementById("headphone-check-form");
+ checkForm?.addEventListener("submit",(event)=>{
+   event.preventDefault();
+   const purpose=document.getElementById("check-use").value;
+   const plug=document.getElementById("check-plug").value;
+   const priority=document.getElementById("check-priority").value;
+   if(!purpose||!plug||!priority)return;
+   const tips=[];
+   if(purpose==="dj")tips.push("Für das DJ-Pult: Anschluss, schwenkbare Muscheln, Außengeräusche und robustes Kabel anhand der Händlerangaben prüfen.");
+   if(purpose==="mobile")tips.push("Für unterwegs: Gewicht, Kabellänge und gegebenenfalls benötigte Adapter vor dem Kauf abgleichen.");
+   if(purpose==="studio")tips.push("Für längere Sessions: Tragekomfort und die Art der Wiedergabe mit deinem Einsatzzweck vergleichen.");
+   if(plug==="small")tips.push("Dein Gerät nutzt 3,5 mm. Prüfe, ob das konkrete Angebot ein passendes Kabel bzw. einen passenden Stecker enthält.");
+   if(plug==="large")tips.push("Dein Gerät nutzt 6,35 mm. Prüfe ausdrücklich, ob der passende Anschluss oder Adapter enthalten ist.");
+   if(plug==="both")tips.push("Bei zwei Anschlussgrößen: beide Verbindungen und die mitgelieferten Stecker im Originalangebot gegenprüfen.");
+   if(plug==="unknown")tips.push("Schau zuerst am Gerät oder in dessen Anleitung nach, ob es einen 3,5-mm- oder 6,35-mm-Kopfhörerausgang hat.");
+   if(priority==="comfort")tips.push("Achte auf Angaben zu Polstern, Verstellbarkeit und Gewicht. Ohne eigenen Test können wir den Sitz nicht beurteilen.");
+   if(priority==="mobility")tips.push("Achte auf Kabellänge, Steckerführung und Beweglichkeit der Hörmuscheln – wichtig besonders am DJ-Pult.");
+   if(priority==="budget")tips.push("Vergleiche aktuelle Händlerpreise, Rückgabebedingungen und Lieferumfang; wir zeigen absichtlich keine veralteten Shoppreise.");
+   const list=document.getElementById("headphone-check-list");
+   list.replaceChildren();
+   for(const tip of tips){const item=document.createElement("li");item.textContent=tip;list.appendChild(item);}
+   const result=document.getElementById("headphone-check-result");
+   result.hidden=false;
+   result.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"nearest"});
+ });
  const more=live.filter(([id])=>id!=="dj-kopfhoerer");
  if(!more.length)return;
  const container=document.getElementById("more-offers-grid");
