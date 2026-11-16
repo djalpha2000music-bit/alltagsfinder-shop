@@ -29,5 +29,15 @@ window.ALLTAGSFINDER_PARTNER_OFFERS = {
     "description": "Mikrofon-Angebot aus dem vom Betreiber bereitgestellten Amazon-Partnerlink. Hersteller, Modell, Anschlüsse und Lieferumfang bitte direkt beim Händler prüfen; das Bild ist eine eigenständige Illustration.",
     "image": "assets/mikrofon-referenz.svg",
     "imageAlt": "Eigenständig erstelltes Referenzbild eines Studiomikrofons – das angebotene Amazon-Produkt kann abweichen"
+  },
+  "led-par": {
+    "merchant": "Amazon",
+    "affiliateUrl": "https://link.amazon/B0dO2Pgr3",
+    "published": true,
+    "title": "EUROLITE LED PARty TCL Spot",
+    "category": "musik",
+    "description": "LED-Partyspot für Lichtakzente bei Veranstaltungen. Exakte LED-Ausstattung, Steuerung, Befestigung und Lieferumfang bitte beim Amazon-Händler prüfen.",
+    "image": "assets/eurolite-led-party-tcl-referenz.svg",
+    "imageAlt": "Selbst gestaltetes Referenzbild eines LED-PAR-Partyspots – kein Originalfoto des EUROLITE LED PARty TCL Spot"
   }
 };
