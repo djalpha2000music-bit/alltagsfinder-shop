@@ -4,7 +4,7 @@ Stand: 16.11.2026. Ziel: fünf zusätzliche klar beschriebene Produkte in der Ka
 
 | Priorität | Katalog-ID (bereits vorhanden) | Konkreter Kandidat | Kaufhilfe-Ansatz | Status |
 |---|---|---|---|---|
-| 1 | dj-controller | AlphaTheta DDJ-FLX2 oder Pioneer DJ DDJ-FLX4 (einen wählen) | Software, Anschlüsse und Laptop-Bedarf | Modell, Partnerlink und Artikelvariante prüfen |
+| 1 | dj-controller | AlphaTheta DDJ-FLX2 (vom Nutzer als nächster Kandidat ausgewählt; tatsächliches Kurzlink-Ziel noch ungeklärt) | Software, Anschlüsse und Laptop-Bedarf | Amazon-Kurzlink `https://link.amazon/B099Pt8mG` erhalten und mit `geprueft=NEIN`, `freigeben=NEIN` vorgemerkt. Produktziel und Tracking müssen vor Veröffentlichung geprüft werden |
 | 2 | audiointerface | Behringer U-Phoria UMC22 | Mikrofonanschluss, USB, Monitoring | Partnerlink und Händlerdetails prüfen |
 | 3 | dynamisches-mikrofon | FIFINE AM8 USB/XLR | XLR vs. USB, Zubehör, Verwendung | Partnerlink und Varianten prüfen |
 | 4 | led-par | EUROLITE LED PARty TCL Spot | Einsatzbereich, Stromversorgung und Steuerung | Partnerlink und Eigenschaften prüfen |
