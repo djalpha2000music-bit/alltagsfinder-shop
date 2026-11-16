@@ -10,9 +10,9 @@ Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenw
 - Auf Unterseiten verlinken Navigation und Footer zum Angebotsbereich; Favoriten lassen sich über `index.html?favorites=1#entdecken` öffnen.
 - Referenzillustrationen: `assets/doqaus-kopfhoerer-referenz.webp`, `assets/dj-controller-referenz.svg`, `assets/mikrofon-referenz.svg`, `assets/audiointerface-referenz.svg`, `assets/eurolite-led-party-tcl-referenz.svg` und `assets/presonus-eris-35-gen2-referenz.svg`. Das tatsächliche Produkt ist ausschließlich auf der Händlerseite abgebildet.
 - Partnerlink-Sammelimport über `data/affiliate-offers.csv` und GitHub Actions; keine API-Schlüssel im Repository.
-- **Google-Vorbereitung:** Alle 19 Sitemap-Seiten enthalten passende Canonical-URLs; `robots.txt` meldet die Sitemap. Die Eigentumsbestätigung in Google Search Console ist in `GOOGLE-START.md` beschrieben.
+- **Google-Vorbereitung:** Alle 20 Sitemap-Seiten enthalten passende Canonical-URLs; `robots.txt` meldet die Sitemap. Die Eigentumsbestätigung in Google Search Console wurde am 16.11.2026 nachweislich durchgeführt. Die Suchmaschinen-Freigabe ist weiterhin gesperrt, bis die offenen Pflichtprüfungen abgeschlossen sind.
 - Die Webseite bleibt testweise über `_headers` **noindex**. `robots.txt` erlaubt den Seitenzugriff für die Prüfung. Eine `sitemap.xml` ist vorbereitet.
-- Die rechtlichen Pflichtangaben und ein weiterer unmittelbarer Kontaktweg müssen vor dem uneingeschränkten öffentlichen Start geprüft bzw. ergänzt werden.
+- Das Kontaktformular über Form.taxi (`kontakt.html`) ist angeschlossen: Erfolgsanzeige von Form.taxi und Nachrichteneingang im verbundenen Gmail-Konto am 16.11.2026 bestätigt. Der AV-Vertrag wurde im Form.taxi-Dashboard erstellt und muss noch heruntergeladen und abschließend geprüft werden. Die Geschäftsanschrift, Cloudflare-Datenschutzkonfiguration und Registrierung der Shop-URL im Amazon PartnerNet bleiben vor der öffentlichen Suchmaschinen-Freigabe zu kontrollieren.
 
 ## Lokale Vorschau
 `index.html` in einem Browser öffnen. Die Startseite ist eigenständig (CSS und Produktdaten inline). Die Unterseiten verwenden `style.css` und `info.js`.

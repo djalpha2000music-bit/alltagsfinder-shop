@@ -4,9 +4,9 @@ Stand: 16. November 2026
 **Status 16. November 2026: Google hat die Inhaberschaft per HTML-Tag bestätigt.** Die Verifizierung ist abgeschlossen; beide bestehenden Google-Metatags in `index.html` dauerhaft beibehalten. Die Site bleibt trotzdem vorläufig `noindex` bis zur Prüfung der rechtlichen Pflichtangaben, Datenschutzpraxis und Amazon-PartnerNet-Website-Zuordnung.
 
 ## Bereits fertig
-- Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml mit 19 URLs, darunter 11 Ratgeber.
+- Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml mit 20 URLs, darunter 11 Ratgeber und die neue Kontaktseite.
 - Crawling-Hinweis: https://alltagsfinder-auto.pages.dev/robots.txt enthält den Link zur Sitemap.
-- Die 19 Seiten haben passende kanonische URLs (rel="canonical").
+- Die 20 Seiten haben passende kanonische URLs (rel="canonical").
 - GitHub prüft den technischen Zustand automatisch.
 
 ## 1. Website-Eigentum bei Google bestätigen (auch während des Testbetriebs möglich)
@@ -19,8 +19,8 @@ Stand: 16. November 2026
 7. Erst nachdem das neue HTML öffentlich sichtbar ist, in der Search Console auf **Bestätigen** klicken. Den Tag danach im Quellcode belassen.
 
 ## 2. Externe Freigaben vor Google-Indexierung
-- **Impressum:** aktuelle ladungsfähige Anschrift und rechtlich erforderliche Unternehmensangaben prüfen. Ein weiterer geeigneter, schneller und unmittelbarer Kontaktweg neben der E-Mail ist noch ungeklärt.
-- **Datenschutz:** echte Cloudflare-Hosting-Verträge, Logdaten, Speicherdauer und ggf. Datenübermittlungen prüfen und die Hinweise an den tatsächlichen Betrieb anpassen.
+- **Impressum:** aktuelle ladungsfähige Anschrift und rechtlich erforderliche Unternehmensangaben prüfen. Das unabhängige Kontaktformular wurde eingerichtet und durch tatsächliche Form.taxi-Zustellung sowie E-Mail-Eingang getestet; die Aktualität der Geschäftsanschrift und gegebenenfalls weitere Unternehmensangaben müssen noch bestätigt werden.
+- **Datenschutz:** Form.taxi-AV-Vertrag wurde im Panel erstellt, muss als PDF gesichert und auf Richtigkeit geprüft werden. Echte Cloudflare-Hosting-Verträge, Analytics-Konfiguration, Logdaten, Speicherdauer und ggf. Datenübermittlungen prüfen und Hinweise an den tatsächlichen Betrieb anpassen.
 - **Amazon PartnerNet:** `https://alltagsfinder-auto.pages.dev/` in der Werbewebsite-Liste hinterlegen; Affiliate-Ziele und Tracking prüfen.
 - Erst nach diesen Punkten die siteweite Anweisung `X-Robots-Tag: noindex, nofollow, noarchive` aus `_headers` entfernen. Sie ist derzeit bewusst aktiv.
 

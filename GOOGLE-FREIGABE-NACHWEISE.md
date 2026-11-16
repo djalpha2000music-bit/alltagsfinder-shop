@@ -4,7 +4,7 @@ Stand: 16. November 2026. Dies ist ein Arbeitsprotokoll, **keine** juristische F
 ## Sicher erledigt
 - [x] Google Search Console: URL-Präfix `https://alltagsfinder-auto.pages.dev/` durch Betreiber am 16.11.2026 per HTML-Tag bestätigt.
 - [x] Beide Google-Verifizierungstags in `index.html` eingebaut und beibehalten.
-- [x] Sitemap enthält 19 Einträge; alle haben Canonical-URLs.
+- [x] Sitemap enthält 20 Einträge einschließlich Kontaktseite; alle haben Canonical-URLs.
 - [x] `robots.txt` verweist auf die Sitemap.
 - [x] Sechs gekennzeichnete Amazon-Angebote im Produktregister; selbst erstellte Referenzbilder, keine behaupteten eigenen Gerätetests und keine statischen Amazon-Preise.
 - [x] E-Mail aus dem bereits bestehenden Impressum als direkt anklickbare Kontaktaktion ergänzt.
@@ -45,8 +45,10 @@ Offizielle Google-Anleitung: https://developers.google.com/search/docs/crawling-
 **Noch gesperrt**. Wir dürfen die `noindex`-Datei nicht als letzte Formalität behandeln, solange echte rechtliche oder Kontoprüfungen offen sind. Eine erfolgreiche Google-Verifizierung ist nur eine Bestätigung der Inhaberschaft, nicht die rechtliche Freigabe.
 
 ## Kontaktformular-Ausbau (16.11.2026)
-- [x] Kontaktseite mit E-Mail-Entwurf und klarer Versand-Anzeige erstellt, Datenschutz erläutert, Navigation und Sitemap ergänzt.
+- [x] Kontaktseite mit echtem Form.taxi-POST-Versand, passenden Datenschutzhinweisen, Navigation und Sitemap eingerichtet.
 - [x] Benutzerdefinierte Form.taxi-Sendeverbindung aus Nutzerangabe `https://form.taxi/s/qc25mby6` mit POST integriert; Nutzer-Screenshot bestätigt Spamfilter und Domainfreigabe.
-- [ ] E-Mail-Empfänger verifizieren, tatsächlichen Testeingang bestätigen, Form.taxi-AV-Vertrag abschließen.
+- [x] E-Mail-Empfänger und tatsächlichen Testeingang am 16.11.2026 um 10:55 Uhr bestätigt; Form.taxi zeigte „Formular wurde übermittelt“ und Gmail enthielt „Sendung von Alltagsfinder Kontaktformular“.
+- [x] Form.taxi-AV-Vertrag nach Screenshot vom 16.11.2026 im Panel erstellt.
+- [ ] AV-Vertrag herunterladen, Personendaten und formelle Vollständigkeit kontrollieren sowie ablegen.
 - [x] Im Impressum als Formularlink bezeichnet; technisch unabhängig vom E-Mail-Client.
 - [ ] Vor Google-Freigabe tatsächliche Zustellung und rechtliche Erreichbarkeit erneut prüfen.

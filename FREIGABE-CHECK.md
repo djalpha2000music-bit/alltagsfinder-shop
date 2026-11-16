@@ -19,8 +19,8 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 
 ## Google-Vorbereitung (16. November 2026)
 - [x] `robots.txt` erlaubt Crawling und nennt `https://alltagsfinder-auto.pages.dev/sitemap.xml`.
-- [x] Sitemap mit 19 URLs und 11 eigenständigen Kaufhilfe-Seiten vorhanden.
-- [x] `rel=canonical` für alle 19 HTML-Ziele ergänzt; generische Meta-Beschreibungen auf Informationsseiten differenziert.
+- [x] Sitemap mit 20 URLs und 11 eigenständigen Kaufhilfe-Seiten vorhanden.
+- [x] `rel=canonical` für alle 20 HTML-Ziele ergänzt; generische Meta-Beschreibungen auf Informationsseiten differenziert.
 - [x] Automatische Qualitätsprüfung für Sitemap-Ziele, Canonicals und Robots-Datei erweitert.
 - [x] **Google Search Console:** URL-Präfix `https://alltagsfinder-auto.pages.dev/` eingerichtet. Zwei Google-HTML-Metatags in der Startseite eingebaut; Nutzer-Screenshot vom 16.11.2026 zeigt ausdrücklich „Inhaberschaft bestätigt“ (Bestätigungsmethode HTML-Tag). Tags für dauerhafte Bestätigung behalten.
 - [ ] **Sitemap einreichen** nach rechtlichem Check und Aufhebung der Suchmaschinensperre.
