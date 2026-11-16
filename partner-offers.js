@@ -44,9 +44,9 @@ window.ALLTAGSFINDER_PARTNER_OFFERS = {
     "merchant": "Amazon",
     "affiliateUrl": "https://link.amazon/B08GxVIDS",
     "published": true,
-    "title": "USB-Audiointerface (Modell beim Händler prüfen)",
+    "title": "Behringer U-PHORIA UMC22 USB-Audiointerface",
     "category": "musik",
-    "description": "Ein vom Shopbetreiber ausgewähltes Audiointerface-Angebot. Das konkrete Hersteller-Modell sowie Anschlüsse und Lieferumfang bitte direkt auf der Amazon-Produktseite kontrollieren.",
+    "description": "Kompaktes 2x2 USB-Audiointerface mit MIDAS-Mikrofonvorverstärker laut vom Shopbetreiber gezeigter Amazon-Produktseite. Zubehör, Anschlüsse und Kompatibilität vor dem Kauf direkt beim Händler prüfen.",
     "image": "assets/audiointerface-referenz.svg",
     "imageAlt": "Eigenständig erstelltes Referenzbild eines USB-Audiointerfaces, kein offizielles Produktfoto"
   },
