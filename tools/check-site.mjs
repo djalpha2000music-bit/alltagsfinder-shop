@@ -44,6 +44,11 @@ console.log('QA OK: 668 unique ideas; '+pics.length+' reference image assets; '+
 
 /* Readiness checks for the live offers funnel and actual reference file. */
 const offersPage = text('angebote.html');
+const inlineStart=offersPage.lastIndexOf('<script>');
+const inlineEnd=offersPage.lastIndexOf('</script>');
+if(inlineStart<0||inlineEnd<=inlineStart)fail('Offers page inline code missing');
+try{new Script(offersPage.slice(inlineStart+8,inlineEnd),{filename:'angebote-inline.js'});}
+catch(e){fail('Invalid inline JavaScript in offers page: '+e.message)}
 const offerStyle = text('angebote.css');
 const picturePath = 'assets/doqaus-kopfhoerer-referenz.webp';
 const picture = readFileSync(resolve(root,picturePath));
