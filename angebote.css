@@ -90,3 +90,10 @@
 .offer-filter-result{grid-column:1/-1;font-size:12px;font-weight:700;color:#675976;margin:0}
 .more-offer[hidden]{display:none!important}
 @media(max-width:600px){.offer-filter-panel{grid-template-columns:1fr}.offer-share-row{align-items:stretch}.offer-share-button{width:100%}}
+
+/* Sofort erreichbare Partnerangebote – vor den optionalen Kaufhilfen. */
+.offers-shortcuts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.offers-shortcuts a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 16px;border-radius:12px;border:1px solid #d7c9ea;background:#fff;color:#543984;font-size:13px;font-weight:850;text-align:center}
+.offers-shortcuts .offers-shortcut-primary{background:#2a204c;border-color:#2a204c;color:#fff}
+.offers-shortcuts a:focus-visible{outline:3px solid #8b5be4;outline-offset:3px}
+@media(max-width:600px){.offers-shortcuts{display:grid;grid-template-columns:1fr}.offers-shortcuts a{width:100%}}
