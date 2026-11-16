@@ -40,6 +40,16 @@ window.ALLTAGSFINDER_PARTNER_OFFERS = {
     "image": "assets/mikrofon-referenz.svg",
     "imageAlt": "Eigenständig erstelltes Referenzbild eines Studiomikrofons – das angebotene Amazon-Produkt kann abweichen"
   },
+  "audiointerface": {
+    "merchant": "Amazon",
+    "affiliateUrl": "https://link.amazon/B08GxVIDS",
+    "published": true,
+    "title": "USB-Audiointerface (Modell beim Händler prüfen)",
+    "category": "musik",
+    "description": "Ein vom Shopbetreiber ausgewähltes Audiointerface-Angebot. Das konkrete Hersteller-Modell sowie Anschlüsse und Lieferumfang bitte direkt auf der Amazon-Produktseite kontrollieren.",
+    "image": "assets/audiointerface-referenz.svg",
+    "imageAlt": "Eigenständig erstelltes Referenzbild eines USB-Audiointerfaces, kein offizielles Produktfoto"
+  },
   "led-par": {
     "merchant": "Amazon",
     "affiliateUrl": "https://link.amazon/B0dO2Pgr3",
