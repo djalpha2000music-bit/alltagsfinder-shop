@@ -193,7 +193,7 @@
       visual.appendChild(picture);
    }else{
       const symbol=document.createElement("span");
-      symbol.textContent="✳";symbol.setAttribute("aria-label","Symbolische Darstellung");
+      symbol.textContent=id==="dj-controller"?"🎛️":"✳";symbol.setAttribute("aria-label",id==="dj-controller"?"Symbolbild für DJ-Controller, kein Originalproduktfoto":"Symbolische Darstellung");
       visual.appendChild(symbol);
    }
    const label=document.createElement("small");
