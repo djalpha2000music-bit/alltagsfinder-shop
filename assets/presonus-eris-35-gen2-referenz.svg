@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="title description">
+<title id="title">Studio-Monitore – Referenzillustration</title>
+<desc id="description">Eigenständig gezeichnete Darstellung zweier schwarzer Nahfeld-Studiolautsprecher mit Hoch- und Tieftönern. Kein offizielles Foto der PreSonus Eris 3.5 Gen 2.</desc>
+<defs>
+  <radialGradient id="background" cx=".5" cy=".3" r=".75"><stop stop-color="#665b91"/><stop offset=".66" stop-color="#332c50"/><stop offset="1" stop-color="#17192d"/></radialGradient>
+  <linearGradient id="cabinet" x1="0" y1="0" x2=".92" y2="1"><stop stop-color="#343b48"/><stop offset=".4" stop-color="#151c26"/><stop offset="1" stop-color="#090e18"/></linearGradient>
+  <radialGradient id="woofer"><stop stop-color="#141f2a"/><stop offset=".32" stop-color="#242c3c"/><stop offset=".48" stop-color="#6a8298"/><stop offset=".67" stop-color="#273746"/><stop offset=".81" stop-color="#0d131e"/><stop offset="1" stop-color="#363c47"/></radialGradient>
+  <radialGradient id="tweeter"><stop stop-color="#d6d9df"/><stop offset=".18" stop-color="#5c6979"/><stop offset=".65" stop-color="#161e2c"/><stop offset="1" stop-color="#060b13"/></radialGradient>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="17"/></filter>
+</defs>
+<rect width="640" height="640" rx="42" fill="url(#background)"/>
+<circle cx="320" cy="256" r="215" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="2"/>
+<ellipse cx="326" cy="508" rx="270" ry="38" fill="#000000" opacity=".45" filter="url(#shadow)"/>
+<g transform="translate(0 -15)">
+<g transform="rotate(-3 183 342)">
+ <path d="M75 172L260 162L279 477L92 494Z" fill="url(#cabinet)" stroke="#687484" stroke-width="5" stroke-linejoin="round"/>
+ <path d="M260 162L280 179L294 479L279 477Z" fill="#101722" stroke="#555d68" stroke-width="2"/>
+ <ellipse cx="173" cy="237" rx="42" ry="42" fill="#0c111c" stroke="#3e4b5a" stroke-width="5"/>
+ <ellipse cx="173" cy="237" rx="28" ry="28" fill="url(#tweeter)"/>
+ <ellipse cx="177" cy="375" rx="78" ry="80" fill="#050911" stroke="#556374" stroke-width="6"/>
+ <ellipse cx="177" cy="375" rx="62" ry="64" fill="url(#woofer)"/>
+ <ellipse cx="177" cy="375" rx="26" ry="28" fill="#182332" stroke="#566c7d" stroke-width="2"/>
+ <path d="M100 465L270 453" stroke="#7a8493" stroke-opacity=".26" stroke-width="3"/>
+ <circle cx="117" cy="471" r="6" fill="#6bceec"/>
+ <circle cx="245" cy="463" r="12" fill="#1a222d" stroke="#a2acb6" stroke-width="3"/>
+ <path d="M245 450V455" stroke="#dceaf0" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g transform="rotate(3 454 340)">
+ <path d="M362 166L548 177L536 494L349 477Z" fill="url(#cabinet)" stroke="#687484" stroke-width="5" stroke-linejoin="round"/>
+ <path d="M362 166L349 183L336 478L349 477Z" fill="#0c111c" stroke="#606b78" stroke-width="2"/>
+ <ellipse cx="453" cy="236" rx="42" ry="42" fill="#0c111c" stroke="#3e4b5a" stroke-width="5"/>
+ <ellipse cx="453" cy="236" rx="28" ry="28" fill="url(#tweeter)"/>
+ <ellipse cx="450" cy="375" rx="78" ry="80" fill="#050911" stroke="#556374" stroke-width="6"/>
+ <ellipse cx="450" cy="375" rx="62" ry="64" fill="url(#woofer)"/>
+ <ellipse cx="450" cy="375" rx="26" ry="28" fill="#182332" stroke="#566c7d" stroke-width="2"/>
+</g>
+</g>
+<rect x="24" y="24" width="185" height="39" rx="19.5" fill="#fff" fill-opacity=".94"/>
+<text x="116" y="50" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1.4" fill="#4e376a">REFERENZBILD</text>
+<text x="320" y="579" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#fff">Studio-Monitore</text>
+<text x="320" y="608" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#ddd5ec">Symbolbild · Original beim Händler ansehen</text>
+</svg>
