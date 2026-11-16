@@ -59,7 +59,20 @@ for (const [i,fields] of rows.entries()) {
     throw new Error('Partner link must use clean HTTPS URL: '+id);
   if (merchant.length>100 || affiliateUrl.length>2048)
     throw new Error('Merchant or URL too long: '+id);
-  live[id] = { merchant, affiliateUrl, published: true };
+  // Restrict Amazon-labeled offers to plausible Amazon-owned or Amazon-shortlink hosts.
+  // This does not independently prove the destination product or associate tracking tag.
+  if (/^amazon$/i.test(merchant)) {
+    const host=u.hostname.toLowerCase();
+    if (!['link.amazon','amzn.to','amazon.de','www.amazon.de','amazon.com','www.amazon.com'].includes(host))
+      throw new Error('Amazon offer is not hosted by an allowed Amazon domain: '+id);
+  }
+  live[id] = {
+    merchant, affiliateUrl, published: true,
+    title: original.title, category: original.category,
+    description: original.description,
+    image: (typeof original.image==='string' ? original.image : ''),
+    imageAlt: (typeof original.imageAlt==='string' ? original.imageAlt : '')
+  };
 }
 if (seen.size !== catalogIds.size)
   throw new Error('The CSV must contain all '+catalogIds.size+' catalog IDs, found '+seen.size);
