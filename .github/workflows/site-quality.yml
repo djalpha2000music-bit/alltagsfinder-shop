@@ -4,6 +4,12 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'angebote.html'
+      - 'angebote.css'
+      - 'signature.css'
+      - 'style.css'
+      - 'guides.css'
+      - 'sitemap.xml'
       - 'partner-offers.js'
       - 'wow.js'
       - 'data/**'
