@@ -1,6 +1,6 @@
 # Alltagsfinder Shop
 
-Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenwelten, einer Sammlung von 668 Produktideen und eigenständigen Ratgebern.
+Öffentlich erreichbares Produktideen- und Affiliate-Portal im Aufbau mit 27 Themenwelten, 668 Produktideen und eigenständigen Kaufhilfen.
 
 ## Status
 - **6 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer, AlphaTheta DDJ-FLX2 DJ-Controller, Mikrofonangebot mit noch offener Modellbezeichnung, Behringer U-PHORIA UMC22 USB-Audiointerface, EUROLITE LED PARty TCL Spot und PreSonus Eris 3.5 Gen 2 Studiomonitore) und 662 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
@@ -10,9 +10,9 @@ Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenw
 - Auf Unterseiten verlinken Navigation und Footer zum Angebotsbereich; Favoriten lassen sich über `index.html?favorites=1#entdecken` öffnen.
 - Referenzillustrationen: `assets/doqaus-kopfhoerer-referenz.webp`, `assets/dj-controller-referenz.svg`, `assets/mikrofon-referenz.svg`, `assets/audiointerface-referenz.svg`, `assets/eurolite-led-party-tcl-referenz.svg` und `assets/presonus-eris-35-gen2-referenz.svg`. Das tatsächliche Produkt ist ausschließlich auf der Händlerseite abgebildet.
 - Partnerlink-Sammelimport über `data/affiliate-offers.csv` und GitHub Actions; keine API-Schlüssel im Repository.
-- **Google-Vorbereitung:** Alle 20 Sitemap-Seiten enthalten passende Canonical-URLs; `robots.txt` meldet die Sitemap. Die Eigentumsbestätigung in Google Search Console wurde am 16.11.2026 nachweislich durchgeführt. Die Suchmaschinen-Freigabe ist weiterhin gesperrt, bis die offenen Pflichtprüfungen abgeschlossen sind.
-- Die Webseite bleibt testweise über `_headers` **noindex**. `robots.txt` erlaubt den Seitenzugriff für die Prüfung. Eine `sitemap.xml` ist vorbereitet.
-- Das Kontaktformular über Form.taxi (`kontakt.html`) ist angeschlossen: Erfolgsanzeige von Form.taxi und Nachrichteneingang im verbundenen Gmail-Konto am 16.11.2026 bestätigt. Der AV-Vertrag wurde im Form.taxi-Dashboard erstellt und muss noch heruntergeladen und abschließend geprüft werden. Die Geschäftsanschrift wurde vom Betreiber bestätigt, ebenso die Shop-Adresse in Amazon PartnerNet. Cloudflare Web Analytics ist aktiviert und in den Datenschutzhinweisen beschrieben. Offen bleiben der AV-Vertragsdownload und die Prüfung der Vertragsangaben, tatsächliche Cloudflare-Datenschutzverträge/Logverarbeitung, die Kontrolle der sechs Amazon-Kurzlink-Ziele und Tracking-IDs sowie die endgültige rechtliche Freigabe.
+- **Google-Vorbereitung:** Alle 20 Sitemap-Seiten enthalten passende Canonical-URLs; `robots.txt` meldet die Sitemap. Die Eigentumsbestätigung in Google Search Console wurde am 16.11.2026 nachweislich durchgeführt. Die Suchmaschinen-Sperre wurde nach ausdrücklicher Betreiberfreigabe am 16.11.2026 entfernt. Ein Google-Live-Test derselben Tagesversion bestätigt die grundsätzliche Indexierbarkeit der Startseite. Eine Aufnahme in den Index ist noch nicht bestätigt.
+- Die globale `noindex`-Regel in `_headers` wurde entfernt. `robots.txt` verweist auf `sitemap.xml` mit 20 URLs; `_headers` legt für die Sitemap ausdrücklich `application/xml` fest. Die Sitemap wurde am 16.11.2026 in Google Search Console eingereicht, meldete zunächst aber „Sitemap konnte nicht gelesen werden“. Der manuelle Indexierungsantrag wurde wegen Tageskontingent nicht angenommen. Die automatisierte GitHub-Qualitätsprüfung ist erfolgreich.
+- Das Kontaktformular über Form.taxi (`kontakt.html`) ist angeschlossen: Erfolgsanzeige von Form.taxi und Nachrichteneingang im verbundenen Gmail-Konto am 16.11.2026 bestätigt. Der 12-seitige Form.taxi-AV-Vertrag wurde am 16.11.2026 erstellt, heruntergeladen und auf die beteiligten Parteien/Grunddaten geprüft; keine anwaltliche Freigabe. Die Geschäftsanschrift wurde vom Betreiber bestätigt, ebenso die Shop-Adresse in Amazon PartnerNet. Cloudflare Web Analytics ist aktiviert und in den Datenschutzhinweisen beschrieben. Offen bleiben die Form.taxi-Speicher-/Löscheinstellungen, tatsächliche Cloudflare-Datenschutzverträge/Logverarbeitung und Analytics-Prüfung, die Ziel-/Trackingprüfung der fünf Amazon-Kurzlinks (der Kopfhörer-Link enthält den bestätigten Tracking-Tag), mögliche weitere Impressums-Pflichtangaben und die abschließende rechtliche Prüfung.
 
 ## Lokale Vorschau
 `index.html` in einem Browser öffnen. Die Startseite ist eigenständig (CSS und Produktdaten inline). Die Unterseiten verwenden `style.css` und `info.js`.
@@ -29,7 +29,7 @@ Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenw
 Shopinhalte und Designs künftig über GitHub-Commits aktualisieren; Git-verbundenes Cloudflare Pages veröffentlicht den gewählten Branch automatisch. Keine echten Partnerlinks ohne Partnerfreigabe, Kennzeichnung und Prüfung hinzufügen.
 
 ## Automatische Veröffentlichung
-Cloudflare Pages ist seit 15.11.2026 als Git-verbundenes Projekt `alltagsfinder-auto` eingerichtet. Diese README-Änderung dient als erster Auto-Deployment-Test; sie verändert die Shop-Oberfläche nicht.
+Cloudflare Pages ist seit 15.11.2026 als Git-verbundenes Projekt `alltagsfinder-auto` eingerichtet. Cloudflare zeigt für `alltagsfinder-auto` automatische Produktionsbereitstellungen vom Branch `main`. Ein Screenshot vom 16.11.2026 bestätigt die Produktion mit Commit `e0fb1da`; spätere GitHub-Änderungen werden automatisch bereitgestellt und müssen im Livebetrieb geprüft werden.
 
 ## Bildregel für neue Partnerprodukte
 Neue Partnerangebote möglichst direkt mit einer **eigens erstellten, zum Produkttyp passenden Referenzillustration** ausstatten. Modell, Marke und genaue Optik niemals aus dem Kurzlink erraten. Bilder als „REFERENZ-/SYMBOLBILD“ und mit sprechendem Alt-Text kennzeichnen. Amazon-Originalbilder nur bei nachgewiesener Lizenz bzw. erlaubter offizieller Einbindung verwenden. Ohne Bildrechte kein ungefragtes Kopieren externer Händlerfotos.
