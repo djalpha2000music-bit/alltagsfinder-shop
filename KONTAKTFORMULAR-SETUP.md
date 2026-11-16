@@ -14,7 +14,7 @@ Stand: 16. November 2026.
 ## Noch unbedingt erforderlich
 - [x] Tatsächlicher E-Mail-Eingang am 16.11.2026 um 10:55 Uhr (Deutschland) im verbundenen Gmail-Postfach `djalpha2000.music@gmail.com` bestätigt. Betreff: „Sendung von Alltagsfinder Kontaktformular“. Gmail meldet Nachricht im Posteingang. Das beweist den End-to-End-Test. Konfiguration der Absender-/Empfängeradressen bei späteren Änderungen erneut kontrollieren.
 - [x] AV-Vertrag im Form.taxi-Dashboard **erstellt**: Screenshot des Betreibers vom 16.11.2026 zeigt ausdrücklich „Vertrag wurde erstellt!“.
-- [x] **AV-Vertrag gespeichert:** Der Betreiber hat am 16.11.2026 bestätigt, die im Form.taxi-Dashboard erzeugte Vertragsdatei gespeichert zu haben. Inhalt und Ablageort wurden nicht eingesehen.
+- [x] **AV-Vertrag heruntergeladen und gespeichert:** Der Betreiber hat ausdrücklich den PDF-Download aus Form.taxi bestätigt. Der PDF-Inhalt und der Ablageort wurden nicht eingesehen.
 - [ ] Angaben, Vertragswirksamkeit und dauerhafte Auffindbarkeit der PDF prüfen; Speicherfristen/Einstellungen im Form.taxi-Konto kontrollieren. https://docs.form.taxi/de/privacy
 - [x] Echte Testübermittlung von der öffentlichen Kontaktseite durchgeführt: Screenshot des Nutzers zeigt Form.taxi „Formular wurde übermittelt!“. Passende Benachrichtigung im verbundenen Gmail-Postfach nachgewiesen.
 - [x] Das GitHub-verbundene Cloudflare-Pages-Projekt veröffentlichte am 16.11.2026 laut Betreiber-Screenshot den damals aktuellen Stand `fe0294a`. Spätere Änderungen werden über `main` automatisch bereitgestellt; die jeweils neueste Version lässt sich über die Projekt-Bereitstellungen überprüfen.
