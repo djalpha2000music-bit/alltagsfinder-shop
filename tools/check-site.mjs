@@ -162,8 +162,8 @@ for(const page of ['index.html','angebote.html','musik-dj.html','ratgeber.html',
 }
 if(!text('impressum.html').includes('Alltagsfinder per E-Mail kontaktieren'))
   fail('Direct email contact action missing from legal page');
-if(!text('datenschutz.html').includes('Cloudflare Pages kann bei eingeschalteter Web Analytics'))
-  fail('Live Cloudflare analytics privacy check disclosure missing');
+if(!text('datenschutz.html').includes('<h2 id="web-analytics">Cloudflare Web Analytics</h2>') || !text('datenschutz.html').includes('Cloudflare Web Analytics aktiviert'))
+  fail('Activated Cloudflare Web Analytics privacy disclosure missing');
 if(!text('angebote.html').includes('Gekennzeichnete Partnerangebote'))
   fail('Offer page should not claim independently verified shortlinks');
 // Protect current published shop data from known regressions.
