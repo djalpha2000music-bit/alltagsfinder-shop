@@ -192,9 +192,7 @@ for(const url of sitemapURLs){
  const src=text(page);
  for(const match of src.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["']/g)){
   const href=match[1];
-  if(/^(?:#|https?:|mailto:|tel:|sms:|data:|javascript:)/i.test(href) || href.includes('
-console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');
-+'{'))continue;
+  if(/^(?:#|https?:|mailto:|tel:|sms:|data:|javascript:)/i.test(href) || href.includes(String.fromCharCode(36,123)))continue;
   let dest;
   try{dest=new URL(href,'https://alltagsfinder-auto.pages.dev/'+page)}
   catch{fail('Invalid internal link in '+page+': '+href)}
