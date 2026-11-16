@@ -16,3 +16,6 @@
 
 /musik-dj.html
   Cache-Control: public, max-age=0, must-revalidate
+
+/editorial-finish.css
+  Cache-Control: public, max-age=0, must-revalidate
