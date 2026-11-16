@@ -6,4 +6,6 @@ Diese Links wurden vom Shopbetreiber bereitgestellt. Der erste Link ist anhand d
 |---|---|---|---|---|
 | 2026-11-15 | https://link.amazon/B0iSm1X4H | DOQAUS DJ-Kopfhörer (Schwarz), 50-mm-Treiber, 3,5-/6,35-mm-Anschlüsse | dj-kopfhoerer | Im Shop eingebunden nach Produkt-Screenshots; Linkziel bei Amazon manuell gegenprüfen |
 
+| 2026-11-16 | https://link.amazon/B099Pt8mG | DJ-Controller, erwartet: AlphaTheta DDJ-FLX2 (Linkziel noch nicht bestätigt) | dj-controller | Kurzlink technisch nicht auflösbar; genauer Produktname, Variante und Partnertracking prüfen, bis dahin nicht veröffentlichen |
+
 **Vorgehen:** Produktseite im Amazon-Konto öffnen, sichtbaren Produktnamen oder Screenshot liefern, sicherstellen, dass der Link per „Partner-Link kopieren“ erzeugt wurde und die korrekte Tracking-ID enthält. Erst nach Prüfung die entsprechende Zeile in `data/affiliate-offers.csv` mit Händler und Link füllen sowie `geprueft=JA` und `freigeben=JA` setzen.
