@@ -20,6 +20,10 @@
 <div class="offers-eyebrow">ALLTAGSFINDER · OFFEN UND TRANSPARENT</div>
 <h1>Echte Links.<br/><em>Klare Auswahl.</em></h1>
 <p class="offers-lead">Hier findest du ausschließlich Angebote, für die ein konkreter Händlerlink hinterlegt ist. Wir erfinden keine Preise, Bewertungen oder vermeintlichen Testsieger – und wir unterscheiden unsere Referenzbilder eindeutig von den Originalartikeln.</p>
+<div class="offer-share-row">
+  <button id="offer-share-btn" type="button" class="offer-share-button">Diese Angebotsseite teilen ↗</button>
+  <span id="offer-share-feedback" role="status" aria-live="polite" class="offer-share-feedback"></span>
+</div>
 </div><aside class="offers-count" aria-label="Anzahl aktuell hinterlegter Partnerangebote"><strong id="offer-count">01</strong><span id="offer-count-label">Partnerangebot hinterlegt</span><p>668 Produktideen sind im großen Katalog erfasst. Die meisten davon sind noch keine kaufbaren Händlerangebote.</p></aside></section>
 <div class="offers-eyebrow" id="angebote">AKTUELL BEI ALLTAGSFINDER</div>
 <h2 class="offers-section-title">Aktuell hervorgehobenes Partnerangebot</h2>
@@ -75,7 +79,14 @@
     <a href="ratgeber/dj-kopfhoerer-praxis.html">Ausführlichen DJ-Kopfhörer-Ratgeber lesen ↗</a>
   </div>
 </section>
-<section id="more-offers" class="more-offers" hidden aria-labelledby="more-offers-title"><div class="offers-eyebrow">WEITERE FREIGEGEBENE PARTNERANGEBOTE</div><h2 class="offers-section-title" id="more-offers-title">Noch mehr konkret verlinkte Produkte</h2><div class="more-offers-grid" id="more-offers-grid"></div></section>
+<section id="more-offers" class="more-offers" hidden aria-labelledby="more-offers-title"><div class="offers-eyebrow">WEITERE FREIGEGEBENE PARTNERANGEBOTE</div><h2 class="offers-section-title" id="more-offers-title">Noch mehr konkret verlinkte Produkte</h2><div class="offer-filter-panel" id="offer-filter-panel">
+ <div class="offer-filter-control"><label for="offer-search">Angebote suchen</label>
+ <input id="offer-search" type="search" placeholder="Produkt oder Händler" autocomplete="off"/></div>
+ <div class="offer-filter-control"><label for="offer-category">Kategorie</label>
+ <select id="offer-category"><option value="">Alle Kategorien</option></select></div>
+ <p id="offer-filter-result" class="offer-filter-result" role="status" aria-live="polite"></p>
+</div>
+<div class="more-offers-grid" id="more-offers-grid"></div></section>
 <div class="offers-eyebrow">SO ARBEITET ALLTAGSFINDER</div>
 <h2 class="offers-section-title">Keine unklaren Werbeversprechen.</h2>
 <section class="offer-steps" aria-label="Unser Umgang mit Produktdaten"><div class="offer-step"><strong>Originalbilder beim Händler</strong><p>Alltagsfinder kennzeichnet Referenz- und Symbolbilder. Ausschlaggebend für die tatsächliche Ausführung sind die Produktbilder und Beschreibungen auf der Händlerseite.</p></div><div class="offer-step"><strong>Keine Fantasiepreise</strong><p>Wir geben keine nicht verlässlich aktualisierten Preise oder Bestandszahlen an. Prüfe aktuelle Konditionen direkt bei Amazon.</p></div><div class="offer-step"><strong>Ratgeber statt Schein-Tests</strong><p>Unsere Kaufhilfen beschreiben Auswahlkriterien. Sie sind keine selbst durchgeführten Geräte- oder Labortests.</p></div></section>
@@ -145,8 +156,28 @@
    result.hidden=false;
    result.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"nearest"});
  });
+
+ const shareButton=document.getElementById("offer-share-btn");
+ const shareFeedback=document.getElementById("offer-share-feedback");
+ shareButton?.addEventListener("click",async()=>{
+   const url=window.location.origin+window.location.pathname;
+   if(navigator.share){
+     try {
+       await navigator.share({title:"Alltagsfinder – Partnerangebote",text:"Partnerangebote und Kaufhilfen bei Alltagsfinder",url});
+       shareFeedback.textContent="Teilen-Menü geöffnet.";
+       return;
+     } catch(e){if(e?.name==="AbortError"){shareFeedback.textContent="Teilen abgebrochen.";return;}}
+   }
+   try{
+     await navigator.clipboard.writeText(url);
+     shareFeedback.textContent="Link zur Angebotsseite kopiert.";
+   }catch(_){
+     shareFeedback.textContent="Kopieren nicht verfügbar – Link oben aus der Adresszeile übernehmen.";
+   }
+ });
  const more=live.filter(([id])=>id!=="dj-kopfhoerer");
  if(!more.length)return;
+ const filterCards=[];
  const container=document.getElementById("more-offers-grid");
  document.getElementById("more-offers").hidden=false;
  for(const [id,offer] of more){
@@ -179,6 +210,30 @@
    body.append(badge,h,description,merchant,link);
    article.append(visual,body);
    container.appendChild(article);
+   filterCards.push({article,category:String(offer.category||"").trim().toLowerCase(),search:(String(offer.title||"")+" "+String(offer.merchant||"")+" "+String(offer.description||"")).toLocaleLowerCase("de")});
  }
+ 
+ const categorySelect=document.getElementById("offer-category");
+ const searchInput=document.getElementById("offer-search");
+ const filterResult=document.getElementById("offer-filter-result");
+ const categoryNames={musik:"Musik & DJ",technik:"Technik",haushalt:"Haushalt"};
+ const categories=[...new Set(filterCards.map(x=>x.category))].filter(Boolean).sort((a,b)=>a.localeCompare(b,"de"));
+ for(const cat of categories){
+   const option=document.createElement("option");option.value=cat;option.textContent=categoryNames[cat]||cat.charAt(0).toLocaleUpperCase("de")+cat.slice(1);categorySelect.appendChild(option);
+ }
+ const updateOffers=()=>{
+   const term=searchInput.value.trim().toLocaleLowerCase("de");
+   const category=categorySelect.value;
+   let visible=0;
+   for(const entry of filterCards){
+     const show=(!term||entry.search.includes(term))&&(!category||entry.category===category);
+     entry.article.hidden=!show;
+     if(show)visible++;
+   }
+   filterResult.textContent=visible===1?"1 weiteres Angebot gefunden":visible+" weitere Angebote gefunden";
+ };
+ searchInput.addEventListener("input",updateOffers);
+ categorySelect.addEventListener("change",updateOffers);
+ updateOffers();
 })();
 </script></body></html>
