@@ -7,6 +7,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/><link href="style.css" rel="stylesheet"/><link href="signature.css" rel="stylesheet"/><link href="angebote.css" rel="stylesheet"/>
 <script defer src="info.js"></script>
 <link rel="canonical" href="https://alltagsfinder-auto.pages.dev/angebote.html"/>
+<link href="editorial-finish.css" rel="stylesheet"/>
 </head><body class="offers-page">
 <div class="preview-strip" role="status"><span class="pulse-dot"></span><strong>Alltagsfinder im Testbetrieb</strong> · Gekennzeichnete Partnerangebote, weitere Katalogeinträge sind Ideen.</div>
 <header class="site-header" id="top"><div class="shell header-inner">
@@ -17,21 +18,33 @@
 </div><nav aria-label="Mobilnavigation" class="mobile-nav" hidden id="mobile-nav"><a href="angebote.html" aria-current="page">Partnerangebote</a><a href="index.html#kategorien">Kategorien</a><a href="musik-dj.html">Musik &amp; DJ</a><a href="ratgeber.html">Ratgeber</a><a href="kontakt.html">Kontakt</a></nav></header>
 <main>
 <div class="offers-wrap">
-<section class="offers-hero"><div>
+<section class="offers-hero"><div class="offers-hero-main">
 <div class="offers-eyebrow">ALLTAGSFINDER · OFFEN UND TRANSPARENT</div>
-<h1>Echte Links.<br/><em>Klare Auswahl.</em></h1>
-<p class="offers-lead">Hier findest du ausschließlich Angebote, für die ein konkreter Händlerlink hinterlegt ist. Wir erfinden keine Preise, Bewertungen oder vermeintlichen Testsieger – und wir unterscheiden unsere Referenzbilder eindeutig von den Originalartikeln.</p>
+<h1>Nicht mehr suchen.<br/><em>Besser entdecken.</em></h1>
+<p class="offers-lead">Weniger Werbechaos. Mehr Orientierung. Entdecke gekennzeichnete Partnerangebote, hilfreiche Kaufchecks und Produktideen. Keine erfundenen Preise, Bewertungen oder Testsiegel. Originalartikel und aktuelle Konditionen siehst du direkt beim Händler.</p>
 <nav class="offers-shortcuts" aria-label="Schnell zu unseren Angeboten">
  <a class="offers-shortcut-primary" href="#angebote">Alle Partnerangebote ansehen</a>
  <a href="#kopfhoerer-check">Kostenlose Kopfhörer-Kaufhilfe</a>
 </nav>
+<div class="offers-hero-stamp">✳ FINDE DEINEN NÄCHSTEN GUTEN FUND</div>
 <div class="offer-share-row">
   <button id="offer-share-btn" type="button" class="offer-share-button">Diese Angebotsseite teilen ↗</button>
   <span id="offer-share-feedback" role="status" aria-live="polite" class="offer-share-feedback"></span>
 </div>
 </div><aside class="offers-count" aria-label="Anzahl aktuell hinterlegter Partnerangebote"><strong id="offer-count">–</strong><span id="offer-count-label">Angebote werden geladen</span><p>668 Produktideen sind im großen Katalog erfasst. Die meisten davon sind noch keine kaufbaren Händlerangebote.</p></aside></section>
+<section class="offers-highlights" aria-label="Was Alltagsfinder besonders macht">
+ <div class="offers-highlight"><span class="hi-icon" aria-hidden="true">↗</span><div><strong>Nur echte Händlerlinks</strong><span>Ein Kaufbutton erscheint erst für ein freigegebenes Partnerangebot.</span></div></div>
+ <div class="offers-highlight"><span class="hi-icon" aria-hidden="true">◉</span><div><strong>Bilder ehrlich gekennzeichnet</strong><span>Unsere Illustrationen sind Referenzbilder, keine Originalaufnahmen.</span></div></div>
+ <div class="offers-highlight"><span class="hi-icon" aria-hidden="true">✳</span><div><strong>Entscheide ohne Druck</strong><span>Kaufhilfen kostenlos nutzen – ohne Anmeldung oder eigenen Checkout.</span></div></div>
+</section>
 <div class="offers-eyebrow" id="angebote">AKTUELL BEI ALLTAGSFINDER</div>
-<h2 class="offers-section-title">Im Fokus: DJ-Kopfhörer</h2>
+<h2 class="offers-section-title">Das könnte dein nächster Fund sein.</h2>
+<nav class="offers-quick-lanes" aria-label="Direkt zum passenden Partnerangebot">
+ <a href="#featured-offer"><span aria-hidden="true">♫</span><strong>Kopfhörer</strong><small>Sound checken</small></a>
+ <a href="#angebot-dj-controller"><span aria-hidden="true">▦</span><strong>Controller</strong><small>Auflegen starten</small></a>
+ <a href="#angebot-audiointerface"><span aria-hidden="true">◉</span><strong>Studio</strong><small>Signal aufnehmen</small></a>
+ <a href="#angebot-led-par"><span aria-hidden="true">✺</span><strong>Licht</strong><small>Atmosphäre schaffen</small></a>
+</nav>
 <article class="offer-panel" id="featured-offer" aria-labelledby="kopfhoerer-title">
 <div class="offer-visual"><img src="assets/doqaus-kopfhoerer-referenz.webp" alt="Generiertes Referenzbild eines schwarzen Over-Ear-DJ-Kopfhörers mit Kabel. Kein offizielles DOQAUS-Produktfoto." width="520" height="520" loading="eager" decoding="async"/><span class="offer-picture-tag">REFERENZBILD · ORIGINALPRODUKT BEI AMAZON ANSEHEN</span></div>
 <div class="offer-copy">
@@ -190,6 +203,7 @@
    const href=safeOffer(offer);
    const article=document.createElement("article");
    article.className="more-offer";
+   article.id="angebot-"+id;
    const visual=document.createElement("div");visual.className="more-offer-visual";
    if(typeof offer.image==="string" && /^assets\/[a-zA-Z0-9_-]+\.(?:svg|webp|png|jpg|jpeg)$/.test(offer.image)){
       const picture=document.createElement("img");
