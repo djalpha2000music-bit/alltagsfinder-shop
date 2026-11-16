@@ -16,8 +16,9 @@ Stand: 16. November 2026.
 - [x] AV-Vertrag im Form.taxi-Dashboard **erstellt**: Screenshot des Betreibers vom 16.11.2026 zeigt ausdrücklich „Vertrag wurde erstellt!“.
 - [ ] AV-Vertrag als PDF herunterladen, Angaben prüfen, dauerhaft aufbewahren und sicherstellen, dass die Vereinbarung tatsächlich wirksam abgeschlossen ist. Speicherfristen/Einstellungen im Form.taxi-Konto kontrollieren. https://docs.form.taxi/de/privacy
 - [x] Echte Testübermittlung von der öffentlichen Kontaktseite durchgeführt: Screenshot des Nutzers zeigt Form.taxi „Formular wurde übermittelt!“. Passende Benachrichtigung im verbundenen Gmail-Postfach nachgewiesen.
-- [ ] Cloudflare-Deployment der neuesten GitHub-Version überprüfen.
-- [ ] Impressum-Anschrift, Amazon PartnerNet und Cloudflare-Datenschutz getrennt prüfen, bevor `_headers` ohne `noindex` geschaltet wird.
+- [x] Das GitHub-verbundene Cloudflare-Pages-Projekt veröffentlichte am 16.11.2026 laut Betreiber-Screenshot den damals aktuellen Stand `fe0294a`. Spätere Änderungen werden über `main` automatisch bereitgestellt; die jeweils neueste Version lässt sich über die Projekt-Bereitstellungen überprüfen.
+- [x] Geschäftsanschrift vom Betreiber als aktuell bestätigt; Alltagsfinder-Domain laut Betreiber bei Amazon PartnerNet bereits eingetragen; Cloudflare Web Analytics im Dashboard nachweislich aktiviert und Datenschutzhinweise entsprechend ergänzt.
+- [ ] Offene Cloudflare-Vertrags-/Speicherfragen, finale Impressums- und Amazon-Link-Prüfungen sowie der PDF-Nachweis zum AV-Vertrag bleiben vor einer Aufhebung von `noindex` bestehen.
 
 ## Technische Hinweise
 Form.taxi unterstützt standardmäßigen HTML-POST, ohne besondere JavaScript-Bibliothek: https://docs.form.taxi/de/form-setup

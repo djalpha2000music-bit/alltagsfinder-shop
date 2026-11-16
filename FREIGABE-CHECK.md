@@ -35,6 +35,12 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - Die öffentliche Cloudflare-Antwort inklusive tatsächlicher HTTP-Header ließ sich aus dieser Umgebung nicht unabhängig abrufen. `_headers` enthält weiterhin siteweites `noindex`.
 - Grundlage und Nachweise: `GOOGLE-FREIGABE-NACHWEISE.md`.
 
+## Letzter technischer Audit (16.11.2026)
+- [x] **Amazon-Link-Herkunft:** Partnerlink-Attribute im Katalog, Produktdialog, Angebotsseite und DJ-Setup auf `rel="sponsored nofollow noopener"` angepasst. Die `Referrer-Policy: strict-origin-when-cross-origin` sendet bei HTTPS-Weiterleitungen die Ursprungsdomain, nicht den vollständigen Pfad. Dies vermeidet eine absichtliche Verschleierung der Werbewebsite.
+- [x] **Aktualität der Texte:** Startseiten-Teaser und hervorgehobenes Angebot sprechen nicht mehr von einem einzigen Partnerangebot.
+- [x] **Interne Linkprüfung:** GitHub QA kontrolliert für alle 20 Sitemap-Seiten die statischen internen Verknüpfungen auf existierende Ziele. Letzter abgeschlossener Lauf für `076deca` erfolgreich.
+- [ ] **Unabhängiger Live-Test:** Öffentliche Cloudflare-HTTP-Antwort einschließlich `X-Robots-Tag`, Analytics-Beacon und die Umleitungen der sechs Amazon-Kurzlinks konnten hier nicht unabhängig abgerufen werden. Die Desktop-/iPhone-Sichtkontrolle bleibt beim Betreiber.
+
 ## Unverzichtbare externe Schritte vor uneingeschränkter Bewerbung und SEO-Freigabe
 
 - [x] **PartnerNet-Website-Liste:** Der Betreiber hat am 16.11.2026 nach Einsicht in die PartnerNet-Kontoeinstellungen bestätigt, dass `https://alltagsfinder-auto.pages.dev/` bereits als Werbewebsite hinterlegt ist. Dies ist eine Nutzerbestätigung, keine unabhängige technische Kontoprüfung. Die frühere Adresse `https://alltagsfinder-shop.pages.dev/` ist eine andere Site.

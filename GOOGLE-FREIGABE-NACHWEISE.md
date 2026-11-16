@@ -33,6 +33,14 @@ EuGH dazu: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=ecli:ECLI:EU:C:20
 Cloudflare Analytics: https://developers.cloudflare.com/pages/how-to/web-analytics/
 Cloudflare DPA: https://www.cloudflare.com/en-gb/cloudflare-customer-dpa/
 
+## Technisches Link-Audit 16.11.2026
+- [x] Alle sechs veröffentlichten Partnerangebote sind im geprüften GitHub-Register vorhanden, die URLs verwenden HTTPS und den vom Partnerprogramm verwendeten Kurzlink-Host `link.amazon`.
+- [x] Werbekennzeichnung, Amazon-Partnerhinweis und eigene Referenzillustrationen bleiben erhalten; der Betrieb zeigt keine ungeprüften Livepreise.
+- [x] `noreferrer` wurde bei den **Amazon-Partnerlinks** entfernt, damit der Shop-Ursprung nach der eigenen Referrer-Richtlinie übermittelt werden kann (nicht der Seitenpfad). Fremde externe Dokumentationslinks bleiben datensparsam.
+- [x] Statische interne Links aller 20 Sitemap-Seiten werden in CI geprüft; QA war beim Commit `076deca` erfolgreich.
+- [ ] Die tatsächlichen Weiterleitungsziele der sechs Amazon-Kurzlinks und deren Tracking-IDs konnten über die verfügbaren externen Zugriffe nicht unabhängig validiert werden. Nur ein manueller Aufruf vom echten Shop sowie die PartnerNet-Berichte können das bestätigen.
+- [ ] Der öffentlich ausgelieferte Cloudflare-HTTP-Header und der Analytik-Beacon waren aus dieser Umgebung nicht erreichbar. Der Nutzer hat den Produktionsstatus für einen früheren Commit und das aktivierte Web Analytics per Screenshots belegt.
+
 ## 4. Erst danach: Google-Indexierung öffnen
 - [ ] Rechtliche und kontobezogene Punkte oben abgeschlossen und vom Betreiber geprüft.
 - [ ] Das globale `X-Robots-Tag: noindex, nofollow, noarchive` in `_headers` entfernen, GitHub-Qualitätstest anpassen und auf Cloudflare deployen.
