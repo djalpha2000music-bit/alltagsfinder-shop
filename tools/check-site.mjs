@@ -126,5 +126,20 @@ for(const page of ['index.html','angebote.html','musik-dj.html','ratgeber.html',
 const sitemap=text('sitemap.xml');
 if(!sitemap.includes('/angebote.html</loc>') || guides.some(n=>!sitemap.includes('/ratgeber/'+n+'</loc>')))
   fail('Sitemap does not reference every current buying guide and the offer page');
+// Google readiness: one unique canonical URL per sitemap entry.
+const sitemapURLs=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+if(sitemapURLs.length!==19 || new Set(sitemapURLs).size!==sitemapURLs.length)
+  fail('Unexpected sitemap URL count or duplicate URLs');
+for(const url of sitemapURLs){
+  if(!url.startsWith('https://alltagsfinder-auto.pages.dev/'))fail('Sitemap external or wrong host: '+url);
+  const path=url.endsWith('.dev/')?'index.html':url.split('.dev/')[1];
+  if(!existsSync(resolve(root,path)))fail('Sitemap target missing: '+path);
+  const src=text(path);
+  if(!src.includes('<link rel="canonical" href="'+url+'"/>'))
+    fail('Canonical URL missing or mismatched: '+path);
+}
+const robots=text('robots.txt');
+if(!robots.includes('Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml'))
+  fail('Missing correct sitemap declaration in robots.txt');
 if(!text('_headers').includes('noindex'))fail('Premature SEO release: legal review not complete');
 console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');

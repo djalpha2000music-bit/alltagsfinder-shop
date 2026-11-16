@@ -14,8 +14,18 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] Hauptnavigation, Unterseiten, Merkliste-Direktlink und Ratgeber-Einstiege verbessert
 - [x] Sammelimport per `data/affiliate-offers.csv` und `tools/build-offers.mjs` mit Amazon-Hostprüfung; keine Zugangsdaten im Frontend
 - [x] Automatische Qualitätsprüfung `tools/check-site.mjs`: Katalog, Bild-Datei, generierte Angebote, Navigation, Rechtslinks, 11 Ratgeber und JavaScript-Syntax
-- [x] GitHub Actions: letzte Qualitätsprüfung erfolgreich, Run 43820705244
+- [x] GitHub Actions: Qualitätsprüfungen laufen bei Änderungen automatisch; aktuellen Status unter GitHub Actions kontrollieren
 - [x] Cloudflare Pages über `main` Git-verbunden laut vorherigem Deployment, Sitemap vorbereitet
+
+## Google-Vorbereitung (16. November 2026)
+- [x] `robots.txt` erlaubt Crawling und nennt `https://alltagsfinder-auto.pages.dev/sitemap.xml`.
+- [x] Sitemap mit 19 URLs und 11 eigenständigen Kaufhilfe-Seiten vorhanden.
+- [x] `rel=canonical` für alle 19 HTML-Ziele ergänzt; generische Meta-Beschreibungen auf Informationsseiten differenziert.
+- [x] Automatische Qualitätsprüfung für Sitemap-Ziele, Canonicals und Robots-Datei erweitert.
+- [ ] **Google Search Console:** URL-Präfix `https://alltagsfinder-auto.pages.dev/` hinzufügen. Den persönlichen Google-HTML-Metatag auf der Startseite einbauen und Inhaberschaft bestätigen.
+- [ ] **Sitemap einreichen** nach rechtlichem Check und Aufhebung der Suchmaschinensperre.
+- [ ] **Indexierung prüfen:** `X-Robots-Tag: noindex, nofollow, noarchive` erst nach Freigabe entfernen, öffentliche Cloudflare-Antwortheader kontrollieren, bei Google die URL-Prüfung verwenden.
+- [ ] **Erwartung:** Google entscheidet selbst über Aufnahme und Ranking. Keine garantierten Aufrufe.
 
 ## Unverzichtbare externe Schritte vor uneingeschränkter Bewerbung und SEO-Freigabe
 

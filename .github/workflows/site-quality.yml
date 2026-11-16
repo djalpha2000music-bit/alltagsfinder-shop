@@ -4,6 +4,11 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'robots.txt'
+      - '_headers'
+      - 'musik-dj.html'
+      - 'impressum.html'
+      - 'ueber-uns.html'
       - 'angebote.html'
       - 'angebote.css'
       - 'signature.css'
