@@ -10,4 +10,6 @@ Diese Links wurden vom Shopbetreiber bereitgestellt. Der erste Link ist anhand d
 
 | 2026-11-16 | https://link.amazon/B0fHdmstM | Mikrofonangebot (genaues Modell noch offen) | dynamisches-mikrofon (Katalog-ID; Modellangaben neutral) | Betreiber hat bestätigt, dass es das Mikrofon ist; als generisches Partnerangebot mit eigenem Referenzbild aktiviert. Originalmodell, Linkziel und Partner-Tracking bleiben extern zu prüfen. |
 
+| 2026-11-16 | https://link.amazon/B0dO2Pgr3 | Nächster Kandidat: USB-Audiointerface (Zuordnung noch unbestätigt) | audiointerface (vorläufig, gesperrt) | Kurzlink nicht auflösbar. Produktname und Modell per Screenshot prüfen. Im CSV mit `geprueft=NEIN`, `freigeben=NEIN` hinterlegt; nicht im Live-Partnerangebot. |
+
 **Vorgehen:** Produktseite im Amazon-Konto öffnen, sichtbaren Produktnamen oder Screenshot liefern, sicherstellen, dass der Link per „Partner-Link kopieren“ erzeugt wurde und die korrekte Tracking-ID enthält. Erst nach Prüfung die entsprechende Zeile in `data/affiliate-offers.csv` mit Händler und Link füllen sowie `geprueft=JA` und `freigeben=JA` setzen.
