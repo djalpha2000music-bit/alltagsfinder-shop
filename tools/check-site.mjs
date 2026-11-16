@@ -156,7 +156,7 @@ if(!text('datenschutz.html').includes('id="kontaktformular"') || !text('datensch
 for(const page of ['index.html','angebote.html','musik-dj.html','ratgeber.html','ueber-uns.html','impressum.html','datenschutz.html','transparenz.html'])if(!text(page).includes('href="kontakt.html"'))fail('Contact link missing in '+page);
 for(const page of ['index.html','angebote.html','musik-dj.html','ratgeber.html','ueber-uns.html','kontakt.html','impressum.html','datenschutz.html','transparenz.html']){
  const src=text(page);
- const mobile=src.match(/<nav\\b[^>]*class="mobile-nav"[^>]*>[\\s\\S]*?<\\/nav>/);
+ const mobile=src.match(/<nav\b[^>]*class="mobile-nav"[^>]*>[\s\S]*?<\/nav>/);
  if(!mobile || !mobile[0].includes('href="kontakt.html"'))
    fail('Mobile menu contact link missing on '+page);
 }
