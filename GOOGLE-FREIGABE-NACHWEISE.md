@@ -17,8 +17,9 @@ Stand: 16. November 2026. Dies ist ein Arbeitsprotokoll, **keine** juristische F
 Offizielle Amazon-Hilfe: https://partnernet.amazon.de/help/node/topic/G9KDEPG2WF47VQY4
 
 ## 2. Impressum – muss an den realen Betrieb angepasst sein
-- [ ] Die bestehende Geschäftsanschrift und die Erreichbarkeit von `djalpha2000.music@gmail.com` bestätigen.
-- [ ] **Zusätzliche schnelle, unmittelbare Kommunikationsmöglichkeit** rechtskonform bereitstellen (erreichbare Telefonnummer **oder** tatsächlich funktionierende und schnell beantwortete Kontaktmöglichkeit). Keine Telefonnummer erfinden; keine fremden Kontaktdaten verwenden. Eine zweite Schaltfläche, die ebenfalls nur die E-Mail öffnet, ist **kein unabhängiger Kommunikationsweg**.
+- [x] Betreiber hat die Geschäftsanschrift im Impressum am 16.11.2026 ausdrücklich als aktuell bestätigt.
+- [x] Erreichbarkeit per Form.taxi-Nachricht mit E-Mail-Benachrichtigung an `djalpha2000.music@gmail.com` durch tatsächlichen Versand und Eingang bestätigt.
+- [x] **Unabhängige Kontaktmöglichkeit:** Form.taxi-POST-Formular funktioniert ohne E-Mail-Programm, die Nachricht ist tatsächlich zugestellt worden. Ob alle rechtlichen Anforderungen einschließlich zeitnaher Antwort erfüllt sind, bleibt abschließend zu beurteilen.
 - [ ] Nach tatsächlicher Unternehmenssituation prüfen, ob Registerangaben, Umsatzsteuer-ID, Wirtschafts-ID oder andere Pflichtangaben anzugeben sind; persönliche Steuer-ID nicht veröffentlichen.
 Amtliche Grundlage: https://www.gesetze-im-internet.de/ddg/__5.html
 EuGH dazu: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=ecli:ECLI:EU:C:2008:572
