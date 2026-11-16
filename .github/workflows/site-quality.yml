@@ -1,0 +1,29 @@
+name: Alltagsfinder Qualitätsprüfung
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'partner-offers.js'
+      - 'wow.js'
+      - 'data/**'
+      - 'assets/**'
+      - 'ratgeber.html'
+      - 'ratgeber/**'
+      - 'datenschutz.html'
+      - 'transparenz.html'
+      - 'tools/check-site.mjs'
+      - '.github/workflows/site-quality.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  site-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate all catalog products, the reference image, scripts and guides
+        run: node tools/check-site.mjs
