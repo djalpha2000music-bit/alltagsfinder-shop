@@ -1,0 +1,119 @@
+/* Alltagsfinder / Editorial Finish 2026
+   Visual polish only. Offers, partner links, disclosure and checkout ownership unchanged. */
+:root{--af-night:#181330;--af-violet:#6e43da;--af-lime:#dfff85;--af-lilac:#e9dfff}
+html{scroll-padding-top:110px}
+body{overflow-x:clip}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #8d60ff;outline-offset:4px}
+
+/* Home: turn the opening scene into a memorable product-discovery moment. */
+body:not(.offers-page) .site-header{box-shadow:0 10px 40px rgba(24,20,48,.055)}
+body:not(.offers-page) .hero.shell{position:relative;isolation:isolate;overflow:hidden;box-shadow:0 32px 80px rgba(27,17,62,.18),inset 0 1px rgba(255,255,255,.18)}
+body:not(.offers-page) .hero.shell::before{content:"";position:absolute;width:46%;aspect-ratio:1;right:-15%;top:-30%;border-radius:50%;border:1px solid rgba(223,255,133,.25);box-shadow:0 0 0 35px rgba(223,255,133,.035),0 0 0 90px rgba(223,255,133,.02);pointer-events:none;z-index:0}
+body:not(.offers-page) .hero-copy,body:not(.offers-page) .hero-visual{position:relative;z-index:1}
+body:not(.offers-page) .hero h1{letter-spacing:-.085em;text-wrap:balance}
+body:not(.offers-page) .hero h1 span{background:linear-gradient(125deg,#efffb6 5%,#baf4df 52%,#effbb4 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+body:not(.offers-page) .hero-actions .button-primary{position:relative;box-shadow:0 12px 38px rgba(217,255,131,.20);font-weight:850}
+body:not(.offers-page) .hero-actions .button-primary:hover{box-shadow:0 17px 44px rgba(217,255,131,.32);transform:translateY(-3px)}
+body:not(.offers-page) .surprise-trigger{box-shadow:0 15px 40px rgba(5,4,16,.20)}
+body:not(.offers-page) .mood-card{transition:transform .28s ease,box-shadow .28s ease,filter .28s ease;box-shadow:0 14px 32px rgba(33,20,73,.09)}
+body:not(.offers-page) .mood-card:hover{transform:translateY(-6px) rotate(-.35deg);box-shadow:0 24px 52px rgba(33,20,73,.18);filter:saturate(1.08)}
+body:not(.offers-page) .category-card{box-shadow:0 10px 28px rgba(27,24,44,.035)}
+body:not(.offers-page) .product-card{box-shadow:0 8px 28px rgba(25,34,34,.045);border-radius:21px}
+body:not(.offers-page) .product-card:hover{transform:translateY(-5px);box-shadow:0 19px 42px rgba(33,35,43,.13)}
+body:not(.offers-page) .reference-tag{backdrop-filter:blur(8px)}
+body:not(.offers-page) .image-disclaimer{box-shadow:0 12px 38px rgba(49,28,98,.07)}
+
+/* Offers: bold, high-trust visual merchandising with actual links only. */
+.offers-page{background:radial-gradient(circle at 93% 17%,rgba(218,203,255,.3),transparent 31%),linear-gradient(180deg,#f8f7ff 0%,#fff 37%,#f8f6ff 100%);color:#231c3f}
+.offers-page .site-header{background:rgba(251,250,255,.94);border-bottom:1px solid #e8e1f5;box-shadow:0 10px 30px rgba(35,22,70,.045)}
+.offers-page .offers-wrap{width:min(1190px,calc(100% - 48px))}
+.offers-page .offers-hero{position:relative;isolation:isolate;overflow:hidden;border-radius:36px;padding:clamp(40px,6vw,78px);margin:30px 0 28px;grid-template-columns:minmax(0,1.3fr) minmax(250px,.7fr);gap:36px;background:radial-gradient(circle at 77% 27%,rgba(129,79,236,.62),transparent 30%),radial-gradient(circle at 8% 91%,rgba(83,63,173,.45),transparent 35%),linear-gradient(135deg,#17112b 5%,#2c2058 62%,#16132d 100%);color:#fff;box-shadow:0 30px 65px rgba(31,19,70,.23)}
+.offers-page .offers-hero::before{content:"";position:absolute;right:-9%;top:-60%;width:55%;aspect-ratio:1;border:1px solid rgba(227,255,147,.23);border-radius:50%;box-shadow:0 0 0 30px rgba(227,255,147,.035),0 0 0 77px rgba(227,255,147,.025),0 0 0 145px rgba(227,255,147,.016);pointer-events:none;z-index:0}
+.offers-page .offers-hero::after{content:"✳";position:absolute;right:23%;bottom:-86px;font-size:320px;line-height:1;color:rgba(208,179,255,.065);pointer-events:none;z-index:0}
+.offers-page .offers-hero>*{position:relative;z-index:1}
+.offers-page .offers-hero .offers-eyebrow{color:#ddff92;font-size:11px;letter-spacing:.19em}
+.offers-page .offers-hero h1{color:#fff;letter-spacing:-.084em;font-weight:900;font-size:clamp(47px,5.6vw,82px);line-height:1.02;text-wrap:balance}
+.offers-page .offers-hero h1 em{color:#dfff85;background:linear-gradient(115deg,#ecffb8,#aaf0c9 75%);-webkit-background-clip:text;background-clip:text}
+.offers-page .offers-lead{color:#e0dcf1;font-size:clamp(14px,1.55vw,17px);line-height:1.77;max-width:620px}
+.offers-page .offers-shortcuts{margin-top:27px}
+.offers-page .offers-shortcuts a{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.075);color:#fff;border-radius:14px;font-weight:800;transition:transform .2s ease,background .2s ease}
+.offers-page .offers-shortcuts a:hover{transform:translateY(-2px);background:rgba(255,255,255,.16)}
+.offers-page .offers-shortcuts .offers-shortcut-primary{color:#1c1635;background:var(--af-lime);border-color:var(--af-lime);box-shadow:0 10px 30px rgba(219,255,133,.15)}
+.offers-page .offers-shortcuts .offers-shortcut-primary:hover{background:#edffb7}
+.offers-page .offers-hero .offer-share-button{background:transparent;border-color:rgba(255,255,255,.25);color:#f5f1ff}
+.offers-page .offers-hero .offer-share-button:hover{background:rgba(255,255,255,.12)}
+.offers-page .offers-hero .offer-share-feedback{color:#d5cdeb}
+.offers-page .offers-count{background:linear-gradient(140deg,rgba(255,255,255,.14),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(15px);box-shadow:inset 0 1px rgba(255,255,255,.16),0 18px 40px rgba(6,3,25,.2);padding:32px}
+.offers-page .offers-count strong{font-size:clamp(78px,8vw,120px);color:#dfff85;text-shadow:0 0 35px rgba(223,255,133,.18)}
+.offers-page .offers-count span{color:#fff}
+.offers-page .offers-count p{color:#d8d0eb}
+.offers-hero-stamp{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:8px 12px;background:rgba(228,255,157,.12);border:1px solid rgba(228,255,157,.24);border-radius:100px;color:#e6ffb1;font-size:10px;font-weight:800;letter-spacing:.075em}
+.offers-page .offers-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 55px}
+.offers-page .offers-highlight{display:flex;align-items:flex-start;gap:14px;padding:17px 19px;background:#fff;border:1px solid #e8e2f2;border-radius:16px;box-shadow:0 8px 24px rgba(45,29,84,.035)}
+.offers-page .offers-highlight .hi-icon{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#f0e9ff;color:#643cbd;font-size:18px;font-weight:900}
+.offers-page .offers-highlight strong{display:block;font-size:13px;font-weight:900;line-height:1.35;color:#2e214d}
+.offers-page .offers-highlight span:not(.hi-icon){display:block;margin-top:3px;font-size:11px;line-height:1.55;color:#716784}
+.offers-page .offers-section-title{font-weight:900;letter-spacing:-.058em}
+.offers-page .offer-panel{border:1px solid #d9cff0;box-shadow:0 32px 66px rgba(43,21,96,.14);border-radius:30px}
+.offers-page .offer-visual{isolation:isolate;overflow:hidden;background:radial-gradient(circle at 50% 40%,#fff 0%,#ede3ff 40%,#cfc0f0 85%);min-height:440px}
+.offers-page .offer-visual::before{content:"";position:absolute;width:72%;aspect-ratio:1;border:1px solid rgba(96,60,167,.15);border-radius:50%;box-shadow:0 0 0 35px rgba(255,255,255,.17),0 0 0 76px rgba(91,54,161,.045);z-index:-1}
+.offers-page .offer-visual img{position:relative;z-index:2;max-height:430px;filter:drop-shadow(0 27px 18px rgba(36,21,65,.25))}
+.offers-page .offer-picture-tag{z-index:3;bottom:18px;background:rgba(255,255,255,.9);backdrop-filter:blur(7px);color:#49346e}
+.offers-page .offer-copy h2{font-weight:900;letter-spacing:-.055em}
+.offers-page .offer-copy p{line-height:1.72}
+.offers-page .offer-buy{background:#dfff85;color:#221a39;box-shadow:0 7px 0 #b7d761,0 13px 23px rgba(55,61,19,.13);border-color:#cbe776;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;text-decoration:none}
+.offers-page .offer-buy:hover{background:#ebffae;transform:translateY(-3px);box-shadow:0 10px 0 #b7d761,0 20px 24px rgba(55,61,19,.14)}
+.offers-page .offer-buy:active{transform:translateY(2px);box-shadow:0 3px 0 #b7d761}
+.offers-page .more-offers{padding-top:19px}
+.offers-page .more-offer{border:1px solid #e4dcf5;border-radius:23px;box-shadow:0 12px 32px rgba(48,31,89,.065);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}
+.offers-page .more-offer:hover{transform:translateY(-6px);box-shadow:0 24px 44px rgba(48,31,89,.15);border-color:#cab7ec}
+.offers-page .more-offer-visual{height:234px;background:radial-gradient(circle at 50% 24%,#fff,#e9e0fa 73%);overflow:hidden}
+.offers-page .more-offer:nth-child(3n+2) .more-offer-visual{background:radial-gradient(circle at 47% 25%,#fff,#ddedf4 75%)}
+.offers-page .more-offer:nth-child(3n+3) .more-offer-visual{background:radial-gradient(circle at 47% 25%,#fff,#e8efdf 75%)}
+.offers-page .more-offer-visual::before{content:"";position:absolute;width:160px;height:160px;border:1px solid rgba(98,72,154,.12);border-radius:50%;box-shadow:0 0 0 28px rgba(98,72,154,.035)}
+.offers-page .more-offer-visual img{position:relative;z-index:1;transition:transform .3s ease}
+.offers-page .more-offer:hover img{transform:translateY(-5px) scale(1.045)}
+.offers-page .more-offer-visual small{z-index:2;max-width:calc(100% - 24px);font-size:9px;backdrop-filter:blur(5px)}
+.offers-page .more-offer-body{gap:12px}
+.offers-page .more-offer-body h3{font-weight:900;font-size:21px}
+.offers-page .more-offer-body .offer-buy{font-size:13px}
+.offers-page .offer-filter-panel{background:#f2edff;border-color:#e4d9fa}
+.offers-page .headphone-check{background:linear-gradient(125deg,#f0eaff,#fff 74%)}
+.offers-page .offer-step{background:#fff;border-color:#e6dcf5;box-shadow:0 8px 24px rgba(47,26,93,.045)}
+.offers-page .offer-guide{background:radial-gradient(circle at 90% 40%,#4b348b,transparent 33%),linear-gradient(130deg,#1d1738,#2a1e55);box-shadow:0 20px 44px rgba(38,22,85,.16)}
+.offers-page .site-footer{margin-top:30px}
+.offers-page #angebote,.offers-page #more-offers,.offers-page #featured-offer,.offers-page #kopfhoerer-check,.offers-page .more-offer{scroll-margin-top:125px}
+@media(prefers-reduced-motion:no-preference){
+ @keyframes afPremiumFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+ @keyframes afPremiumEntrance{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+ .offers-page .offer-visual img{animation:afPremiumFloat 6s ease-in-out infinite}
+ .offers-page .offers-hero-main{animation:afPremiumEntrance .7s ease-out both}
+ .offers-page .offers-count{animation:afPremiumEntrance .8s .1s ease-out both}
+}
+@media(max-width:900px){
+ .offers-page .offers-hero{grid-template-columns:1fr;padding:38px 34px}
+ .offers-page .offers-count{max-width:none}
+ .offers-page .offers-highlights{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+ .offers-page .offers-wrap{width:calc(100% - 28px)}
+ .offers-page .offers-hero{padding:32px 21px;border-radius:25px;margin:16px 0 16px;gap:25px}
+ .offers-page .offers-hero h1{font-size:clamp(43px,10vw,58px);margin:15px 0}
+ .offers-page .offers-lead{font-size:13px;line-height:1.7}
+ .offers-page .offers-count{padding:24px;border-radius:20px}
+ .offers-page .offers-count strong{font-size:83px}
+ .offers-page .offers-highlights{grid-template-columns:1fr;gap:9px;margin-bottom:37px}
+ .offers-page .offers-highlight{padding:13px 15px}
+ .offers-page .offer-visual{min-height:300px;padding:35px 18px 52px}
+ .offers-page .offer-visual img{max-height:280px}
+ .offers-page .offer-copy{padding:26px 22px 31px}
+ .offers-page .more-offer-visual{height:240px}
+ .offers-page .more-offer-body{padding:23px}
+ .offers-page .offer-buy{min-height:50px;box-shadow:0 5px 0 #b7d761}
+ .offers-page .offer-buy:hover{box-shadow:0 7px 0 #b7d761}
+ body:not(.offers-page) .hero.shell{box-shadow:0 24px 45px rgba(27,17,62,.13)}
+}
+@media(prefers-reduced-motion:reduce){
+ .offers-page .offer-visual img,.offers-page .offers-hero-main,.offers-page .offers-count{animation:none!important}
+ .offers-page .more-offer,.offers-page .more-offer-visual img,.offers-page .offer-buy,body:not(.offers-page) .mood-card{transition:none!important}
+}
