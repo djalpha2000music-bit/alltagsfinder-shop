@@ -103,6 +103,15 @@ const partnersContext={window:{}};
 try { new Script(partnerJS,{filename:'partner-offers.js'}).runInNewContext(partnersContext,{timeout:1000}); }
 catch(e){ fail('Unable to read public affiliate link registry: '+e.message); }
 const active=partnersContext.window.ALLTAGSFINDER_PARTNER_OFFERS||{};
+const umc22=active.audiointerface;
+if(!umc22 || !umc22.published || umc22.affiliateUrl!=='https://link.amazon/B08GxVIDS' || !umc22.title.includes('UMC22'))
+  fail('UMC22 registry missing or incorrect; avoid stale DEMO listing');
+const catalogUmc22=products.find(p=>p.id==='audiointerface');
+if(!catalogUmc22?.title?.includes('UMC22'))
+  fail('UMC22 title missing from main catalog');
+if(!existsSync(resolve(root,umc22.image||'')))
+  fail('UMC22 reference image missing');
+
 for(const [id,offer] of Object.entries(active)){
  if(!products.some(p=>p.id===id)) fail('Affiliate offer has unknown product ID: '+id);
  if(!offer.published || !offer.affiliateUrl || !offer.merchant) fail('Invalid published offer: '+id);
