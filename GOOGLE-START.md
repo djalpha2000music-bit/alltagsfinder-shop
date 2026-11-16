@@ -1,6 +1,8 @@
 # Google Search Console für Alltagsfinder – letzte Schritte
 Stand: 16. November 2026
 
+**Status 16. November 2026: Google hat die Inhaberschaft per HTML-Tag bestätigt.** Die Verifizierung ist abgeschlossen; beide bestehenden Google-Metatags in `index.html` dauerhaft beibehalten. Die Site bleibt trotzdem vorläufig `noindex` bis zur Prüfung der rechtlichen Pflichtangaben, Datenschutzpraxis und Amazon-PartnerNet-Website-Zuordnung.
+
 ## Bereits fertig
 - Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml mit 19 URLs, darunter 11 Ratgeber.
 - Crawling-Hinweis: https://alltagsfinder-auto.pages.dev/robots.txt enthält den Link zur Sitemap.
