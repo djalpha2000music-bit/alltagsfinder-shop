@@ -67,6 +67,12 @@ if (offerStyle.length < 1500) fail('Offers page missing styles');
 if (!offersPage.includes('id="headphone-check-form"') || !offersPage.includes('id="headphone-check-result"'))
   fail('Interactive headphone buying checklist missing');
 if (!offerStyle.includes('.headphone-check-form')) fail('Headphone buying checklist styles missing');
+if (!offersPage.includes('id="offer-share-btn"') || !offersPage.includes('navigator.share'))
+  fail('Offer page share feature missing');
+if (!offersPage.includes('id="offer-search"') || !offersPage.includes('id="offer-category"'))
+  fail('Additional partner offer filters missing');
+if (!offerStyle.includes('.offer-filter-panel') || !offerStyle.includes('.offer-share-button'))
+  fail('Offer share/filter styles missing');
 if (!html.includes('href="angebote.html"')) fail('Home page does not link to genuine offers');
 const partnersContext={window:{}};
 try { new Script(partnerJS,{filename:'partner-offers.js'}).runInNewContext(partnersContext,{timeout:1000}); }
