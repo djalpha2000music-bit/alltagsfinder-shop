@@ -5,7 +5,7 @@ id,produktidee,kategorie,haendler,partnerlink,geprueft,freigeben
 "dj-mischpult","DJ-Mischpult","musik","","","NEIN","NEIN"
 "pa-aktivlautsprecher","Aktive PA-Lautsprecher","musik","","","NEIN","NEIN"
 "studio-monitore","Studio-Monitore","musik","","","NEIN","NEIN"
-"dynamisches-mikrofon","Dynamisches Mikrofon","musik","","","NEIN","NEIN"
+"dynamisches-mikrofon","Mikrofon für Aufnahme und Streaming (Modell beim Händler prüfen)","musik","Amazon","https://link.amazon/B0fHdmstM","JA","JA"
 "funkmikrofon","Funkmikrofon-System","musik","","","NEIN","NEIN"
 "audiointerface","USB-Audiointerface","musik","","","NEIN","NEIN"
 "midi-keyboard","MIDI-Keyboard","musik","","","NEIN","NEIN"
