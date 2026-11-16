@@ -64,6 +64,9 @@ if (!offersPage.includes('Als Amazon-Partner verdiene ich an qualifizierten Verk
 if (!offersPage.includes('Werbung / Partnerlink') || !offersPage.includes('REFERENZBILD'))
   fail('Offers page must clearly identify advertising and reference images');
 if (offerStyle.length < 1500) fail('Offers page missing styles');
+if (!offersPage.includes('id="kopfhoerer-check-form"') || !offersPage.includes('id="headphone-check-result"'))
+  fail('Interactive headphone buying checklist missing');
+if (!offerStyle.includes('.headphone-check-form')) fail('Headphone buying checklist styles missing');
 if (!html.includes('href="angebote.html"')) fail('Home page does not link to genuine offers');
 const partnersContext={window:{}};
 try { new Script(partnerJS,{filename:'partner-offers.js'}).runInNewContext(partnersContext,{timeout:1000}); }
