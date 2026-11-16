@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#241b4a"/>
-<meta name="description" content="Alltagsfinder zeigt nur echte, klar gekennzeichnete Partnerangebote. Derzeit mit einem Amazon-Kopfhörerangebot und eigenen Kaufhilfen. Kein eigener Onlineshop."/>
+<meta name="description" content="Alltagsfinder zeigt nur echte, klar gekennzeichnete Partnerangebote mit Links zu Händlern und eigenen Kaufhilfen. Kein eigener Onlineshop."/>
 <title>Partnerangebote – Echte Links, klare Kennzeichnung | Alltagsfinder</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/><link href="style.css" rel="stylesheet"/><link href="signature.css" rel="stylesheet"/><link href="angebote.css" rel="stylesheet"/>
 <script defer src="info.js"></script>
@@ -20,10 +20,10 @@
 <div class="offers-eyebrow">ALLTAGSFINDER · OFFEN UND TRANSPARENT</div>
 <h1>Echte Links.<br/><em>Klare Auswahl.</em></h1>
 <p class="offers-lead">Hier findest du ausschließlich Angebote, für die ein konkreter Händlerlink hinterlegt ist. Wir erfinden keine Preise, Bewertungen oder vermeintlichen Testsieger – und wir unterscheiden unsere Referenzbilder eindeutig von den Originalartikeln.</p>
-</div><aside class="offers-count" aria-label="Anzahl aktuell hinterlegter Partnerangebote"><strong>01</strong><span>Partnerangebot hinterlegt</span><p>668 Produktideen sind im großen Katalog erfasst. Die meisten davon sind noch keine kaufbaren Händlerangebote.</p></aside></section>
+</div><aside class="offers-count" aria-label="Anzahl aktuell hinterlegter Partnerangebote"><strong id="offer-count">01</strong><span id="offer-count-label">Partnerangebot hinterlegt</span><p>668 Produktideen sind im großen Katalog erfasst. Die meisten davon sind noch keine kaufbaren Händlerangebote.</p></aside></section>
 <div class="offers-eyebrow" id="angebote">AKTUELL BEI ALLTAGSFINDER</div>
-<h2 class="offers-section-title">Unser erstes Partnerangebot</h2>
-<article class="offer-panel" aria-labelledby="kopfhoerer-title">
+<h2 class="offers-section-title">Aktuell hervorgehobenes Partnerangebot</h2>
+<article class="offer-panel" id="featured-offer" aria-labelledby="kopfhoerer-title">
 <div class="offer-visual"><img src="assets/doqaus-kopfhoerer-referenz.webp" alt="Generiertes Referenzbild eines schwarzen Over-Ear-DJ-Kopfhörers mit Kabel. Kein offizielles DOQAUS-Produktfoto." width="520" height="520" loading="eager" decoding="async"/><span class="offer-picture-tag">REFERENZBILD · ORIGINALPRODUKT BEI AMAZON ANSEHEN</span></div>
 <div class="offer-copy">
 <span class="offer-label">WERBUNG · AMAZON-PARTNERLINK</span>
@@ -35,6 +35,7 @@
 <p class="offer-disclosure"><strong>Werbung / Partnerlink.</strong> Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Dieses Bild ist eine Illustration und keine offizielle Aufnahme des angebotenen Produkts. Wir haben keinen eigenen Produkttest durchgeführt. Für den Kauf wirst du zur Händlerseite weitergeleitet.</p>
 </div>
 </article>
+<section id="more-offers" class="more-offers" hidden aria-labelledby="more-offers-title"><div class="offers-eyebrow">WEITERE FREIGEGEBENE PARTNERANGEBOTE</div><h2 class="offers-section-title" id="more-offers-title">Noch mehr konkret verlinkte Produkte</h2><div class="more-offers-grid" id="more-offers-grid"></div></section>
 <div class="offers-eyebrow">SO ARBEITET ALLTAGSFINDER</div>
 <h2 class="offers-section-title">Keine unklaren Werbeversprechen.</h2>
 <section class="offer-steps" aria-label="Unser Umgang mit Produktdaten"><div class="offer-step"><strong>Originalbilder beim Händler</strong><p>Alltagsfinder kennzeichnet Referenz- und Symbolbilder. Ausschlaggebend für die tatsächliche Ausführung sind die Produktbilder und Beschreibungen auf der Händlerseite.</p></div><div class="offer-step"><strong>Keine Fantasiepreise</strong><p>Wir geben keine nicht verlässlich aktualisierten Preise oder Bestandszahlen an. Prüfe aktuelle Konditionen direkt bei Amazon.</p></div><div class="offer-step"><strong>Ratgeber statt Schein-Tests</strong><p>Unsere Kaufhilfen beschreiben Auswahlkriterien. Sie sind keine selbst durchgeführten Geräte- oder Labortests.</p></div></section>
@@ -44,22 +45,73 @@
 <footer class="site-footer"><div class="shell footer-top"><div class="footer-brand"><a class="brand" href="index.html"><span aria-hidden="true" class="brand-mark"><span></span><span></span><span></span><span></span></span><span>alltags<span class="brand-accent">finder</span><span class="brand-period">.</span></span></a><p>Clevere Ideen. Klare Orientierung.<br/>Einfacher entscheiden, bewusster auswählen.</p></div><div class="footer-links"><div><h4>Entdecken</h4><a href="angebote.html">Partnerangebote</a><a href="musik-dj.html">Musik &amp; DJ</a><a href="index.html#entdecken">Produktideen</a><a href="index.html#kategorien">Kategorien</a><a href="ratgeber.html">Ratgeber</a></div><div><h4>Informationen</h4><a href="ueber-uns.html">Über uns</a><a href="transparenz.html">Affiliate-Transparenz</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div></div><div class="shell footer-bottom"><span>© <span id="year">2026</span> Alltagsfinder · Testbetrieb</span><span>*Einzelne gekennzeichnete Partnerangebote sind verfügbar.</span></div><div class="shell amazon-disclosure" role="note">Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. <a href="transparenz.html">Informationen zu Partnerlinks</a></div></footer>
 <script src="partner-offers.js"></script>
 <script>
-(()=> {
-  const button=document.getElementById("doqaus-link");
-  const offer=window.ALLTAGSFINDER_PARTNER_OFFERS?.["dj-kopfhoerer"];
-  let approved=false;
-  try{
-    const u=new URL(offer?.affiliateUrl||"");
-    approved=Boolean(offer?.published&&offer?.merchant==="Amazon"&&u.protocol==="https:"&&["link.amazon","amzn.to","amazon.de","www.amazon.de"].includes(u.hostname));
-    if(approved){
-      button.href=u.toString();
-      button.target="_blank";
-      button.rel="sponsored nofollow noopener noreferrer";
-      button.referrerPolicy="strict-origin-when-cross-origin";
-      button.textContent="Zum Amazon-Partnerangebot ↗";
-      button.setAttribute("aria-label","DOQAUS DJ-Kopfhörer auf der Amazon-Händlerseite ansehen, öffnet neuen Tab");
-    }
-  }catch(_){}
-  if(!approved){button.textContent="Aktuell kein freigegebenes Händlerangebot";button.setAttribute("aria-disabled","true");}
+(() => {
+ const entries=Object.entries(window.ALLTAGSFINDER_PARTNER_OFFERS||{});
+ const safeOffer=(offer)=>{
+   if(!offer?.published || !offer?.merchant || !offer?.affiliateUrl)return null;
+   let url;
+   try{url=new URL(offer.affiliateUrl)}catch(_){return null}
+   if(url.protocol!=="https:" || url.username || url.password)return null;
+   if(offer.merchant.toLowerCase()==="amazon" &&
+      !["link.amazon","amzn.to","amazon.de","www.amazon.de","amazon.com","www.amazon.com"].includes(url.hostname.toLowerCase()))return null;
+   return url.toString();
+ };
+ const live=entries.filter(([,offer])=>Boolean(safeOffer(offer)));
+ const count=live.length;
+ const countEl=document.getElementById("offer-count");
+ const labelEl=document.getElementById("offer-count-label");
+ countEl.textContent=String(count).padStart(2,"0");
+ labelEl.textContent=count===1?"Partnerangebot hinterlegt":"Partnerangebote hinterlegt";
+ const banner=document.querySelector(".preview-strip");
+ if(banner)banner.innerHTML='<span class="pulse-dot"></span><strong>Alltagsfinder im Testbetrieb</strong> · '+count+' gekennzeichnete Händlerangebote; übrige Einträge sind Produktideen.';
+ const button=document.getElementById("doqaus-link");
+ const featured=document.getElementById("featured-offer");
+ const first=window.ALLTAGSFINDER_PARTNER_OFFERS?.["dj-kopfhoerer"];
+ const firstUrl=safeOffer(first);
+ if(firstUrl){
+    button.href=firstUrl;button.target="_blank";button.rel="sponsored nofollow noopener noreferrer";
+    button.referrerPolicy="strict-origin-when-cross-origin";
+    button.textContent="Zum Amazon-Partnerangebot ↗";
+    button.setAttribute("aria-label","DOQAUS DJ-Kopfhörer auf der Händlerseite ansehen, öffnet neuen Tab");
+ }else{
+    featured.hidden=true;
+    button.textContent="Aktuell kein freigegebenes Händlerangebot";
+    button.setAttribute("aria-disabled","true");
+ }
+ const more=live.filter(([id])=>id!=="dj-kopfhoerer");
+ if(!more.length)return;
+ const container=document.getElementById("more-offers-grid");
+ document.getElementById("more-offers").hidden=false;
+ for(const [id,offer] of more){
+   const href=safeOffer(offer);
+   const article=document.createElement("article");
+   article.className="more-offer";
+   const visual=document.createElement("div");visual.className="more-offer-visual";
+   if(typeof offer.image==="string" && /^assets\/[a-zA-Z0-9_-]+\.(?:svg|webp|png|jpg|jpeg)$/.test(offer.image)){
+      const picture=document.createElement("img");
+      picture.src=offer.image;
+      picture.alt=offer.imageAlt||"Referenzbild, Originalprodukt beim Händler ansehen";
+      picture.loading="lazy";picture.decoding="async";
+      visual.appendChild(picture);
+   }else{
+      const symbol=document.createElement("span");
+      symbol.textContent="✳";symbol.setAttribute("aria-label","Symbolische Darstellung");
+      visual.appendChild(symbol);
+   }
+   const label=document.createElement("small");
+   label.textContent="REFERENZ-/SYMBOLBILD";visual.appendChild(label);
+   const body=document.createElement("div");body.className="more-offer-body";
+   const badge=document.createElement("div");badge.className="more-offer-label";badge.textContent="WERBUNG · PARTNERLINK";
+   const h=document.createElement("h3");h.textContent=offer.title||id.replaceAll("-"," ");
+   const description=document.createElement("p");description.textContent=offer.description||"Details und tatsächliches Produkt bitte beim Händler prüfen.";
+   const merchant=document.createElement("span");merchant.className="more-offer-merchant";merchant.textContent="Händler: "+offer.merchant+" · Kein eigener Produkttest";
+   const link=document.createElement("a");link.className="offer-buy";link.href=href;
+   link.target="_blank";link.rel="sponsored nofollow noopener noreferrer";
+   link.referrerPolicy="strict-origin-when-cross-origin";
+   link.textContent="Beim Händler ansehen ↗";
+   body.append(badge,h,description,merchant,link);
+   article.append(visual,body);
+   container.appendChild(article);
+ }
 })();
 </script></body></html>
