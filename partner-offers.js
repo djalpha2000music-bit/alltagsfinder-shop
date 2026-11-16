@@ -20,6 +20,16 @@ window.ALLTAGSFINDER_PARTNER_OFFERS = {
     "image": "assets/dj-controller-referenz.svg",
     "imageAlt": "Eigenständig erstelltes Referenzbild eines DJ-Controllers – keine Abbildung des tatsächlichen AlphaTheta Produkts"
   },
+  "studio-monitore": {
+    "merchant": "Amazon",
+    "affiliateUrl": "https://link.amazon/B0c2ZsVIU",
+    "published": true,
+    "title": "PreSonus Eris 3.5 Gen 2 Studiomonitore (Schwarz)",
+    "category": "musik",
+    "description": "Aktive 3,5-Zoll-Studiomonitore für Musikproduktion, Multimedia und Gaming. Das gezeigte Amazon-Angebot nennt 50 W Leistung; Lieferumfang und technische Angaben beim Händler prüfen.",
+    "image": "assets/presonus-eris-35-gen2-referenz.svg",
+    "imageAlt": "Eigenständig erstelltes Referenzbild zweier schwarzer Studiolautsprecher, keine Originalaufnahme der PreSonus Eris 3.5 Gen 2"
+  },
   "dynamisches-mikrofon": {
     "merchant": "Amazon",
     "affiliateUrl": "https://link.amazon/B0fHdmstM",
