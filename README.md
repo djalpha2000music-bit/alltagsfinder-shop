@@ -3,11 +3,11 @@
 Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenwelten, einer Sammlung von 668 Produktideen und eigenständigen Ratgebern.
 
 ## Status
-- **2 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer und AlphaTheta DDJ-FLX2 DJ-Controller) und 666 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
-- **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau. Für den Controller nutzt die Angebotsseite ausdrücklich ein Symbolbild statt eines Amazon-Produktfotos.
+- **3 aktive, gekennzeichnete Amazon-Partnerangebote** (DOQAUS DJ-Kopfhörer, AlphaTheta DDJ-FLX2 DJ-Controller und ein vom Betreiber bestätigtes Mikrofonangebot mit noch offener Modellbezeichnung) und 665 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
+- **`angebote.html`** zeigt ausschließlich freigegebene Händlerangebote. Neue Produkte erscheinen dort automatisch, wenn der Sammelimport `partner-offers.js` neu erzeugt. Die Startseite enthält eine auffällige Produktvorschau. Die Angebotsseite nutzt selbst erstellte, klar gekennzeichnete Referenzillustrationen für DJ-Controller und Mikrofon statt Amazon-Produktfotos.
 - **11 eigenständige Kaufhilfe-Seiten plus vier Grundlagenartikel** sind unter `ratgeber.html` verlinkt.
 - Auf Unterseiten verlinken Navigation und Footer zum Angebotsbereich; Favoriten lassen sich über `index.html?favorites=1#entdecken` öffnen.
-- Der DOQAUS-Referenzbild-Asset liegt in `assets/doqaus-kopfhoerer-referenz.svg`, als generierte Illustration gekennzeichnet.
+- Referenzillustrationen: `assets/doqaus-kopfhoerer-referenz.webp`, `assets/dj-controller-referenz.svg` und `assets/mikrofon-referenz.svg`. Das tatsächliche Produkt ist ausschließlich auf der Händlerseite abgebildet.
 - Partnerlink-Sammelimport über `data/affiliate-offers.csv` und GitHub Actions; keine API-Schlüssel im Repository.
 - Die Webseite bleibt testweise über `_headers` **noindex**. `robots.txt` erlaubt den Seitenzugriff für die Prüfung. Eine `sitemap.xml` ist vorbereitet.
 - Die rechtlichen Pflichtangaben und ein weiterer unmittelbarer Kontaktweg müssen vor dem uneingeschränkten öffentlichen Start geprüft bzw. ergänzt werden.
@@ -28,3 +28,6 @@ Shopinhalte und Designs künftig über GitHub-Commits aktualisieren; Git-verbund
 
 ## Automatische Veröffentlichung
 Cloudflare Pages ist seit 15.11.2026 als Git-verbundenes Projekt `alltagsfinder-auto` eingerichtet. Diese README-Änderung dient als erster Auto-Deployment-Test; sie verändert die Shop-Oberfläche nicht.
+
+## Bildregel für neue Partnerprodukte
+Neue Partnerangebote möglichst direkt mit einer **eigens erstellten, zum Produkttyp passenden Referenzillustration** ausstatten. Modell, Marke und genaue Optik niemals aus dem Kurzlink erraten. Bilder als „REFERENZ-/SYMBOLBILD“ und mit sprechendem Alt-Text kennzeichnen. Amazon-Originalbilder nur bei nachgewiesener Lizenz bzw. erlaubter offizieller Einbindung verwenden. Ohne Bildrechte kein ungefragtes Kopieren externer Händlerfotos.
