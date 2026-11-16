@@ -57,3 +57,22 @@
 .more-offer-body .offer-buy{margin-top:auto;width:100%;font-size:12px;padding:12px 11px;line-height:1.4;text-align:center}
 @media(max-width:900px){.more-offers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.more-offers-grid{grid-template-columns:1fr}.more-offer-visual{height:230px}}
+
+/* Datenfreier, barrierearm nutzbarer Kopfhörer-Kaufcheck. */
+.headphone-check{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 32px;border:1px solid #ddd2ee;border-radius:26px;padding:clamp(22px,4vw,40px);margin:8px 0 52px;background:linear-gradient(130deg,#f4efff,#fff 70%);box-shadow:0 15px 36px #271a4810}
+.headphone-check-heading h2{font-size:clamp(27px,3vw,38px);letter-spacing:-.06em;line-height:1.15;color:#2b2050;margin:12px 0}
+.headphone-check-heading p{font-size:14px;color:#655b75;line-height:1.75;max-width:48ch}
+.headphone-check-form{display:flex;flex-direction:column;gap:9px}
+.headphone-check-form label{font-size:13px;font-weight:850;color:#35274c;margin-top:5px}
+.headphone-check-form select{min-height:46px;width:100%;padding:10px 12px;border:1px solid #c9b9e4;border-radius:10px;background:#fff;color:#281c3d;font:inherit;font-size:14px}
+.headphone-check-submit{background:#241b48;color:#fff;border:0;border-radius:12px;min-height:48px;padding:11px 16px;margin-top:10px;font:inherit;font-weight:850;cursor:pointer}
+.headphone-check-submit:hover,.headphone-check-submit:focus-visible{background:#563b8e}
+.headphone-check :is(select,button,a):focus-visible{outline:3px solid #8958eb;outline-offset:3px}
+.headphone-check-result{grid-column:1/-1;border-radius:16px;background:#fff;border:1px solid #c9b4e5;padding:22px}
+.headphone-check-result[hidden]{display:none}
+.headphone-check-result h3{font-size:22px;color:#2b2050;margin:0 0 12px}
+.headphone-check-result ul{margin:0;padding-left:22px}
+.headphone-check-result li{margin-bottom:8px;color:#403653;font-size:13px;line-height:1.7}
+.headphone-check-result p{font-size:12px;color:#635777;line-height:1.7;margin:14px 0}
+.headphone-check-result a{color:#6241aa;text-decoration:underline;font-weight:850;font-size:13px}
+@media(max-width:750px){.headphone-check{grid-template-columns:1fr}}
