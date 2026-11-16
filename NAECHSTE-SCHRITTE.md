@@ -6,11 +6,11 @@
 
 1. **Technik & Wahrheit vor Werbung**
    - Im Shop kontrollieren, dass der DOQAUS-Link genau zum richtigen Modell führt.
-   - Produktreferenzbild als echte Bilddatei ins GitHub-Repository bringen und in der Produktkarte sowie Detailansicht testen. (Prüfung ergab: aktuell fehlt die Bilddatei im Repository; frühere Aussage, sie sei eingebaut, war voreilig.)
+   - [x] Generiertes Kopfhörer-Referenzbild als selbstenthaltenes SVG eingebaut und Bildpfad geprüft. Die Live-Ansicht auf dem iPhone bleibt noch zu testen.
    - Sichtbare Hinweise zu Werbung / Affiliate sowie Symbolbildern erhalten.
    - Impressum und Datenschutz vor Bewerbung prüfen und korrigieren; keine ungeprüften Identitäts- oder Kontaktangaben veröffentlichen.
 2. **Originale Inhalte statt Demo-Masse**
-   - 10 eigenständige, hilfreiche Artikel/Beiträge veröffentlichen. Bestehende Ratgeber sind ein guter Ausgangspunkt, zählen aber nicht automatisch als 10 separate Posts.
+   - [x] 11 eigenständige Ratgeberseiten hinzugefügt und im Ratgeberverzeichnis verlinkt; zusätzlich vier bestehende Grundlagenartikel.
    - Kategorien mit wenigen konkreten, verifizierten Angeboten priorisieren: DJ/Musik, Technik, Haushalt.
    - Aussagen nicht als selbst getestet darstellen, wenn kein Test stattgefunden hat.
 3. **Qualifizierte Verkäufe**
@@ -22,13 +22,13 @@
    - Nach endgültiger Annahme API-Status prüfen. Für bestimmte API-Produktdaten nennt Amazon zusätzliche Berechtigungen und Verkaufsanforderungen.
    - API-Geheimnisse nur in einem Secret-Speicher aufbewahren; nicht im Browser, Repository oder Chat.
 5. **Suchmaschinenstart**
-   - Aktuell unterbinden `robots.txt` und `_headers` die Indexierung. Erst nach überprüften Rechtstexten und Originalinhalten SEO freigeben.
+   - `robots.txt` lässt Crawler für die Begutachtung zu; `_headers` setzt weiter `noindex, nofollow`, bis die rechtliche Freigabe erfolgt. Eine XML-Sitemap ist vorbereitet.
 
 ## Nächster Block
 
-- [ ] Bilddatei für DOQAUS-Kopfhörer tatsächlich hochladen und auf der Live-Seite prüfen
+- [x] Kopfhörerbild hochgeladen und mit der Produktkarte verbunden; Live-Ansicht auf dem iPhone bleibt zu prüfen
 - [ ] Ersten Partnerlink im Browser testen
-- [ ] Pflichtseiten und Ratgeber prüfen
+- [x] 11 redaktionelle Ratgeber ergänzt; Datenschutztext aktualisiert. [ ] Rechtstexte, Pflichtkontakt und Cloudflare-Vertragsdaten abschließend prüfen
 - [ ] Weitere 5–10 eindeutig passende Produkte mit echten Partnerlinks ergänzen
 - [ ] Katalog/SEO erst bei überprüfter Qualität öffnen
 
