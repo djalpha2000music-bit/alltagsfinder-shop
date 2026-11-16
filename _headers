@@ -1,2 +1,14 @@
 /*
   X-Robots-Tag: noindex, nofollow, noarchive
+
+/partner-offers.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/angebote.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/musik-dj.html
+  Cache-Control: public, max-age=0, must-revalidate
