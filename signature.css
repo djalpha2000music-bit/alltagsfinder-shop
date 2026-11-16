@@ -527,3 +527,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{
  .product-art .reference-product-image{transition:none}
  .product-card:hover .reference-product-image{transform:none}
 }
+
+
+/* Homepage: honest first partner offer, distinct from the 667 demo ideas. */
+.first-offer-feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;background:#231944;color:#fff;border-radius:32px;overflow:hidden;margin-top:35px;margin-bottom:38px;box-shadow:0 25px 58px #23194438;isolation:isolate}
+.first-offer-pic{min-height:310px;background:radial-gradient(ellipse at 50% 30%,#f7edff,#dac8f8 67%,#b3a2de);display:grid;place-items:center;position:relative;overflow:hidden}
+.first-offer-pic img{width:min(100%,355px);height:350px;object-fit:contain;filter:drop-shadow(0 19px 13px #2419463d);z-index:1}
+.first-offer-pic span{position:absolute;z-index:2;left:18px;right:18px;bottom:15px;border:1px solid #d8cdf0;background:#f7f2ffed;color:#33214e;text-align:center;border-radius:10px;font-size:9px;letter-spacing:.07em;padding:9px;font-weight:900}
+.first-offer-copy{padding:clamp(28px,4.5vw,55px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.first-offer-overline{font-size:10px;color:#dffc81;letter-spacing:.15em;font-weight:950}
+.first-offer-copy h2{font-size:clamp(30px,3.8vw,53px);letter-spacing:-.065em;line-height:1.1;margin:13px 0 17px;color:#fff}
+.first-offer-copy h2 em{font-style:normal;color:#dffe87}
+.first-offer-copy p{font-size:14px;color:#ddd3f1;line-height:1.75;max-width:545px;margin:0}
+.first-offer-buttons{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin:22px 0}
+.first-offer-buttons .first-offer-btn{background:#ddff85;color:#28183c;border-radius:12px;padding:15px 19px;font-size:13px;font-weight:950;box-shadow:0 12px 19px #16102f2b}
+.first-offer-buttons .first-offer-alt{color:#f0e5ff;text-decoration:underline;text-underline-offset:4px;font-size:12px;font-weight:850}
+.first-offer-copy small{font-size:10px;color:#bfb4d6;line-height:1.5;max-width:490px}
+@media(max-width:850px){.first-offer-feature{grid-template-columns:1fr;margin-top:25px;border-radius:24px}.first-offer-pic{min-height:240px}.first-offer-pic img{height:265px}.first-offer-copy{padding:26px}}
+@media(max-width:510px){.first-offer-pic img{height:235px}.first-offer-copy h2{font-size:34px}.first-offer-buttons .first-offer-btn{width:100%;text-align:center}.first-offer-buttons{width:100%}}
