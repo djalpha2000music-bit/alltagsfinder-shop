@@ -14,7 +14,7 @@ Stand: 16. November 2026. Technische Prüfung ist **nicht** gleich rechtliche Fr
 
 ## Was noch **nicht** als abgeschlossen gelten darf
 1. Form.taxi-AV-Vertrag ist inhaltlich kontrolliert. Weiter offen: tatsächliche Speicher-/Lösch-Einstellungen im Form.taxi-Konto und fortlaufende Kontrolle der Unterauftragnehmer.
-2. Betreiber bestätigt, dass **alle sechs Amazon-Links funktionieren**. Das tatsächliche Zielprodukt beziehungsweise die genaue Variante und die Affiliate-Tracking-ID im echten PartnerNet kontrollieren. Eine funktionierende Weiterleitung allein beweist noch keine Provisionszuordnung.
+2. Betreiber bestätigt, dass **alle sechs Amazon-Links funktionieren**. Ein Screenshot aus PartnerNet zeigt die vorhandene und ausgewählte Tracking-ID `alltagsfin03b-21`. Diese muss noch für die jeweiligen **sechs Kurzlink-Weiterleitungen** überprüft werden, ebenso die exakten Zielprodukte. Die Kontoseite allein beweist keine Provisionszuordnung.
 3. Cloudflare-Datenverarbeitungsvereinbarung, tatsächliche Logspeicherung, Analytics-Beacon und etwaige Drittlandübermittlungen anhand der Kontodaten prüfen.
 4. Prüfen, ob das Impressum je nach Rechtsform und persönlicher Situation zusätzliche Register-, Steuer- oder Wirtschafts-Identifikationsangaben benötigt. Keine private Steuer-ID veröffentlichen.
 5. Öffentliche Header/Seiten und iPhone-Funktionen final testen. Automatische GitHub-Tests sind kein vollständiger echter Browser- oder Rechtstest.

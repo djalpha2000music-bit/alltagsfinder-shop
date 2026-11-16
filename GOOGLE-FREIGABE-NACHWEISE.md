@@ -13,7 +13,8 @@ Stand: 16. November 2026. Dies ist ein Arbeitsprotokoll, **keine** juristische F
 ## 1. Amazon PartnerNet – ohne Kontozugriff nicht prüfbar
 - [x] Betreiber war am 16.11.2026 in Amazon PartnerNet unter „Liste Deiner Webseiten & Apps“ und bestätigte ausdrücklich, dass `https://alltagsfinder-auto.pages.dev/` bereits eingetragen ist. Keine unabhängige Einsicht in die vollständige Kontoliste. https://partnernet.amazon.de/
 - [x] Betreiber bestätigt am 16.11.2026: **Alle sechs Amazon-Links funktionieren** bei seinem Aufruf.
-- [ ] Exakte Zielprodukte/Varianten und Tracking-ID in Mobile GetLink bzw. PartnerNet kontrollieren. Dass ein Kurzlink geöffnet werden kann, beweist nicht automatisch die richtige Tracking-Zuordnung.
+- [x] Amazon PartnerNet → „Tracking-IDs verwalten“: Screenshot vom 16.11.2026 zeigt die ausgewählte und vorhandene Tracking-ID `alltagsfin03b-21`.
+- [ ] Exakte Zielprodukte/Varianten und hinterlegte Tracking-ID in den **sechs vorhandenen Kurzlinks** kontrollieren. Dass ein Kurzlink geöffnet werden kann oder die ID im Konto existiert, beweist nicht automatisch die korrekte Zuordnung.
 - [ ] Prüfen, dass der Shop alle Partnerprogrammregeln erfüllt und das Konto nicht abgelehnt wurde.
 Offizielle Amazon-Hilfe: https://partnernet.amazon.de/help/node/topic/G9KDEPG2WF47VQY4
 
