@@ -22,7 +22,7 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] Sitemap mit 19 URLs und 11 eigenständigen Kaufhilfe-Seiten vorhanden.
 - [x] `rel=canonical` für alle 19 HTML-Ziele ergänzt; generische Meta-Beschreibungen auf Informationsseiten differenziert.
 - [x] Automatische Qualitätsprüfung für Sitemap-Ziele, Canonicals und Robots-Datei erweitert.
-- [ ] **Google Search Console:** URL-Präfix `https://alltagsfinder-auto.pages.dev/` hinzufügen. Den persönlichen Google-HTML-Metatag auf der Startseite einbauen und Inhaberschaft bestätigen.
+- [x] **Google Search Console:** URL-Präfix `https://alltagsfinder-auto.pages.dev/` eingerichtet. Zwei Google-HTML-Metatags in der Startseite eingebaut; Nutzer-Screenshot vom 16.11.2026 zeigt ausdrücklich „Inhaberschaft bestätigt“ (Bestätigungsmethode HTML-Tag). Tags für dauerhafte Bestätigung behalten.
 - [ ] **Sitemap einreichen** nach rechtlichem Check und Aufhebung der Suchmaschinensperre.
 - [ ] **Indexierung prüfen:** `X-Robots-Tag: noindex, nofollow, noarchive` erst nach Freigabe entfernen, öffentliche Cloudflare-Antwortheader kontrollieren, bei Google die URL-Prüfung verwenden.
 - [ ] **Erwartung:** Google entscheidet selbst über Aufnahme und Ranking. Keine garantierten Aufrufe.
