@@ -8,6 +8,6 @@ Diese Links wurden vom Shopbetreiber bereitgestellt. Der erste Link ist anhand d
 
 | 2026-11-16 | https://link.amazon/B099Pt8mG | AlphaTheta Pioneer DJ DDJ-FLX2, kompakter 2-Kanal DJ-Controller | dj-controller | Produktname und Modell durch vom Betreiber übermittelten Amazon-Screenshot bestätigt; als Partnerangebot veröffentlicht. Die technische Prüfung des Kurzlink-Ziels und des Tracking-Tags in PartnerNet bleibt extern offen. |
 
-| 2026-11-16 | https://link.amazon/B0fHdmstM | Produkt noch nicht identifiziert (möglicherweise nächstes Mikrofon) | noch offen | Amazon-Kurzlink konnte nicht technisch aufgelöst werden; Screenshot mit Produktname/Modell nötig. Nicht freigeben oder als bestimmtes Modell bewerben. |
+| 2026-11-16 | https://link.amazon/B0fHdmstM | Mikrofonangebot (genaues Modell noch offen) | dynamisches-mikrofon (Katalog-ID; Modellangaben neutral) | Betreiber hat bestätigt, dass es das Mikrofon ist; als generisches Partnerangebot mit eigenem Referenzbild aktiviert. Originalmodell, Linkziel und Partner-Tracking bleiben extern zu prüfen. |
 
 **Vorgehen:** Produktseite im Amazon-Konto öffnen, sichtbaren Produktnamen oder Screenshot liefern, sicherstellen, dass der Link per „Partner-Link kopieren“ erzeugt wurde und die korrekte Tracking-ID enthält. Erst nach Prüfung die entsprechende Zeile in `data/affiliate-offers.csv` mit Händler und Link füllen sowie `geprueft=JA` und `freigeben=JA` setzen.
