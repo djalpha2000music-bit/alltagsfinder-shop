@@ -17,7 +17,17 @@ window.ALLTAGSFINDER_PARTNER_OFFERS = {
     "title": "AlphaTheta Pioneer DJ DDJ-FLX2 Kompakter 2-Kanal DJ-Controller",
     "category": "musik",
     "description": "Kompakter 2-Kanal-DJ-Controller. Vor dem Kauf Software-Kompatibilität, Anschlussmöglichkeiten, Stromversorgung und mitgeliefertes Zubehör beim Händler prüfen.",
-    "image": "",
-    "imageAlt": ""
+    "image": "assets/dj-controller-referenz.svg",
+    "imageAlt": "Eigenständig erstelltes Referenzbild eines DJ-Controllers – keine Abbildung des tatsächlichen AlphaTheta Produkts"
+  },
+  "dynamisches-mikrofon": {
+    "merchant": "Amazon",
+    "affiliateUrl": "https://link.amazon/B0fHdmstM",
+    "published": true,
+    "title": "Mikrofon für Aufnahme und Streaming (Modell beim Händler prüfen)",
+    "category": "musik",
+    "description": "Mikrofon-Angebot aus dem vom Betreiber bereitgestellten Amazon-Partnerlink. Hersteller, Modell, Anschlüsse und Lieferumfang bitte direkt beim Händler prüfen; das Bild ist eine eigenständige Illustration.",
+    "image": "assets/mikrofon-referenz.svg",
+    "imageAlt": "Eigenständig erstelltes Referenzbild eines Studiomikrofons – das angebotene Amazon-Produkt kann abweichen"
   }
 };
