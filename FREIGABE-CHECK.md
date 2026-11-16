@@ -1,6 +1,6 @@
 # Alltagsfinder – Freigabe- und Betriebscheck
 
-Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet sich aber weiterhin im Testbetrieb.**
+Stand: 16. November 2026. **Die Website ist technisch veröffentlicht und befindet sich weiterhin im Aufbau. Die rechtliche Abschlussprüfung ist offen.**
 
 ## Erledigt und in GitHub umgesetzt
 
@@ -23,8 +23,8 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] `rel=canonical` für alle 20 HTML-Ziele ergänzt; generische Meta-Beschreibungen auf Informationsseiten differenziert.
 - [x] Automatische Qualitätsprüfung für Sitemap-Ziele, Canonicals und Robots-Datei erweitert.
 - [x] **Google Search Console:** URL-Präfix `https://alltagsfinder-auto.pages.dev/` eingerichtet. Zwei Google-HTML-Metatags in der Startseite eingebaut; Nutzer-Screenshot vom 16.11.2026 zeigt ausdrücklich „Inhaberschaft bestätigt“ (Bestätigungsmethode HTML-Tag). Tags für dauerhafte Bestätigung behalten.
-- [ ] **Sitemap einreichen** nach rechtlichem Check und Aufhebung der Suchmaschinensperre.
-- [ ] **Indexierung prüfen:** `X-Robots-Tag: noindex, nofollow, noarchive` erst nach Freigabe entfernen, öffentliche Cloudflare-Antwortheader kontrollieren, bei Google die URL-Prüfung verwenden.
+- [x] **Sitemap eingereicht** am 16.11.2026. Der aktuelle Status lautet vorläufig „Sitemap konnte nicht gelesen werden“ (0 erkannte Seiten). Im GitHub-Projekt enthält sie 20 Adressen und `_headers` setzt den XML-Inhaltstyp.
+- [x] **Google-Live-Test bestanden:** Die `noindex`-Regel wurde nach Betreiberfreigabe entfernt. Live-Test am 16.11.2026 um 14:09: „URL ist für Google verfügbar / Seite kann indexiert werden“. Manuelle Indexierungsanfrage wegen Tageskontingent nicht angenommen; tatsächliche Indexierung noch offen.
 - [ ] **Erwartung:** Google entscheidet selbst über Aufnahme und Ranking. Keine garantierten Aufrufe.
 
 ## Prüfstand am 16.11.2026 – was wir tatsächlich wissen
@@ -32,7 +32,7 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - Sechs Amazon-Partnerangebote sind im GitHub-Produktbestand hinterlegt; der Betreiber hat mehrere Produktseiten per Screenshot abgeglichen. Die Amazon-Kurzlinks und Tracking-IDs lassen sich von hier **nicht unabhängig validieren**.
 - Die aktuell im Impressum hinterlegte Anschrift und E-Mail sind vorhanden; die geschäftliche Anschrift, die Erreichbarkeit und ein weiterer effizienter Kontaktweg sind vom Betreiber noch zu bestätigen.
 - Datenschutz: Der **GitHub-Quellcode** enthält keine eingebundene Analysebibliothek. Cloudflare Pages kann bei aktivierter Web Analytics ein Skript automatisch ergänzen; ob das live aktiviert ist, ist ohne Dashboard-Zugriff ungeprüft.
-- Die öffentliche Cloudflare-Antwort inklusive tatsächlicher HTTP-Header ließ sich aus dieser Umgebung nicht unabhängig abrufen. `_headers` enthält weiterhin siteweites `noindex`.
+- Die öffentlichen Cloudflare-Header konnten hier nicht vollständig unabhängig abgerufen werden. `_headers` enthält inzwischen **keine** globale `noindex`-Regel; Googles Live-Test bestätigt die Indexierbarkeit der Startseite.
 - Grundlage und Nachweise: `GOOGLE-FREIGABE-NACHWEISE.md`.
 
 ## Letzter technischer Audit (16.11.2026)
@@ -54,7 +54,7 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] **Impressum – Anschrift:** Betreiber hat am 16.11.2026 ausdrücklich bestätigt, dass die eingetragene Geschäftsanschrift Hamelnerstraße 20, 06126 Halle (Saale) aktuell ist. Form.taxi-Kontaktformular wurde unabhängig von E-Mail-Apps getestet; Benachrichtigung erreichte Gmail.
 - [ ] **Impressum – Restpflichten:** Erforderliche Unternehmens-, Register- bzw. Identifikationsangaben je nach tatsächlicher Situation prüfen. **Keine private Steuer-ID veröffentlichen.** Rechtliche Vollständigkeit und schnelle Erreichbarkeit abschließend prüfen.
 - [ ] **Datenschutzrechtlicher Betriebscheck:** Cloudflare Pages-Vertrag, Datenverarbeitung, Drittlandtransfers, Logaufbewahrung und gegebenenfalls zusätzliche Dienste prüfen; Erklärung an tatsächliche Einstellungen anpassen.
-- [x] **Cloudflare-Produktionsstand:** Screenshot des Betreibers vom 16.11.2026 zeigt unter `alltagsfinder-auto` den Produktionszweig `main` mit Commit `ba8835b`, identisch mit dem GitHub-HEAD. Die Startseite war auf dem iPhone erreichbar. Dies bestätigt den veröffentlichten Git-Stand, nicht die Prüfung aller Funktionen.
+- [x] **Cloudflare-Produktionsstand:** Screenshot vom 16.11.2026 zeigt im Projekt `alltagsfinder-auto` eine Produktion aus Branch `main` mit Commit `e0fb1da`; automatische Bereitstellungen sind aktiv. Nachfolgende Commits müssen bei Bedarf im Livebetrieb geprüft werden.
 - [ ] **Weitere Live-Tests:** `angebote.html`, Kopfhörerbild, Ratgeber, Katalogfilter, Menü, Merkliste und Kontaktdaten auf iPhone prüfen.
 - [x] **Cloudflare Web Analytics im Projekt aktiviert:** Screenshot des Betreibers vom 16.11.2026 zeigt „Web Analytics wurde jetzt aktiviert. Änderungen werden bei der nächsten Bereitstellung angewendet“ und „Web Analytics ist aktiviert“. Datenschutzhinweise an diese Konfiguration angepasst. Cloudflare fügt den Beacon nach eigener Dokumentation ab der nächsten Bereitstellung ein.
 - [ ] **Live-Analytics-Einbindung und Datenschutz verifizieren:** Nach der folgenden Produktionsbereitstellung prüfen, ob `static.cloudflareinsights.com/beacon.min.js` eingefügt wurde. Rechtsgrundlage, Hosting-Vertrag/DPA, etwaige Drittlandverarbeitung und Speicherfristen abschließend überprüfen. Die Kennzahlen „0 Anfragen“ im Cloudflare-Pages-Bereich sind kein verlässlicher Beleg dafür, dass die Website keine Besucher hat.
@@ -63,7 +63,7 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] **DOQAUS-Kopfhörer-Link mit Tag belegt und live im Quellcode ersetzt:** Der Betreiber hat am 16.11.2026 bestätigt, dass ASIN `B0F9WBFSK7` die DOQAUS-DJ-Kopfhörer zeigt; sein übermittelter vollständiger Amazon-Partnerlink enthält ausdrücklich `tag=alltagsfin03b-21`. Im CSV und in `partner-offers.js` wurde der bisherige Kopfhörer-Kurzlink durch die vom Betreiber gelieferte **vollständige** URL ersetzt. Die Shop-Oberfläche zieht die URL dynamisch aus diesem Register. Ob die Weiterleitung auf dem iPhone weiterhin das beabsichtigte Produkt zeigt, ist nach Deployment nochmals zu prüfen.
 - [ ] **Weitere fünf Amazon-Kurzlinks gesondert prüfen:** Nach Austausch des DOQAUS-Kopfhörer-Links sind für die übrigen fünf Kurzlinks die Ziel-ASIN und der tatsächlich übermittelte Amazon-Tag noch nicht nachgewiesen.
 - [ ] **Amazon-Link-Zuordnung:** DOQAUS-Produkt jetzt über den vom Betreiber bereitgestellten vollständigen Affiliate-Link zur ASIN `B0F9WBFSK7` mit sichtbarem Tag `alltagsfin03b-21` verbunden. Die übrigen fünf Kurzlinks haben noch keine unabhängige Ziel-/Tag-Prüfung. Eine aktive PartnerNet-ID allein bestätigt deren Verwendung nicht.
-- [ ] **Suchmaschinenfreigabe:** Aktuell setzt `_headers` noch `X-Robots-Tag: noindex, nofollow, noarchive`. Diese Sperre erst nach den Prüfungen bewusst entfernen; danach Sitemap in der Google Search Console einreichen.
+- [x] **Technische Suchmaschinenfreigabe:** Die globale `noindex`-Regel ist entfernt und die Sitemap eingereicht. Die Search Console meldete einen vorläufigen Abruffehler. Die Google-Indexierung selbst ist noch nicht bestätigt.
 
 ## Laufender Amazon-Betrieb
 
