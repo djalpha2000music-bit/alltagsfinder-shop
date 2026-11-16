@@ -1,12 +1,14 @@
 # Alltagsfinder Shop
 
-Deutschsprachiger Produktideen- und Affiliate-Demokatalog mit 27 Themenwelten.
+Deutschsprachiger Produktideen- und Affiliate-Shop im Testbetrieb mit 27 Themenwelten, einer Sammlung von 668 Produktideen und eigenständigen Ratgebern.
 
 ## Status
-- Testversion / Demo: Die Einträge sind noch keine echten Kaufangebote.
-- Keine aktiven Partnerlinks oder Bestellfunktionen.
-- Suchmaschinenindexierung ist während der Testphase über `robots.txt` und `_headers` deaktiviert.
-- Rechtliche Seiten müssen vor einem regulären Affiliate-Verkaufsstart geprüft und finalisiert werden.
+- **1 aktives, gekennzeichnetes Amazon-Partnerangebot** (DOQAUS DJ-Kopfhörer) und 667 weitere unverbindliche Produktideen. Keine eigene Bestellfunktion.
+- **11 eigenständige Kaufhilfe-Seiten plus vier Grundlagenartikel** sind unter `ratgeber.html` verlinkt.
+- Der DOQAUS-Referenzbild-Asset liegt in `assets/doqaus-kopfhoerer-referenz.svg`, als generierte Illustration gekennzeichnet.
+- Partnerlink-Sammelimport über `data/affiliate-offers.csv` und GitHub Actions; keine API-Schlüssel im Repository.
+- Die Webseite bleibt testweise über `_headers` **noindex**. `robots.txt` erlaubt den Seitenzugriff für die Prüfung. Eine `sitemap.xml` ist vorbereitet.
+- Die rechtlichen Pflichtangaben und ein weiterer unmittelbarer Kontaktweg müssen vor dem uneingeschränkten öffentlichen Start geprüft bzw. ergänzt werden.
 
 ## Lokale Vorschau
 `index.html` in einem Browser öffnen. Die Startseite ist eigenständig (CSS und Produktdaten inline). Die Unterseiten verwenden `style.css` und `info.js`.
