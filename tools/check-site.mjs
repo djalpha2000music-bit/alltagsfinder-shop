@@ -207,5 +207,5 @@ for(const file of ['index.html','angebote.html','dj-setup.js','transparenz.html'
 }
 if(!text('index.html').includes('AUSGEWÄHLTES PARTNERANGEBOT'))
  fail('Homepage still describes a single affiliate product');
-if(!text('_headers').includes('noindex'))fail('Premature SEO release: legal review not complete');
+if(/X-Robots-Tag:\\s*[^\\n]*\\bnoindex\\b/i.test(text('_headers')))fail('Search engine exclusion still active after operator-authorized technical launch');
 console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');
