@@ -37,6 +37,22 @@ if(!partnerJS.includes('window.ALLTAGSFINDER_PARTNER_OFFERS'))fail('no partner r
 for(const [name,js] of [['partner-offers.js',partnerJS],['wow.js',text('wow.js')]]){
  try{new Script(js,{filename:name})}catch(e){fail('invalid JS '+name+': '+e.message)}
 }
+// Music & DJ hub: current offers, privacy-friendly setup finder and its assets.
+const musicHub=text('musik-dj.html');
+if(!musicHub.includes('id="dj-setup-finder"') || !musicHub.includes('id="dj-setup-products"'))
+  fail('Missing music setup finder');
+for(const type of ['dj','recording','speech'])
+  if(!musicHub.includes('data-setup="'+type+'"')) fail('Missing setup purpose: '+type);
+if(!musicHub.includes('src="partner-offers.js"') || !musicHub.includes('src="dj-setup.js"'))
+  fail('DJ setup registry or client logic not loaded');
+if(musicHub.includes('ein gekennzeichnetes Partnerangebot verfügbar'))
+  fail('Stale static offer count in music hub');
+const djScript=text('dj-setup.js');
+try { new Script(djScript,{filename:'dj-setup.js'}) } catch(e){fail('Invalid setup finder JavaScript: '+e.message)}
+for(const productId of ['dj-kopfhoerer','dj-controller','dynamisches-mikrofon'])
+  if(!djScript.includes('"'+productId+'"')) fail('Setup selection missing product ID '+productId);
+if(!text('dj-setup.css').includes('.dj-setup-card'))fail('DJ setup styles missing');
+
 if(!text('datenschutz.html').includes('Cloudflare Pages'))fail('hosting missing from privacy page');
 if(!text('transparenz.html').includes('Referenz- und Symbolbilder'))fail('reference-image guidance missing');
 console.log('QA OK: 668 unique ideas; '+pics.length+' reference image assets; '+guides.length+' guide pages; affiliate disclosures and scripts present.');
