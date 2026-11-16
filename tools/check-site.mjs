@@ -160,5 +160,24 @@ if(!text('datenschutz.html').includes('Cloudflare Pages kann bei eingeschalteter
   fail('Live Cloudflare analytics privacy check disclosure missing');
 if(!text('angebote.html').includes('Gekennzeichnete Partnerangebote'))
   fail('Offer page should not claim independently verified shortlinks');
+// Protect current published shop data from known regressions.
+for(const [page,stale] of [
+ ['ueber-uns.html','ein gekennzeichnetes Partnerangebot'],
+ ['transparenz.html','Ein erstes ausdrücklich als Werbung'],
+ ['datenschutz.html','keine eigenen Kontaktformulare']
+]){
+ if(text(page).includes(stale))fail('Outdated site information still present: '+page);
+}
+for(const page of guides.map(name=>'ratgeber/'+name))
+ if(!text(page).includes('href="../kontakt.html"'))fail('Guide contact link missing: '+page);
+const headerRules=text('_headers');
+for(const rule of [
+ 'X-Content-Type-Options: nosniff',
+ 'Referrer-Policy: strict-origin-when-cross-origin',
+ 'X-Frame-Options: SAMEORIGIN',
+ 'Permissions-Policy: camera=(), microphone=(), geolocation=()'
+]){
+ if(!headerRules.includes(rule))fail('Missing safety header: '+rule);
+}
 if(!text('_headers').includes('noindex'))fail('Premature SEO release: legal review not complete');
 console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');
