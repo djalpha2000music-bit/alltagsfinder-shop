@@ -12,4 +12,6 @@ Diese Links wurden vom Shopbetreiber bereitgestellt. Der erste Link ist anhand d
 
 | 2026-11-16 | https://link.amazon/B0dO2Pgr3 | EUROLITE LED PARty TCL Spot (vom Betreiber bestätigt) | led-par | Betreiber hat Link eindeutig dem LED-PAR-Partyspot zugeordnet. Als Partnerangebot mit eigenem Referenzbild freigegeben. Kurzlink-Ziel und Tracking-Tag sollten im PartnerNet weiterhin kontrolliert werden. |
 
+| 2026-11-16 | https://link.amazon/B0c2ZsVIU | PreSonus Eris 3.5 Gen 2, 3,5-Zoll-Studiomonitore, Schwarz (laut Amazon-Screenshot) | studio-monitore | Produktmodell durch vom Betreiber bereitgestellten Amazon-Screenshot abgeglichen; als Partnerangebot mit eigener Referenzillustration freigegeben. Kurzlink-Ziel und Partner-Tracking weiterhin unabhängig prüfen. |
+
 **Vorgehen:** Produktseite im Amazon-Konto öffnen, sichtbaren Produktnamen oder Screenshot liefern, sicherstellen, dass der Link per „Partner-Link kopieren“ erzeugt wurde und die korrekte Tracking-ID enthält. Erst nach Prüfung die entsprechende Zeile in `data/affiliate-offers.csv` mit Händler und Link füllen sowie `geprueft=JA` und `freigeben=JA` setzen.
