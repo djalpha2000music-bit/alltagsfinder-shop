@@ -24,7 +24,8 @@ Amtliche Grundlage: https://www.gesetze-im-internet.de/ddg/__5.html
 EuGH dazu: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=ecli:ECLI:EU:C:2008:572
 
 ## 3. Cloudflare Pages / Datenschutz – Live-Konfiguration überprüfen
-- [ ] Cloudflare → Workers & Pages → Projekt **alltagsfinder-auto** → Metrics → Web Analytics: Ist der Dienst aktiviert? Wenn ja, ergänzende Datenschutzhinweise tatsächlich umsetzen.
+- [x] Cloudflare → Workers & Pages → **alltagsfinder-auto** → Kennzahlen: Screenshot vom 16.11.2026 bestätigt **Web Analytics aktiviert**. Cloudflare weist darauf hin, dass dies bei der nächsten Bereitstellung angewendet wird. Datenschutzerklärung wurde um den aktiven Dienst ergänzt.
+- [ ] Nach der nächsten Bereitstellung die tatsächliche HTML-Auslieferung und Einbindung des Beacon-Skripts bestätigen.
 - [ ] Beim Besuch der öffentlichen Seite mit Entwicklertools prüfen, ob externe Analyse-Beacons, Cookies oder andere Dienste geladen werden.
 - [ ] Cloudflare-Vertrags-/DPA-Status, Log-Verarbeitung und Speicherfristen anhand der für das eigene Konto geltenden Dokumentation prüfen.
 - [ ] Drittländer, Verarbeitung und ggf. Betroffenenrechte in der Datenschutzerklärung auf den tatsächlichen Stand bringen.
