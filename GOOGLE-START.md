@@ -21,7 +21,7 @@ Stand: 16. November 2026
 ## 2. Externe Freigaben vor Google-Indexierung
 - **Impressum:** aktuelle ladungsfähige Anschrift und rechtlich erforderliche Unternehmensangaben prüfen. Das unabhängige Kontaktformular wurde eingerichtet und durch tatsächliche Form.taxi-Zustellung sowie E-Mail-Eingang getestet; die Aktualität der Geschäftsanschrift und gegebenenfalls weitere Unternehmensangaben müssen noch bestätigt werden.
 - **Datenschutz:** Form.taxi-AV-Vertrag wurde im Panel erstellt, muss als PDF gesichert und auf Richtigkeit geprüft werden. Echte Cloudflare-Hosting-Verträge, Analytics-Konfiguration, Logdaten, Speicherdauer und ggf. Datenübermittlungen prüfen und Hinweise an den tatsächlichen Betrieb anpassen.
-- **Amazon PartnerNet:** `https://alltagsfinder-auto.pages.dev/` in der Werbewebsite-Liste hinterlegen; Affiliate-Ziele und Tracking prüfen.
+- **Amazon PartnerNet:** Betreiber hat am 16.11.2026 bestätigt, dass `https://alltagsfinder-auto.pages.dev/` bereits in der Werbewebsite-Liste eingetragen ist. Die sechs tatsächlichen Affiliate-Ziele, Tracking-IDs und der Kontostatus bleiben zu kontrollieren.
 - Erst nach diesen Punkten die siteweite Anweisung `X-Robots-Tag: noindex, nofollow, noarchive` aus `_headers` entfernen. Sie ist derzeit bewusst aktiv.
 
 ## 3. Wenn die Website freigegeben ist
