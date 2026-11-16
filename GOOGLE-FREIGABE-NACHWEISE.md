@@ -11,8 +11,7 @@ Stand: 16. November 2026. Dies ist ein Arbeitsprotokoll, **keine** juristische F
 - [x] Datenschutzhinweise klargestellt: Auch wenn der GitHub-Code keine Analyseskripte enthält, kann Cloudflare Web Analytics auf Serverebene eingebunden sein.
 
 ## 1. Amazon PartnerNet – ohne Kontozugriff nicht prüfbar
-- [ ] Im Amazon PartnerNet anmelden: https://partnernet.amazon.de/
-- [ ] Kontoeinstellungen → **Website-Liste bearbeiten** öffnen. Website `https://alltagsfinder-auto.pages.dev/` als eigene Werbewebsite hinzufügen bzw. bestätigen.
+- [x] Betreiber war am 16.11.2026 in Amazon PartnerNet unter „Liste Deiner Webseiten & Apps“ und bestätigte ausdrücklich, dass `https://alltagsfinder-auto.pages.dev/` bereits eingetragen ist. Keine unabhängige Einsicht in die vollständige Kontoliste. https://partnernet.amazon.de/
 - [ ] Die sechs bereits erstellten Partnerlinks in der Amazon-App aufrufen und prüfen, dass sie auf die beabsichtigten Produkte führen. Kontrollieren, ob bei Mobile GetLink die zutreffende Tracking-ID ausgewählt ist.
 - [ ] Prüfen, dass der Shop alle Partnerprogrammregeln erfüllt und das Konto nicht abgelehnt wurde.
 Offizielle Amazon-Hilfe: https://partnernet.amazon.de/help/node/topic/G9KDEPG2WF47VQY4
