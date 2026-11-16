@@ -1,7 +1,7 @@
 # Alltagsfinder – echte Partnerprodukte aktivieren
 
 ## Aktueller Status
-- 668 **Demo-Produktideen** aus 27 Kategorien; noch keine echten Angebote.
+- 668 **Produktideen** aus 27 Kategorien; davon ist **1 geprüftes Partnerangebot** aktiv und 667 sind unverbindliche Ideen.
 - Produktdaten stehen in `index.html` im Array `window.ALLTAGSFINDER_PRODUCTS`.
 - Jedes Produkt hat die Felder `id`, `title`, `category`, `description`, `benefits`, `merchant`, `affiliateUrl`, `published`.
 - Der Shop nimmt keine eigenen Zahlungen an; eine qualifizierte Partnervermittlung wird nach Händlerfreigabe vergütet.
@@ -18,7 +18,7 @@
 
 ## Empfehlenswerte Reihenfolge
 - Phase A: 15–25 hochwertige, überprüfte echte Angebote in **Musik & DJ**, **Technik** und **Haushalt**.
-- Phase B: 10+ eigenständige Ratgeber für Lesermehrwert (nicht nur Produktlisten).
+- Phase B: 11 eigenständige Ratgeber-Seiten wurden im November 2026 veröffentlicht, zusätzlich zu vier Grundlagenartikeln.
 - Phase C: Partnerprogrammmöglichkeiten vergleichen; keine Anbieterbedingungen verletzen.
 - Phase D: Erst nach erfolgreichem Test den Katalog ausweiten und etwaige erlaubte Produktfeeds anbinden.
 
@@ -27,4 +27,4 @@
 - Awin: https://www.awin.com/de
 - Thomann Partnerprogramm: https://www.thomann.de/de/faq_question_wie_werde_ich_thomann_linkpartner.html (hat Mindestanforderungen an Reichweite)
 
-**Wichtig:** Dies ist keine Zusage für Programmakzeptanz, automatische Produktversorgung oder Einnahmen. `robots.txt` und `_headers` blockieren aktuell die Suchmaschinenindexierung für die Testphase. Die endgültigen Rechtstexte müssen vor einem regulären öffentlichen Vertriebsstart sachlich und rechtlich geprüft werden.
+**Wichtig:** Dies ist keine Zusage für Programmakzeptanz, automatische Produktversorgung oder Einnahmen. `robots.txt` erlaubt das Crawling, die `_headers`-Datei verhindert derzeit noch die Suchmaschinen-Indexierung für die Testphase. Die endgültigen Rechtstexte müssen vor einem regulären öffentlichen Vertriebsstart sachlich und rechtlich geprüft werden.
