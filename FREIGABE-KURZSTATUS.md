@@ -6,15 +6,15 @@ Stand: 16. November 2026. Technische Prüfung ist **nicht** gleich rechtliche Fr
 - Die Geschäftsanschrift im Impressum ist vom Betreiber ausdrücklich als aktuell bestätigt.
 - Der Betreiber hat bestätigt, dass `https://alltagsfinder-auto.pages.dev/` in der Amazon PartnerNet-Website-Liste eingetragen ist.
 - Das Kontaktformular hat eine echte Form.taxi-Erfolgsseite ausgelöst; am 16.11.2026 um 10:55 Uhr ging die Nachricht im verbundenen Gmail-Postfach ein.
-- Der Form.taxi-Auftragsverarbeitungsvertrag wurde im Dashboard erzeugt, aber nach Nutzerangabe noch **nicht als PDF gesichert**.
+- Der Form.taxi-Auftragsverarbeitungsvertrag wurde im Dashboard erzeugt und nach Nutzerbestätigung am 16.11.2026 **gespeichert**. PDF-Inhalt und formelle Wirksamkeit sind noch nicht unabhängig kontrolliert.
 - Cloudflare Pages ist mit GitHub `main` verbunden; die Produktionsversion `fe0294a` wurde laut Screenshot angezeigt. Web Analytics wurde im Dashboard aktiviert.
 - 20 Sitemap-Einträge (einschließlich 11 Kaufhilfen) und übereinstimmende Canonical-URLs. `robots.txt` verweist auf die Sitemap.
 - Sechs gekennzeichnete Amazon-Partnerangebote und 662 weitere unverbindliche Produktideen. Eigene Referenzbilder; keine eigene Bestellabwicklung.
 - Produktseiten, Menüs und Partnerlink-Verweise wurden verbessert. Die GitHub-QA prüft nun interne Linkziele und den Partnerlink-Referrer.
 
 ## Was noch **nicht** als abgeschlossen gelten darf
-1. Form.taxi-AV-Vertrag als PDF speichern, Angaben auf Richtigkeit und Wirksamkeit prüfen.
-2. Für die sechs Amazon-Kurzlinks das **tatsächliche Zielprodukt** und die Affiliate-Tracking-ID im echten PartnerNet beziehungsweise auf dem iPhone kontrollieren. Ein plausibler `link.amazon`-Host beweist noch keine Zuordnung.
+1. Gespeicherten Form.taxi-AV-Vertrag auf Richtigkeit und Wirksamkeit der Vereinbarung prüfen.
+2. Betreiber bestätigt, dass **alle sechs Amazon-Links funktionieren**. Das tatsächliche Zielprodukt beziehungsweise die genaue Variante und die Affiliate-Tracking-ID im echten PartnerNet kontrollieren. Eine funktionierende Weiterleitung allein beweist noch keine Provisionszuordnung.
 3. Cloudflare-Datenverarbeitungsvereinbarung, tatsächliche Logspeicherung, Analytics-Beacon und etwaige Drittlandübermittlungen anhand der Kontodaten prüfen.
 4. Prüfen, ob das Impressum je nach Rechtsform und persönlicher Situation zusätzliche Register-, Steuer- oder Wirtschafts-Identifikationsangaben benötigt. Keine private Steuer-ID veröffentlichen.
 5. Öffentliche Header/Seiten und iPhone-Funktionen final testen. Automatische GitHub-Tests sind kein vollständiger echter Browser- oder Rechtstest.

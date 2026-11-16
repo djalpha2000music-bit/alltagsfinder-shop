@@ -20,8 +20,8 @@ Stand: 16. November 2026
 
 ## 2. Externe Freigaben vor Google-Indexierung
 - **Impressum:** aktuelle ladungsfähige Anschrift und rechtlich erforderliche Unternehmensangaben prüfen. Das unabhängige Kontaktformular wurde eingerichtet und durch tatsächliche Form.taxi-Zustellung sowie E-Mail-Eingang getestet; die Geschäftsanschrift wurde vom Betreiber am 16.11.2026 ausdrücklich bestätigt. Gegebenenfalls erforderliche zusätzliche Unternehmensangaben sind weiterhin zu prüfen.
-- **Datenschutz:** Form.taxi-AV-Vertrag wurde im Panel erstellt, muss als PDF gesichert und auf Richtigkeit geprüft werden. Echte Cloudflare-Hosting-Verträge, am 16.11.2026 nachgewiesene Aktivierung von Cloudflare Web Analytics: Auslieferung nach dem nächsten Deployment, Hosting-Verträge/DPA, Logdaten, Speicherdauer und ggf. Datenübermittlungen prüfen und Hinweise an den tatsächlichen Betrieb anpassen.
-- **Amazon PartnerNet:** Betreiber hat am 16.11.2026 bestätigt, dass `https://alltagsfinder-auto.pages.dev/` bereits in der Werbewebsite-Liste eingetragen ist. Die sechs tatsächlichen Affiliate-Ziele, Tracking-IDs und der Kontostatus bleiben zu kontrollieren.
+- **Datenschutz:** Form.taxi-AV-Vertrag wurde im Panel erstellt und nach Betreiberangabe gespeichert; PDF-Inhalt und Wirksamkeit der Vereinbarung müssen noch geprüft werden. Echte Cloudflare-Hosting-Verträge, am 16.11.2026 nachgewiesene Aktivierung von Cloudflare Web Analytics: Auslieferung nach dem nächsten Deployment, Hosting-Verträge/DPA, Logdaten, Speicherdauer und ggf. Datenübermittlungen prüfen und Hinweise an den tatsächlichen Betrieb anpassen.
+- **Amazon PartnerNet:** Betreiber hat am 16.11.2026 bestätigt, dass `https://alltagsfinder-auto.pages.dev/` bereits in der Werbewebsite-Liste eingetragen ist. Alle sechs Affiliate-Links funktionieren laut Betreiber-Test; Zielprodukte/Varianten, Tracking-IDs und Kontostatus bleiben zu kontrollieren.
 - Erst nach diesen Punkten die siteweite Anweisung `X-Robots-Tag: noindex, nofollow, noarchive` aus `_headers` entfernen. Sie ist derzeit bewusst aktiv.
 
 ## 3. Wenn die Website freigegeben ist

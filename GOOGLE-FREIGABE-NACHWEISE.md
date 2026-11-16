@@ -12,7 +12,8 @@ Stand: 16. November 2026. Dies ist ein Arbeitsprotokoll, **keine** juristische F
 
 ## 1. Amazon PartnerNet – ohne Kontozugriff nicht prüfbar
 - [x] Betreiber war am 16.11.2026 in Amazon PartnerNet unter „Liste Deiner Webseiten & Apps“ und bestätigte ausdrücklich, dass `https://alltagsfinder-auto.pages.dev/` bereits eingetragen ist. Keine unabhängige Einsicht in die vollständige Kontoliste. https://partnernet.amazon.de/
-- [ ] Die sechs bereits erstellten Partnerlinks in der Amazon-App aufrufen und prüfen, dass sie auf die beabsichtigten Produkte führen. Kontrollieren, ob bei Mobile GetLink die zutreffende Tracking-ID ausgewählt ist.
+- [x] Betreiber bestätigt am 16.11.2026: **Alle sechs Amazon-Links funktionieren** bei seinem Aufruf.
+- [ ] Exakte Zielprodukte/Varianten und Tracking-ID in Mobile GetLink bzw. PartnerNet kontrollieren. Dass ein Kurzlink geöffnet werden kann, beweist nicht automatisch die richtige Tracking-Zuordnung.
 - [ ] Prüfen, dass der Shop alle Partnerprogrammregeln erfüllt und das Konto nicht abgelehnt wurde.
 Offizielle Amazon-Hilfe: https://partnernet.amazon.de/help/node/topic/G9KDEPG2WF47VQY4
 
@@ -38,7 +39,8 @@ Cloudflare DPA: https://www.cloudflare.com/en-gb/cloudflare-customer-dpa/
 - [x] Werbekennzeichnung, Amazon-Partnerhinweis und eigene Referenzillustrationen bleiben erhalten; der Betrieb zeigt keine ungeprüften Livepreise.
 - [x] `noreferrer` wurde bei den **Amazon-Partnerlinks** entfernt, damit der Shop-Ursprung nach der eigenen Referrer-Richtlinie übermittelt werden kann (nicht der Seitenpfad). Fremde externe Dokumentationslinks bleiben datensparsam.
 - [x] Statische interne Links aller 20 Sitemap-Seiten werden in CI geprüft; QA war beim Commit `076deca` erfolgreich.
-- [ ] Die tatsächlichen Weiterleitungsziele der sechs Amazon-Kurzlinks und deren Tracking-IDs konnten über die verfügbaren externen Zugriffe nicht unabhängig validiert werden. Nur ein manueller Aufruf vom echten Shop sowie die PartnerNet-Berichte können das bestätigen.
+- [x] Alle sechs Kurzlinks sind nach Bestätigung des Betreibers vom 16.11.2026 erreichbar.
+- [ ] Die tatsächlichen Produktvarianten und Tracking-IDs konnten über die verfügbaren externen Zugriffe nicht unabhängig validiert werden. Die PartnerNet-Einstellungen beziehungsweise Partnerberichte müssen dies noch bestätigen.
 - [ ] Der öffentlich ausgelieferte Cloudflare-HTTP-Header und der Analytik-Beacon waren aus dieser Umgebung nicht erreichbar. Der Nutzer hat den Produktionsstatus für einen früheren Commit und das aktivierte Web Analytics per Screenshots belegt.
 
 ## 4. Erst danach: Google-Indexierung öffnen
@@ -58,6 +60,7 @@ Offizielle Google-Anleitung: https://developers.google.com/search/docs/crawling-
 - [x] Benutzerdefinierte Form.taxi-Sendeverbindung aus Nutzerangabe `https://form.taxi/s/qc25mby6` mit POST integriert; Nutzer-Screenshot bestätigt Spamfilter und Domainfreigabe.
 - [x] E-Mail-Empfänger und tatsächlichen Testeingang am 16.11.2026 um 10:55 Uhr bestätigt; Form.taxi zeigte „Formular wurde übermittelt“ und Gmail enthielt „Sendung von Alltagsfinder Kontaktformular“.
 - [x] Form.taxi-AV-Vertrag nach Screenshot vom 16.11.2026 im Panel erstellt.
-- [ ] AV-Vertrag herunterladen, Personendaten und formelle Vollständigkeit kontrollieren sowie ablegen.
+- [x] Betreiber bestätigt am 16.11.2026, dass die erzeugte Form.taxi-Vertragsdatei gespeichert wurde.
+- [ ] PDF-Inhalt, Personendaten, formelle Vollständigkeit und Gültigkeit der Vereinbarung kontrollieren.
 - [x] Im Impressum als Formularlink bezeichnet; technisch unabhängig vom E-Mail-Client.
 - [ ] Vor Google-Freigabe tatsächliche Zustellung und rechtliche Erreichbarkeit erneut prüfen.

@@ -39,7 +39,7 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] **Amazon-Link-Herkunft:** Partnerlink-Attribute im Katalog, Produktdialog, Angebotsseite und DJ-Setup auf `rel="sponsored nofollow noopener"` angepasst. Die `Referrer-Policy: strict-origin-when-cross-origin` sendet bei HTTPS-Weiterleitungen die Ursprungsdomain, nicht den vollständigen Pfad. Dies vermeidet eine absichtliche Verschleierung der Werbewebsite.
 - [x] **Aktualität der Texte:** Startseiten-Teaser und hervorgehobenes Angebot sprechen nicht mehr von einem einzigen Partnerangebot.
 - [x] **Interne Linkprüfung:** GitHub QA kontrolliert für alle 20 Sitemap-Seiten die statischen internen Verknüpfungen auf existierende Ziele. Letzter abgeschlossener Lauf für `076deca` erfolgreich.
-- [ ] **Unabhängiger Live-Test:** Öffentliche Cloudflare-HTTP-Antwort einschließlich `X-Robots-Tag`, Analytics-Beacon und die Umleitungen der sechs Amazon-Kurzlinks konnten hier nicht unabhängig abgerufen werden. Die Desktop-/iPhone-Sichtkontrolle bleibt beim Betreiber.
+- [ ] **Unabhängiger Live-Test:** Öffentliche Cloudflare-HTTP-Antwort einschließlich `X-Robots-Tag`, Analytics-Beacon und die Weiterleitungsdetails der Amazon-Kurzlinks konnten hier nicht unabhängig abgerufen werden. Der Betreiber bestätigt, dass alle sechs Amazon-Links funktionieren; die Tracking-IDs und die externe technische Prüfung bleiben offen.
 
 ## Unverzichtbare externe Schritte vor uneingeschränkter Bewerbung und SEO-Freigabe
 
@@ -48,7 +48,8 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [x] **Direkter Formularversand technisch integriert:** Nutzer hat den Endpunkt `https://form.taxi/s/qc25mby6` zur Verfügung gestellt; `kontakt.html` sendet mit nativem HTML-POST an Form.taxi. Standard-Bestätigungsseite (laut Nutzerkonfiguration), Spamfilter aktiviert und Domainfreigabe `alltagsfinder-auto.pages.dev` laut Screenshot vorhanden.
 - [x] **Formular-Versand und E-Mail-Empfang nachgewiesen:** Nutzer-Screenshot „Formular wurde übermittelt!“ und passende Nachricht „Sendung von Alltagsfinder Kontaktformular“ im verbundenen Gmail-Postfach am 16.11.2026 um 10:55 Uhr (Deutschland).
 - [x] **Form.taxi-AV-Vertrag generiert:** Screenshot vom 16.11.2026 zeigt „Vertrag wurde erstellt!“ im Form.taxi-Dashboard.
-- [ ] **AV-Vertrag herunterladen und abschließend prüfen:** PDF speichern, Angaben und tatsächlichen Vertragsabschluss bestätigen, Datenschutzkonfiguration und Speicherdauer kontrollieren.
+- [x] **Form.taxi-Vertrag gespeichert:** Betreiber hat am 16.11.2026 die Speicherung bestätigt. Die PDF wurde hier nicht eingesehen.
+- [ ] **AV-Vertrag abschließend prüfen:** Angaben und tatsächlichen Vertragsabschluss bestätigen, Datenschutzkonfiguration und Speicherdauer kontrollieren.
 - [x] **Impressum – Anschrift:** Betreiber hat am 16.11.2026 ausdrücklich bestätigt, dass die eingetragene Geschäftsanschrift Hamelnerstraße 20, 06126 Halle (Saale) aktuell ist. Form.taxi-Kontaktformular wurde unabhängig von E-Mail-Apps getestet; Benachrichtigung erreichte Gmail.
 - [ ] **Impressum – Restpflichten:** Erforderliche Unternehmens-, Register- bzw. Identifikationsangaben je nach tatsächlicher Situation prüfen. **Keine private Steuer-ID veröffentlichen.** Rechtliche Vollständigkeit und schnelle Erreichbarkeit abschließend prüfen.
 - [ ] **Datenschutzrechtlicher Betriebscheck:** Cloudflare Pages-Vertrag, Datenverarbeitung, Drittlandtransfers, Logaufbewahrung und gegebenenfalls zusätzliche Dienste prüfen; Erklärung an tatsächliche Einstellungen anpassen.
@@ -56,7 +57,8 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [ ] **Weitere Live-Tests:** `angebote.html`, Kopfhörerbild, Ratgeber, Katalogfilter, Menü, Merkliste und Kontaktdaten auf iPhone prüfen.
 - [x] **Cloudflare Web Analytics im Projekt aktiviert:** Screenshot des Betreibers vom 16.11.2026 zeigt „Web Analytics wurde jetzt aktiviert. Änderungen werden bei der nächsten Bereitstellung angewendet“ und „Web Analytics ist aktiviert“. Datenschutzhinweise an diese Konfiguration angepasst. Cloudflare fügt den Beacon nach eigener Dokumentation ab der nächsten Bereitstellung ein.
 - [ ] **Live-Analytics-Einbindung und Datenschutz verifizieren:** Nach der folgenden Produktionsbereitstellung prüfen, ob `static.cloudflareinsights.com/beacon.min.js` eingefügt wurde. Rechtsgrundlage, Hosting-Vertrag/DPA, etwaige Drittlandverarbeitung und Speicherfristen abschließend überprüfen. Die Kennzahlen „0 Anfragen“ im Cloudflare-Pages-Bereich sind kein verlässlicher Beleg dafür, dass die Website keine Besucher hat.
-- [ ] **Händlerlink-Test:** Vom Partnerangebot aus den Amazon-Link öffnen und das exakte DOQAUS-Produkt sowie Partnerverfolgung kontrollieren. Ein Kurzlink lässt sich hier nicht unabhängig bis zum Ziel auflösen.
+- [x] **Amazon-Link-Aufruf:** Betreiber hat am 16.11.2026 bestätigt, dass alle sechs hinterlegten Amazon-Links funktionieren. Dies bestätigt aus Nutzersicht ihre Erreichbarkeit, nicht unabhängig die exakte Zielvariante oder die Tracking-ID.
+- [ ] **Amazon-Link-Zuordnung:** Exakte Zielprodukte/Varianten und korrekte Affiliate-Tracking-ID anhand von Amazon PartnerNet bzw. den tatsächlichen Zielseiten prüfen. Kurzlink-Ziele lassen sich von hier nicht unabhängig verifizieren.
 - [ ] **Suchmaschinenfreigabe:** Aktuell setzt `_headers` noch `X-Robots-Tag: noindex, nofollow, noarchive`. Diese Sperre erst nach den Prüfungen bewusst entfernen; danach Sitemap in der Google Search Console einreichen.
 
 ## Laufender Amazon-Betrieb
