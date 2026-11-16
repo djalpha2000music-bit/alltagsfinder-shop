@@ -61,6 +61,7 @@ Offizielle Google-Anleitung: https://developers.google.com/search/docs/crawling-
 - [x] E-Mail-Empfänger und tatsächlichen Testeingang am 16.11.2026 um 10:55 Uhr bestätigt; Form.taxi zeigte „Formular wurde übermittelt“ und Gmail enthielt „Sendung von Alltagsfinder Kontaktformular“.
 - [x] Form.taxi-AV-Vertrag nach Screenshot vom 16.11.2026 im Panel erstellt.
 - [x] Betreiber bestätigt am 16.11.2026, dass die erzeugte Form.taxi-Vertragsdatei gespeichert wurde.
-- [ ] PDF-Inhalt, Personendaten, formelle Vollständigkeit und Gültigkeit der Vereinbarung kontrollieren.
+- [x] 12-seitiger Form.taxi-AV-Vertrag vom 16.11.2026 im Chat geprüft: Vertragsparteien, bestätigte Anschrift, Gegenstand und elektronische Unterschriftsfreiheit laut Vertragsklausel vorhanden. Dokument selbst wurde **nicht** in GitHub öffentlich hinterlegt.
+- [ ] Weiterhin keine abschließende anwaltliche Wirksamkeitsprüfung. Konkrete Löschfristen, Dienstleistereinsatz und Datenschutzkonfiguration bei Form.taxi fortlaufend prüfen.
 - [x] Im Impressum als Formularlink bezeichnet; technisch unabhängig vom E-Mail-Client.
 - [ ] Vor Google-Freigabe tatsächliche Zustellung und rechtliche Erreichbarkeit erneut prüfen.
