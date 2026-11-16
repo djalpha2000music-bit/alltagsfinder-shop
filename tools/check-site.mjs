@@ -141,5 +141,11 @@ for(const url of sitemapURLs){
 const robots=text('robots.txt');
 if(!robots.includes('Sitemap: https://alltagsfinder-auto.pages.dev/sitemap.xml'))
   fail('Missing correct sitemap declaration in robots.txt');
+if(!text('impressum.html').includes('Alltagsfinder per E-Mail kontaktieren'))
+  fail('Direct email contact action missing from legal page');
+if(!text('datenschutz.html').includes('Cloudflare Pages kann bei eingeschalteter Web Analytics'))
+  fail('Live Cloudflare analytics privacy check disclosure missing');
+if(!text('angebote.html').includes('Gekennzeichnete Partnerangebote'))
+  fail('Offer page should not claim independently verified shortlinks');
 if(!text('_headers').includes('noindex'))fail('Premature SEO release: legal review not complete');
 console.log('Offer funnel OK: real WebP picture, '+Object.keys(active).length+' affiliate links, legal links and '+guides.length+' guide pages.');

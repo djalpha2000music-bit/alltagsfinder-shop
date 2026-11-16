@@ -27,6 +27,14 @@ Stand: 16. November 2026. **Die Website ist technisch weiter ausgebaut, befindet
 - [ ] **Indexierung prüfen:** `X-Robots-Tag: noindex, nofollow, noarchive` erst nach Freigabe entfernen, öffentliche Cloudflare-Antwortheader kontrollieren, bei Google die URL-Prüfung verwenden.
 - [ ] **Erwartung:** Google entscheidet selbst über Aufnahme und Ranking. Keine garantierten Aufrufe.
 
+## Prüfstand am 16.11.2026 – was wir tatsächlich wissen
+- Die Google Search Console zeigt laut vom Betreiber übermitteltem Screenshot „Inhaberschaft bestätigt“. Die Google-Tags bleiben dauerhaft in `index.html`.
+- Sechs Amazon-Partnerangebote sind im GitHub-Produktbestand hinterlegt; der Betreiber hat mehrere Produktseiten per Screenshot abgeglichen. Die Amazon-Kurzlinks und Tracking-IDs lassen sich von hier **nicht unabhängig validieren**.
+- Die aktuell im Impressum hinterlegte Anschrift und E-Mail sind vorhanden; die geschäftliche Anschrift, die Erreichbarkeit und ein weiterer effizienter Kontaktweg sind vom Betreiber noch zu bestätigen.
+- Datenschutz: Der **GitHub-Quellcode** enthält keine eingebundene Analysebibliothek. Cloudflare Pages kann bei aktivierter Web Analytics ein Skript automatisch ergänzen; ob das live aktiviert ist, ist ohne Dashboard-Zugriff ungeprüft.
+- Die öffentliche Cloudflare-Antwort inklusive tatsächlicher HTTP-Header ließ sich aus dieser Umgebung nicht unabhängig abrufen. `_headers` enthält weiterhin siteweites `noindex`.
+- Grundlage und Nachweise: `GOOGLE-FREIGABE-NACHWEISE.md`.
+
 ## Unverzichtbare externe Schritte vor uneingeschränkter Bewerbung und SEO-Freigabe
 
 - [ ] **PartnerNet-Website-Liste prüfen:** Unter PartnerNet-Kontoeinstellungen sicherstellen, dass `https://alltagsfinder-auto.pages.dev/` als eigene Werbewebsite hinterlegt ist. Die frühere Direktupload-Adresse `https://alltagsfinder-shop.pages.dev/` ist eine andere Site und ersetzt die neue Adresse nicht.
